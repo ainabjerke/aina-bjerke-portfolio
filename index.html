@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--navigation menu -->
+    <header>
+      <div class="#">
+        <a href="index.html">
+          <img src="#" alt="#" />
+        </a>
+      </div>
+      <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+          &#9776;
+        </a>
+        <ul>
+          <li class="style-nav">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="style-nav"><a href="#">Portfolio</a></li>
+          <li class="style-nav"><a href="#">About me</a></li>
+          <li class="style-nav"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--start page intro images-->
+    <section>
+      <div class="intro-main-img"></div>
+      <div class="intro-second-img"></div>
+    </section>
+    <!--start page intro info section-->
+    <section>
+      <div class="intro-main-text">
+        <h1>Aina Bjerke</h1>
+        <h2>Frontend student at Noroff</h2>
+        <a href="#" class="btn-cv">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          Download CV
+        </a>
+        <a href="#" class="btn-portfolio">
+          <i class="fa-solid fa-laptop-code"></i>
+          My Portfolio
+        </a>
+      </div>
+    </section>
+    <!--start page portfolio-projects-->
+    <section>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              src="images/square_eyes_webpage_img.jpg"
+              alt="webpage square eyes"
+            />
+            <h2>Square Eyes</h2>
+            <p><a href="#" class="btn-view-portfolio">See more</a></p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="images/comunity_science_museum_webpage_img.jpg"
+              alt="webpage comunity science museum"
+            />
+
+            <h2>Community Science Museum</h2>
+            <p><a href="#" class="btn-view-portfolio">See more</a></p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="images/helios_travel_webpage_img.jpg"
+              alt="webpage helios travel"
+            />
+
+            <h2>Helios Travel</h2>
+            <p><a href="#" class="btn-view-portfolio">See more</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--js files-->
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>
