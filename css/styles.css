@@ -318,7 +318,8 @@ body {
 .btn-cv,
 .btn-view-portfolio,
 .about-btn-cv {
-  background-color: #0388a6;
+  /* background-color: #03588c; */
+  background-color: #0396a6;
   color: #fff;
 }
 
