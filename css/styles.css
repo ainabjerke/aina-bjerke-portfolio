@@ -149,7 +149,7 @@ body {
   list-style-type: none;
   text-align: left;
   margin-left: -270px;
-  margin-top: 58px;
+  margin-top: 40px;
   font-size: 20px;
 }
 
@@ -160,7 +160,7 @@ body {
 
 .left-footer-logo img {
   height: 5em;
-  margin-top: 23px;
+  margin-top: 0px;
   object-fit: contain;
   margin-left: -111px;
   /* width: 100%; */
@@ -175,7 +175,7 @@ body {
 .right-footer-container-info {
   flex: 50%;
   margin: 0px 9px -8px 8px;
-  padding: 10px;
+  padding: 31px;
   /* flex: 50%;
   margin: 0px 54px 4px 3px;
   padding: 10px; */
@@ -326,6 +326,7 @@ body {
 
 .btn-portfolio {
   background-color: #5a4bbf;
+  /* background-color: #5d59d9; */
   color: #edf7fc;
 }
 
