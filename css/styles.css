@@ -482,6 +482,9 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2; */
 }
+.small-img-ab {
+  display: none;
+}
 
 @media screen and (max-width: 940px) {
   .intro-second-img {
@@ -491,7 +494,15 @@ body {
     left: 50%;
     max-width: 800px;
     padding: 20px;
-    top: -401px;
+    top: -362px;
+  }
+  .small-img-ab {
+    display: block;
+  }
+
+  .small-img-ab img {
+    width: 46%;
+    opacity: 0.9;
   }
 }
 
@@ -506,6 +517,9 @@ body {
     top: 17px;
     position: relative;
     font-size: 1.5rem;
+  }
+  .small-img-ab {
+    display: none;
   }
 }
 /*****************portfolio section**************/
