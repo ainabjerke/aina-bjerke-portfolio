@@ -318,11 +318,13 @@ body {
 .btn-cv,
 .btn-view-portfolio,
 .about-btn-cv {
-  background-color: #6bb7bf;
+  background-color: #0388a6;
+  color: #fff;
 }
 
 .btn-portfolio {
-  background-color: #bf63b9;
+  background-color: #5a4bbf;
+  color: #edf7fc;
 }
 
 .btn-view-portfolio {
@@ -342,7 +344,8 @@ body {
 
 .btn-cv:hover,
 .btn-portfolio:hover,
-.btn-view-portfolio {
+.btn-view-portfolio:hover,
+.about-btn-cv:hover {
   filter: brightness(115%);
 }
 
