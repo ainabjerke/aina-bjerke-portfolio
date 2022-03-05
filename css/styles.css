@@ -295,6 +295,18 @@ body {
   text-decoration: none;
 }
 
+.portfolioBtn {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1em;
+  padding: 15px 0px;
+  text-transform: uppercase;
+}
+
 .about-btn-cv {
   border-radius: 5px;
   display: inline-block;
@@ -317,7 +329,8 @@ body {
 
 .btn-cv,
 .btn-view-portfolio,
-.about-btn-cv {
+.about-btn-cv,
+.portfolioBtn {
   /* background-color: #03588c; */
   /* background-color: #0396a6; */
   background-color: #20818c;
@@ -348,7 +361,9 @@ body {
 .btn-cv:hover,
 .btn-portfolio:hover,
 .btn-view-portfolio:hover,
-.about-btn-cv:hover {
+.about-btn-cv:hover,
+.portfolioBtn:hover,
+.portfolio-section img:hover {
   filter: brightness(115%);
 }
 
@@ -372,6 +387,20 @@ body {
     font-size: 18px;
     line-height: 64px;
     padding: 0px;
+  }
+
+  /* .footer-info-left li {
+    margin-left: -31px;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  .left-footer-info li {
+    margin-left: 0px;
+  }
+
+  .footer-info-left li {
+    column-count: 1;
   }
 
   /* .footer-info-left li {
@@ -523,6 +552,134 @@ body {
   }
 }
 /*****************portfolio section**************/
+
+.btn-cv,
+.btn-portfolio {
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1em;
+  padding: 15px 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-cv,
+.btn-view-portfolio,
+.about-btn-cv {
+  /* background-color: #03588c; */
+  /* background-color: #0396a6; */
+  background-color: #20818c;
+  color: #fff;
+}
+
+.btn-portfolio {
+  background-color: #5a4bbf;
+  /* background-color: #5d59d9; */
+  color: #edf7fc;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+/***do something about name flex-item-right inside modal **/
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.portfolio-section img {
+  width: 100%;
+}
+
+.portfolio-section a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.portfolio-section a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-section p {
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    display: block;
+    width: 100%;
+  }
+}
+/*****************specialiy section**************/
 
 .flex-container {
   display: flex;

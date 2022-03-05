@@ -61,8 +61,70 @@
           </div>
         </div>
       </section>
+      <!--portfolio section-->
+      <section>
+        <section class="heading-speciality">
+          <h2>Portfolio</h2>
+        </section>
+        <!--Modal-->
+        <section class="container-portfolio">
+          <div class="row">
+            <!-- <div class="flex-container container-portfolio row row-blog-page"> -->
+            <div class="column">
+              <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" />
+            <h1>Helios Travel</h1>
+            <button id="myBtn">Open Modal</button> -->
+            </div>
 
-      <!--Modal-->
+            <div class="column">
+              <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" />
+            <h1>Helios Travel</h1>
+            <button id="myBtn">Open Modal</button> -->
+            </div>
+
+            <div class="column">
+              <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" />
+            <h1>Helios Travel</h1>
+            <button id="myBtn">Open Modal</button> -->
+            </div>
+          </div>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="flex-container">
+              <div class="flex-item-left">
+                <img
+                  id="myImg"
+                  src="img_snow.jpg"
+                  alt="Snow"
+                  style="width: 100%; max-width: 300px"
+                />
+                <p>Some text in the Modal..</p>
+                <div class="intro-section-btns">
+                  <a href="#" class="btn-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    live demo
+                  </a>
+
+                  <a href="#" class="btn-portfolio">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Github
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex-item-right">
+                <p>lorem ipsum tekst</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- <section>
       <div id="blog-modal-01" class="modal" onclick="this.style.display='none'">
         <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -250,6 +312,8 @@
     </footer>
     <!--js files-->
     <script src="js/hamburgerMenu.js"></script>
+    <script src="js/components/errorMessage.js"></script>
+    <script src="js/fetchPortfolioContent.js"></script>
     <script src="js/modal.js"></script>
   </body>
 </html>
