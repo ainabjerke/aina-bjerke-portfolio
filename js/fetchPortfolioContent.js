@@ -33,10 +33,10 @@ function createPortfolioContentHTML(content) {
     console.log(content[i].name);
     if (i <= 2) {
       containerPortfolio.innerHTML += ` <div class="column portfolio-section">
-                                          <a href="modal-content?id=${content[i].id}">
+                                          <a href="#"?id=${content[i].id}>
                                           <img src = "${content[i].images[0].src}" alt="${content[i].images[0].alt}"> 
                                           <p>${content[i].name}</p>
-                                          <a href="modal-content?id=${content[i].id}" class="portfolioBtn">Read more</a>
+                                          <a href="#?id=${content[i].id}" class="portfolioBtn">Read more</a>
                                           </a>
                                            </div>`;
     }
