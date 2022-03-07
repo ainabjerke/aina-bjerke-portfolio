@@ -590,6 +590,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .intro-main-img {
+    margin-top: -161px;
+  }
   .intro-section-btns {
     display: flex;
     flex-direction: column;
