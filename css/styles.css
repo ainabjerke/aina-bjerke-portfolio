@@ -27,7 +27,6 @@ body {
 
 .topnav {
   align-items: center;
-
   box-shadow: 0 1px 0 0 #d3d0c5;
   display: flex;
   justify-content: end;
@@ -432,7 +431,7 @@ button {
 }
 
 .intro-second-img {
-  background-image: url("../images/aina_bjerke_intro_img.jpg");
+  background-image: url("../images/aina.bjerke_main_bg2.jpg");
 }
 
 .intro-main-img,
@@ -782,7 +781,6 @@ button {
   }
 
   .about-img {
-    object-fit: contain;
     height: 434px;
   }
 }
