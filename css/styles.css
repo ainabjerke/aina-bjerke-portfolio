@@ -551,7 +551,8 @@ button {
 /* The Close Button */
 .closeOne,
 .closeTwo,
-.closeThree {
+.closeThree,
+.closeFour {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -563,7 +564,9 @@ button {
 .closeTwo:hover,
 .closeTwo:focus,
 .closeThree:hover,
-.closeThree:focus {
+.closeThree:focus,
+.closeFour:hover,
+.closeFour:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -663,6 +666,15 @@ button {
 .modal-project-list li {
   margin-left: 0.2rem;
   font-size: 1.3rem;
+}
+
+.modal-project-sub-header__grade li {
+  margin-left: -19px;
+  font-size: 0.9em;
+}
+
+.modal-project-sub-header__grade span {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 950px) {
