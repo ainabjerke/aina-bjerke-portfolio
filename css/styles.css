@@ -322,10 +322,14 @@ body {
   color: #ffffff;
 }
 
-.btn-webpage,
+.btn-webpage {
+  font-size: 0.9em;
+  padding: 15px 22px;
+}
+
 .btn-github {
   font-size: 0.9em;
-  padding: 15px 10px;
+  padding: 15px 30px;
 }
 
 .portfolioBtn {
