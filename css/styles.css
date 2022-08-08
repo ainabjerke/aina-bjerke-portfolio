@@ -521,7 +521,7 @@ button {
     left: 58%;
   }
 
-  .intro-section-btns {
+  .intro-section-btns__style {
     display: flex;
     flex-direction: column;
     margin-left: -50px;
