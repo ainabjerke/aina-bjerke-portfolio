@@ -384,7 +384,7 @@ button {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .btn-cv,
   .btn-portfolio {
     margin-top: 10px;
@@ -470,6 +470,16 @@ button {
   z-index: 1;
 }
 
+.intro-main-text h2 {
+  font-size: 19px;
+}
+
+.intro-main-text p,
+.intro-main-text span {
+  font-weight: normal;
+  font-size: 1em;
+}
+
 .small-img-ab {
   display: none;
 }
@@ -484,6 +494,10 @@ button {
     padding: 20px;
     top: -362px;
   }
+
+  .intro-main-text span {
+    display: block;
+  }
   .small-img-ab {
     display: block;
   }
@@ -494,17 +508,24 @@ button {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .intro-main-img {
     margin-top: -161px;
   }
+
+  .intro-main-text {
+    left: 58%;
+  }
+
   .intro-section-btns {
     display: flex;
     flex-direction: column;
+    margin-left: -50px;
   }
+
   .intro-main-text h1,
   .intro-main-text h2 {
-    left: 32px;
+    /* left: 32px; */
     top: 17px;
     position: relative;
     font-size: 1.5rem;
