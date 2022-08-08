@@ -480,6 +480,10 @@ button {
   font-size: 1em;
 }
 
+.intro-main-text span {
+  display: inline;
+}
+
 .small-img-ab {
   display: none;
 }
@@ -532,6 +536,12 @@ button {
   }
   .small-img-ab {
     display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .intro-main-text__span span {
+    display: block;
   }
 }
 
