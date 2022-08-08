@@ -543,9 +543,18 @@ button {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .intro-main-text__span span {
     display: block;
+  }
+
+  .intro-main-text h1 {
+    top: 26px;
+  }
+
+  .intro-main-text h1,
+  .intro-main-text h2 {
+    font-size: 1.2rem;
   }
 }
 
