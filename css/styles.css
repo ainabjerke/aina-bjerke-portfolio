@@ -522,7 +522,7 @@ button {
   }
 
   .intro-main-text {
-    left: 58%;
+    margin-left: 0px;
   }
 
   .intro-section-btns__style {
