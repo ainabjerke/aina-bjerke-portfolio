@@ -1,0 +1,182 @@
+.about {
+  margin-left: 5px;
+  &__container {
+    margin-top: 15px;
+  }
+  &__content {
+    background-color: $white-color;
+    margin-bottom: 10px;
+    @media screen and (min-width: 992px) {
+      height: 285px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      height: 303px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      height: 310px;
+    }
+    // @media screen and (max-width: 567px) {
+    //   margin-bottom: 10px;
+    // }
+  }
+
+  &__img--l {
+    @media screen and (min-width: 1200px) {
+      width: 83%;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      width: 98%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      width: 63%;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-right: 40px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      width: 76%;
+      margin-left: auto;
+      margin-top: 0px;
+    }
+    @media screen and (max-width: 567px) {
+      width: 76%;
+      margin-left: auto;
+      margin-top: 0px;
+    }
+  }
+
+  &__img--r {
+    @media screen and (min-width: 1200px) {
+      width: 71%;
+      margin-left: 181px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      width: 68%;
+      margin-left: 165px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      width: 67%;
+      margin-left: 188px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      width: 67%;
+      margin-left: 138px;
+    }
+    @media screen and (max-width: 567px) {
+      //   width: 67%;
+      //   margin-left: auto;
+      //   margin-right: -25%;
+      width: 70%;
+      margin-left: 31%;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 1200px) {
+      margin-top: -134px;
+      margin-left: -131px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      margin-top: -50px;
+      margin-left: -5px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      margin-top: -50px;
+      margin-left: 31px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      margin-top: -50px;
+      margin-left: 31px;
+    }
+    // @media screen and (max-width: 567px) {
+    //   margin-top: 88px;
+    //   margin-left: -148px;
+    //   padding-bottom: 63px;
+    // }
+    @media screen and (max-width: 567px) {
+      margin-top: -40px;
+      margin-left: 31px;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    margin-top: -11px;
+  }
+}
+
+// .frontend {
+//     &__container {
+//       margin-top: 300px;
+//     }
+
+//     &__content {
+//       background-color: $white-color;
+//       margin-left: 5px;
+//       text-align: center;
+//       height: 180px;
+//       @media screen and (min-width: 768px) and (max-width: 991px) {
+//         margin-bottom: 196px;
+//       }
+//       @media screen and (min-width: 568px) and (max-width: 765px) {
+//         margin-bottom: 196px;
+//       }
+//       @media screen and (max-width: 567px) {
+//         margin-bottom: 196px;
+//       }
+//     }
+
+//     &__img {
+//       margin-left: auto;
+//       margin-right: auto;
+//       @media screen and (min-width: 1200px) {
+//         margin-top: -122px;
+//         width: 129.18px;
+//         height: 216.08px;
+//         //   margin-left: auto;
+//         //   margin-right: auto;
+//       }
+//       @media screen and (min-width: 991px) and (max-width: 1199px) {
+//         margin-top: -118px;
+//         width: 129.18px;
+//         height: 229.08px;
+//         //   margin-left: auto;
+//         //   margin-right: auto;
+//       }
+//       @media screen and (min-width: 768px) and (max-width: 991px) {
+//         margin-top: -108px;
+//         width: 118.18px;
+//         height: 200.08px;
+//         //   margin-left: auto;
+//         //   margin-right: auto;
+//       }
+//       @media screen and (min-width: 568px) and (max-width: 765px) {
+//         margin-top: -113px;
+//         width: 122.18px;
+//         height: 200.08px;
+//         //   margin-left: auto;
+//         //   margin-right: auto;
+//       }
+//       @media screen and (max-width: 567px) {
+//         margin-top: -119px;
+//         width: 124.18px;
+//         height: 211.08px;
+//         //   margin-left: auto;
+//         //   margin-right: auto;
+//       }
+//     }
+
+//     &__text {
+//       margin-top: -10px;
+//     }
+
+//     &__heading {
+//       @media screen and (min-width: 991px) and (max-width: 1999px) {
+//         font-size: 25px;
+//       }
+//     }
+//     &__paragraph {
+//       padding: 2px;
+//     }
+//   }

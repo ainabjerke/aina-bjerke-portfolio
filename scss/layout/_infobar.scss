@@ -1,0 +1,104 @@
+/*** *** *** INFO BAR:  *** *** ***/
+.infobar {
+  background-color: $white-color;
+  //   border-radius: 5px;
+  margin-left: 8px;
+  margin-top: 27px;
+  overflow: auto;
+  position: relative;
+  //   width: 98.5%;
+  z-index: 0;
+  margin-bottom: 21px;
+  &__content {
+    color: $primary-color;
+    float: left;
+    // font-size: 22px;
+    font-size: 22px;
+    padding: 5px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 20%;
+  }
+  &__short-text {
+    display: block;
+    font-size: 14px;
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+    }
+  }
+}
+
+// .icon-bar {
+//     background-color: #ffffff;
+//     border-radius: 5px;
+//     margin-left: 8px;
+//     margin-top: 27px;
+//     overflow: auto;
+//     position: relative;
+//     width: 98.5%;
+//     z-index: 0;
+//     margin-bottom: 21px;
+//   }
+
+//   .icon-bar p {
+//     color: #28235d;
+//     float: left;
+//     font-size: 22px;
+//     padding: 2px 0;
+//     text-align: center;
+//     transition: all 0.3s ease;
+//     width: 20%;
+//   }
+
+//   p span {
+//     display: block;
+//     font-size: 20px;
+//   }
+
+//   @media screen and (max-width: 800px) {
+//     .icon-bar {
+//       display: none;
+//     }
+//     .heading-interest {
+//       display: none;
+//     }
+//   }
+
+//--- --- INFO BAR STYLE: --- ---//
+// .info-bar {
+//   background-color: $white-color;
+//   margin-top: 27px;
+//   overflow: auto;
+//   position: relative;
+//   padding: 10px 0px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 23px;
+
+//   @media screen and (min-width: 1200px) {
+//     width: 1100px;
+//   }
+//   @media screen and (max-width: 1199px) {
+//     width: 100%;
+//   }
+//   & p {
+//     color: $primary-color;
+//     float: left;
+//     font-size: 14px;
+//     padding: 2px 0;
+//     text-align: center;
+//     transition: all 0.3s ease;
+//     width: 33%;
+//   }
+
+//   & i {
+//     font-size: 23px;
+//     margin-bottom: 12px;
+//     margin-top: 7px;
+//   }
+
+//   & span {
+//     display: block;
+//     font-size: 12px;
+//   }
+// }
