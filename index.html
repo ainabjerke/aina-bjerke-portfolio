@@ -38,6 +38,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!---------------------------------------------- NAV SECTION:------------------------------------>
       <nav class="nav">
         <div class="container">
           <!-- TOP NAV SECTION: -->
@@ -70,7 +71,9 @@
                 <a href="https://no.linkedin.com/in/aina-bjerke-a2b114172">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                <a href="/assets/aina_bjerke_cv.pdf">
+                  <i class="fa-solid fa-file-lines"></i>
+                </a>
               </div>
             </div>
             <!-- HAMBURGER ICON SECTION: -->
@@ -95,16 +98,16 @@
                 </a>
               </li>
               <li class="nav__menu__item">
-                <a href="./products.html" class="nav__link">Home</a>
+                <a href="./index.html" class="nav__link">Home</a>
               </li>
               <li class="nav__menu__item">
-                <a href="./products.html" class="nav__link">Portfolio</a>
+                <a href="./index.html#portfolio" class="nav__link">Portfolio</a>
               </li>
               <li class="nav__menu__item">
-                <a href="./products.html" class="nav__link">About me</a>
+                <a href="./index.html#aboutme" class="nav__link">About me</a>
               </li>
               <li class="nav__menu__item">
-                <a href="./products.html" class="nav__link">Contact</a>
+                <a href="./index.html#contact" class="nav__link">Contact</a>
               </li>
             </ul>
           </div>
@@ -112,9 +115,310 @@
       </nav>
 
       <!-- MAIN CONTENT SECTION: -->
-
-      <!-- SKILLS SECTION: -->
       <main class="main container">
+        <!---------------------------------------------- HEROBANNER SECTION:------------------------------------>
+         <!--start page intro images-->
+        <section class="herobanner">
+          <div class="herobanner__img--primary"></div>
+          <div class="herobanner__img--secondary"></div>
+          <!--start page intro info section-->
+          <section>
+            <div class="herobanner__content">
+              <div>
+                <img
+                  src="images/ab_img.jpg"
+                  alt="Aina Bjerke competence"
+                  class="herobanner__img--tertiary"
+                />
+              </div>
+              <p class="herobanner__heading--small">This is me</p>
+              <h1 class="herobanner__heading">Aina Bjerke</h1>
+              <h2 class="herobanner__subheading">Front-end developer</h2>
+              <div class="herobanner__paragraph anim-text-banner">
+                <span class="anim-text">I create websites</span>
+                <br />
+                <span class="anim-text">that captures users attention</span>
+                <br />
+                <span class="anim-text">with focus on</span>
+                <br />
+                <div class="anim-text-parent">
+                  <span class="anim-text">Details.</span>
+                  <span class="anim-text">Creativity.</span>
+                  <span class="anim-text">Clean code.</span>
+                  <span class="anim-text">Responsive design.</span>
+                  <span class="v-bar"></span>
+                </div>
+                <br />
+              </div>
+              <!-- <div class="anim-text-banner">
+                <p class="herobanner__paragraph-style anim-text">
+                  <span class="anim-text">I create websites</span>
+                </p>
+                <br />
+                <p class="herobanner__paragraph-style anim-text">
+                  <span>that captures users attention</span>
+                </p>
+                <br />
+                <p class="herobanner__paragraph-style anim-text">
+                  <span>with focus on</span>
+                </p>
+                <br />
+                <div class="anim-text-parent">
+                  <p class="herobanner__paragraph-style anim-text">Details.</p>
+                  <p class="herobanner__paragraph-style anim-text">Creativity.</p>
+                  <p class="herobanner__paragraph-style anim-text">Clean code.</p>
+                  <p class="herobanner__paragraph-style anim-text">Responsive design.</p>
+                  <p class="v-bar"></p>
+                </div>
+                <br /> -->
+              <!-- </div> -->
+              <!-- <div class="anim-text-banner">
+                <span class="herobanner__paragraph anim-text">
+                  I create websites
+                </span>
+                <br />
+                <span class="anim-text">that captures users attention</span>
+                <br />
+                <span class="anim-text">with focus on</span>
+                <br />
+                <div class="anim-text-parent">
+                  <span class="anim-text">Details.</span>
+                  <span class="anim-text">Creativity.</span>
+                  <span class="anim-text">Clean code.</span>
+                  <span class="anim-text">Responsive design.</span>
+
+                  <span class="v-bar"></span>
+                </div>
+                <br />
+              </div> -->
+              <!-- <p class="herobanner__paragraph">
+                I create websites that captures users attention,
+                <span>with focus on details.</span>
+                <span>
+                  Perfection is when creativity meets technology!!!!!!.
+                </span>
+              </p> -->
+              <!----------------------------------------------remember buttonN:------------------------------------>
+              <div class="">
+                <a
+                  href="/assets/aina_bjerke_cv.pdf"
+                  class="btn btn--secondary btn--md"
+                >
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  Download CV
+                </a>
+
+                <a
+                  href="index.html#portfolio"
+                  class="btn btn--tertiary btn--md"
+                >
+                  <i class="fa-solid fa-laptop-code"></i>
+                  My Portfolio
+                </a>
+              </div>
+
+              <!-- <div class="intro-section-btns intro-section-btns__style">
+                <a
+                  href="/assets/aina_bjerke_cv.pdf"
+                  class="btn btn--secondary btn-cv"
+                >
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  Download CV
+                </a>
+
+                <a
+                  href="index.html#portfolio"
+                  class="btn btn--secondary--tertiary btn-portfolio"
+                >
+                  <i class="fa-solid fa-laptop-code"></i>
+                  My Portfolio
+                </a>
+              </div> -->
+            </div>
+          </section>
+        </section>
+        <!---------------------------------------------- PORTFOLIO SECTION:------------------------------------>
+        <!-- PRODUCTS AND DYNAMIC PRODUCTS SECTION-->
+        <section class="heading">
+          <div class="heading__portfolio">
+            <h2 id="portfolio">Portfolio</h2>
+          </div>
+        </section>
+        <section class="projects row">
+          <!-- LOADER SECTION: -->
+          <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+        <!---------------------------------------------- MODAL SECTION:------------------------------------>
+
+        <!-- <div class="container">
+          <div class="row">
+            <div id="myModalOne" class="modal">
+            <div class="col">
+              1 of 2
+            </div>
+            <div class="col">
+              2 of 2
+            </div>
+          </div>
+          </div> -->
+          <!-- <div class="frontend__container container">
+            <div class="row">
+              <div class="frontend__content col-sm-12 col-lg">
+                <div class="frontend__img"> -->
+        <!-- The Modal -->
+        <!-- Modal content Helios Travel -->
+        <section class="modal_container container">
+          
+          <div id="myModalOne" class="modal">
+          <div class="modal__row row">
+            <!-- <div class="modal-content"> -->
+              <span class="closeOne">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+              <!-- <div class="flex-container"> -->
+                <div class="modal-l__content col-sm-12 col-lg">
+                  <!-- <h5 class="details__title"></h5> -->
+                  <div class="modal-l__styling">
+                  <img
+                    src="images/helios_travel_webpage_img.jpg"
+                    alt="Helios Travel webpage"
+                    class="modal-l__img"
+                  />
+                  <h3 class="modal-l__heading">Helios Travel</h3>
+                  <div class="intro-section-btns">
+                    <a
+                      href="https://inspiring-shaw-0ef167.netlify.app/index.html"
+                      class="btn-webpage"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      webpage
+                    </a>
+
+                    <a
+                      href="https://github.com/ainabjerke/HeliosTravel"
+                      class="btn-github"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                      Github
+                    </a>
+                  </div>
+                </div>
+                </div>
+                <div class="modal-r__content col-sm-12 col-lg">
+                  <section class="modal-r__header modal-project-header">
+                    <div>
+                      <h2 class="modal-r__header">Helios travel</h2>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div id="modal-r-languages">
+                      <span class="modal-r__language modal-code-style">HML</span>
+                      <span class="modal-r__language modal-code-style">CSS</span>
+                      <span class="modal-r__language modal-code-style">JS</span>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="modal-project-sub-header">
+                      <h2 class="modal-r__subheading">Project exam 1</h2>
+                      <ul class="modal-r__grade--styling modal-project-sub-header__grade">
+                        <li>
+                          <span class="modal-r__grade">Grade:</span>
+                          <span id="modal-grade-value">A</span>
+                        </li>
+                      </ul>
+                      <div id="modal-description">
+                        <p class="modal-r__paragraph">
+                          Project exam 1 was created in 2022 to showcase my skills
+                          learned over the first year of studies.
+                        </p>
+                        <p class="modal-r__paragraph">
+                          I created a Travel blog for a fictive company by the
+                          name of Helios Travel based on the following
+                          specifications:
+                        </p>
+                      </div>
+                      <ul class="modal-r__list--main modal-project-list">
+                        <li>WordPress REST API to fetch data</li>
+                        <li>Responsive layout</li>
+                        <li>Fetch dynamic data stored in WordPress</li>
+                        <li>
+                          Carousel slider users can click to view more posts
+                        </li>
+                        <li>View more/less button to view more blog posts</li>
+                        <li>
+                          Using query parameter to fetch specific data users has
+                          clicked on
+                        </li>
+                        <li>
+                          Modal users can click on to view a bigger images
+                        </li>
+                        <li>
+                          Search function allows users to find the blog post
+                          easier
+                        </li>
+                        <li>
+                          Post data from contact form to Wordpress so the
+                          details is saved
+                        </li>
+                        <li>
+                          Allows user to submit comments on blogposts and post
+                          this data to wordpress
+                        </li>
+                        <li>
+                          JavaScript is used for validation on the contactform,
+                          showing an error message I the value in the textboxes
+                          does not meet the requirements
+                        </li>
+                      </ul>
+                      <!-- <hr class="modal-r__hr"/> -->
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="modal-r__heading--third modal-project-sub-header">
+                      <h2 id="modal-subheading2">Updates implemented</h2>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div>
+                      <ul class="modal-r__list--second modal-project-list">
+                        <li>
+                          Lightbox modal images gallery, clicking on the images
+                          in blog specific page opens the lightbox.
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          </div>
+        </section>
+
+        <!---------------------------------------------- SKILLS SECTION:------------------------------------>
+        <section class="heading">
+          <div class="heading__skills">
+            <h3 id="speciality">Skills</h3>
+          </div>
+        </section>
+        <!-- SKILLS SECTION: -->
         <section>
           <div class="skills__container container">
             <div class="row">
@@ -5126,8 +5430,13 @@
           </div>
         </section>
 
+         <!---------------------------------------------- FRONTEND SECTION:------------------------------------>
+         <section class="heading">
+          <div class="heading__frontend">
+            <h3>Front-end</h3>
+          </div>
+        </section>
         <!-- FRONTEND SECTION -->
-
         <section>
           <div class="frontend__container container">
             <div class="row">
@@ -5488,6 +5797,925 @@
           </div>
         </section>
 
+      <!---------------------------------------------- WORK AND EDUCATION SECTION:------------------------------------>
+          <section class="heading">
+            <div class="heading__work--education">
+              <h3 id="workandeducation">Work and education</h3>
+            </div>
+          </section>
+        <!-- WORK AND EDUCATION SECTION: -->
+        <section class="work-education">
+          <div class="work-education__img"></div>
+          <div class="work-education__chart">
+            <svg
+              id="Component_10_1"
+              data-name="Component 10 – 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 891.455 574.782"
+            >
+              <g
+                id="Group_705"
+                data-name="Group 705"
+                transform="translate(31.455 -25)"
+              >
+                <rect
+                  id="Rectangle_304"
+                  data-name="Rectangle 304"
+                  width="374.72"
+                  height="89.41"
+                  transform="translate(-31.455 58.209)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_305"
+                  data-name="Rectangle 305"
+                  width="312.654"
+                  height="89.41"
+                  transform="translate(-31.455 419.683)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_306"
+                  data-name="Rectangle 306"
+                  width="312.654"
+                  height="89.411"
+                  transform="translate(-31.455 239.585)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_307"
+                  data-name="Rectangle 307"
+                  width="374.722"
+                  height="89.41"
+                  transform="translate(469.278 509.094)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_308"
+                  data-name="Rectangle 308"
+                  width="374.722"
+                  height="89.41"
+                  transform="translate(469.278 328.996)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_309"
+                  data-name="Rectangle 309"
+                  width="374.722"
+                  height="89.41"
+                  transform="translate(469.278 148.897)"
+                  fill="#fff"
+                />
+                <g
+                  id="Group_661"
+                  data-name="Group 661"
+                  transform="translate(376.298 25)"
+                >
+                  <rect
+                    id="Rectangle_310"
+                    data-name="Rectangle 310"
+                    width="0.639"
+                    height="1.277"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_680"
+                    data-name="Path 680"
+                    d="M301.442,595.133H300.8V592.59h.639Zm0-5.087H300.8V587.5h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.086H300.8V577.33h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8V562.07h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.087H300.8V551.9h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V521.38h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8V506.12h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8V490.86h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.542h.639Zm0-5.085H300.8V475.6h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8V440h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V419.65h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8V404.39h.639Zm0-5.086H300.8V399.3h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V389.13h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.542h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.086H300.8V363.7h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.085H300.8v-2.543h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8V333.18h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.085H300.8V317.92h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V302.66h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8V287.4h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8V251.8h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8V231.45h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V216.19h.639Zm0-5.087H300.8V211.1h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.542h.639Zm0-5.085H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8V175.5h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8v-2.542h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.544h.639Zm0-5.087H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.086H300.8v-2.543h.639Zm0-5.087H300.8V99.2h.639Zm0-5.086H300.8V94.115h.639Zm0-5.086H300.8V89.029h.639Zm0-5.086H300.8V83.942h.639Zm0-5.086H300.8V78.857h.639Zm0-5.087H300.8V73.769h.639Zm0-5.086H300.8V68.683h.639Zm0-5.086H300.8V63.6h.639Zm0-5.086H300.8V58.511h.639Zm0-5.086H300.8V53.423h.639Zm0-5.087H300.8V48.337h.639Zm0-5.086H300.8V43.251h.639Zm0-5.086H300.8V38.165h.639Zm0-5.087H300.8V33.078h.639Zm0-5.086H300.8V27.991h.639Z"
+                    transform="translate(-300.803 -24.171)"
+                    fill="#fff"
+                  />
+                  <rect
+                    id="Rectangle_311"
+                    data-name="Rectangle 311"
+                    width="0.639"
+                    height="1.277"
+                    transform="translate(0 573.504)"
+                    fill="#fff"
+                  />
+                </g>
+                <rect
+                  id="Rectangle_312"
+                  data-name="Rectangle 312"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(406.758 509.094)"
+                  fill="#5a4bbf"
+                />
+                <path
+                  id="Path_3565"
+                  data-name="Path 3565"
+                  d="M0,0H19.585V19.585H0Z"
+                  transform="translate(395.978 553.798) rotate(-44.992)"
+                  fill="#5a4bbf"
+                />
+                <rect
+                  id="Rectangle_314"
+                  data-name="Rectangle 314"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(273.785 419.683)"
+                  fill="#20818c"
+                />
+                <rect
+                  id="Rectangle_315"
+                  data-name="Rectangle 315"
+                  width="19.585"
+                  height="19.585"
+                  transform="translate(326.87 464.391) rotate(-45.008)"
+                  fill="#20818c"
+                />
+                <rect
+                  id="Rectangle_316"
+                  data-name="Rectangle 316"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(406.758 328.996)"
+                  fill="#5a4bbf"
+                />
+                <path
+                  id="Path_3564"
+                  data-name="Path 3564"
+                  d="M0,0H19.585V19.585H0Z"
+                  transform="translate(395.978 373.7) rotate(-44.992)"
+                  fill="#5a4bbf"
+                />
+                <rect
+                  id="Rectangle_318"
+                  data-name="Rectangle 318"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(273.785 239.585)"
+                  fill="#20818c"
+                />
+                <path
+                  id="Path_3566"
+                  data-name="Path 3566"
+                  d="M0,0H19.585V19.585H0Z"
+                  transform="translate(326.87 284.293) rotate(-45.008)"
+                  fill="#20818c"
+                />
+                <rect
+                  id="Rectangle_320"
+                  data-name="Rectangle 320"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(406.758 148.897)"
+                  fill="#5a4bbf"
+                />
+                <rect
+                  id="Rectangle_321"
+                  data-name="Rectangle 321"
+                  width="19.585"
+                  height="19.585"
+                  transform="translate(395.978 193.601) rotate(-44.992)"
+                  fill="#5a4bbf"
+                />
+                <rect
+                  id="Rectangle_322"
+                  data-name="Rectangle 322"
+                  width="70.002"
+                  height="89.41"
+                  transform="translate(273.785 58.21)"
+                  fill="#20818c"
+                />
+                <rect
+                  id="Rectangle_323"
+                  data-name="Rectangle 323"
+                  width="19.585"
+                  height="19.585"
+                  transform="translate(326.87 102.917) rotate(-45.008)"
+                  fill="#20818c"
+                />
+                <g
+                  id="Group_663"
+                  data-name="Group 663"
+                  transform="translate(369.6 546.774)"
+                >
+                  <g id="Group_662" data-name="Group 662">
+                    <path
+                      id="Path_681"
+                      data-name="Path 681"
+                      d="M302.443,446.773a6.386,6.386,0,1,0-6.384-6.4A6.38,6.38,0,0,0,302.443,446.773Z"
+                      transform="translate(-295.42 -433.361)"
+                      fill="#edf1f4"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_682"
+                      data-name="Path 682"
+                      d="M302.582,447.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,447.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.747,5.747,0,0,0,302.582,434.777Z"
+                      transform="translate(-295.559 -433.5)"
+                      fill="#802c82"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Group_665"
+                  data-name="Group 665"
+                  transform="translate(369.6 457.364)"
+                >
+                  <g id="Group_664" data-name="Group 664">
+                    <path
+                      id="Path_683"
+                      data-name="Path 683"
+                      d="M302.443,376.773a6.386,6.386,0,1,0-6.384-6.4A6.38,6.38,0,0,0,302.443,376.773Z"
+                      transform="translate(-295.42 -363.361)"
+                      fill="#edf1f4"
+                      stroke="#25d6da"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_684"
+                      data-name="Path 684"
+                      d="M302.582,377.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,377.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.747,5.747,0,0,0,302.582,364.777Z"
+                      transform="translate(-295.559 -363.5)"
+                      fill="#d22e37"
+                      stroke="#25d6da"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Group_667"
+                  data-name="Group 667"
+                  transform="translate(369.6 366.676)"
+                >
+                  <g id="Group_666" data-name="Group 666">
+                    <path
+                      id="Path_685"
+                      data-name="Path 685"
+                      d="M302.443,305.773a6.386,6.386,0,1,0-6.384-6.4A6.38,6.38,0,0,0,302.443,305.773Z"
+                      transform="translate(-295.42 -292.361)"
+                      fill="#edf1f4"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_686"
+                      data-name="Path 686"
+                      d="M302.582,306.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,306.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.747,5.747,0,0,0,302.582,293.777Z"
+                      transform="translate(-295.559 -292.5)"
+                      fill="#f58020"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Group_669"
+                  data-name="Group 669"
+                  transform="translate(369.6 277.265)"
+                >
+                  <g id="Group_668" data-name="Group 668">
+                    <path
+                      id="Path_687"
+                      data-name="Path 687"
+                      d="M302.443,235.773a6.386,6.386,0,1,0-6.384-6.4A6.379,6.379,0,0,0,302.443,235.773Z"
+                      transform="translate(-295.42 -222.361)"
+                      fill="#edf1f4"
+                      stroke="#25d6da"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_688"
+                      data-name="Path 688"
+                      d="M302.582,236.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,236.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.746,5.746,0,0,0,302.582,223.777Z"
+                      transform="translate(-295.559 -222.5)"
+                      fill="#e9bb01"
+                      stroke="#25d6da"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Group_671"
+                  data-name="Group 671"
+                  transform="translate(369.6 186.578)"
+                >
+                  <g id="Group_670" data-name="Group 670">
+                    <path
+                      id="Path_689"
+                      data-name="Path 689"
+                      d="M302.443,164.773a6.386,6.386,0,1,0-6.384-6.4A6.379,6.379,0,0,0,302.443,164.773Z"
+                      transform="translate(-295.42 -151.361)"
+                      fill="#edf1f4"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_690"
+                      data-name="Path 690"
+                      d="M302.582,165.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,165.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.746,5.746,0,0,0,302.582,152.777Z"
+                      transform="translate(-295.559 -151.5)"
+                      fill="#86c341"
+                      stroke="#8a92da"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Group_673"
+                  data-name="Group 673"
+                  transform="translate(369.6 95.89)"
+                >
+                  <g id="Group_672" data-name="Group 672">
+                    <path
+                      id="Path_691"
+                      data-name="Path 691"
+                      d="M302.443,93.773a6.386,6.386,0,1,0-6.384-6.4A6.379,6.379,0,0,0,302.443,93.773Z"
+                      transform="translate(-295.42 -80.361)"
+                      fill="#edf1f4"
+                      stroke="#1ce0e3"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_692"
+                      data-name="Path 692"
+                      d="M302.582,94.55a7.025,7.025,0,1,1,7.012-7.038A7.038,7.038,0,0,1,302.582,94.55Zm0-12.773a5.748,5.748,0,1,0,5.735,5.735A5.746,5.746,0,0,0,302.582,81.777Z"
+                      transform="translate(-295.559 -80.5)"
+                      fill="#3d9cd4"
+                      stroke="#1ce0e3"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+                <rect
+                  id="Rectangle_326"
+                  data-name="Rectangle 326"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(201.75 102.961)"
+                  fill="#b0c1c0"
+                />
+                <rect
+                  id="Rectangle_327"
+                  data-name="Rectangle 327"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(201.75 286.04)"
+                  fill="#b0c1c0"
+                />
+                <rect
+                  id="Rectangle_328"
+                  data-name="Rectangle 328"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(201.75 468.268)"
+                  fill="#b0c1c0"
+                />
+                <rect
+                  id="Rectangle_329"
+                  data-name="Rectangle 329"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(495.526 195.777)"
+                  fill="#b0c1c0"
+                />
+                <rect
+                  id="Rectangle_330"
+                  data-name="Rectangle 330"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(495.526 555.548)"
+                  fill="#b0c1c0"
+                />
+                <rect
+                  id="Rectangle_331"
+                  data-name="Rectangle 331"
+                  width="54.592"
+                  height="0.639"
+                  transform="translate(495.526 375.45)"
+                  fill="#b0c1c0"
+                />
+                <text
+                  id="Online_marketing"
+                  data-name="Online marketing"
+                  transform="translate(164 89.782)"
+                  fill="#707070"
+                  font-size="23"
+                  font-family="SegoeUI, Segoe UI"
+                  letter-spacing="0.032em"
+                >
+                  <tspan x="-93.387" y="0">Online marketing</tspan>
+                </text>
+                <text
+                  id="Travel_consultant"
+                  data-name="Travel consultant"
+                  transform="translate(164 277.782)"
+                  fill="#707070"
+                  font-size="23"
+                  font-family="SegoeUI, Segoe UI"
+                  letter-spacing="0.032em"
+                >
+                  <tspan x="-91.105" y="0">Travel consultant</tspan>
+                </text>
+                <g
+                  id="Group_753"
+                  data-name="Group 753"
+                  transform="translate(-1758.689 -848.466)"
+                >
+                  <path
+                    id="Path_3175"
+                    data-name="Path 3175"
+                    d="M2072.565,931.063v1.094h1.908v3.8h-13.584v-3.8h1.908v-1.094h-20.108v35.366h49.406V931.063Zm-25.371,29.013s.467-4,2.821-5.236c1.809-1.392,4.378-2.368,4.641-3.259s-.88-3.382-.88-3.382a1.8,1.8,0,0,1-.8-1.208c-.085-.771.326-.856.326-.856a16.9,16.9,0,0,1-.354-3.077,3.386,3.386,0,0,1,1.865-2.981,5.937,5.937,0,0,1,3.813-.389c.859.194,2.88,1.1,3.037,3.135a11.6,11.6,0,0,1-.325,3.146.414.414,0,0,0,.168.384,2.094,2.094,0,0,1-.158,1.175,2.037,2.037,0,0,1-.7.708,9.347,9.347,0,0,0-.708,2.785,2.687,2.687,0,0,0,.32,1.059c.352,1.017,4.28,1.486,5.686,2.976s1.712,5.019,1.712,5.019Zm37.767-3.262h-10.655v-3.387h10.655Zm0-6.262H2070.49v-3.387h14.471Zm0-6.426H2070.49v-3.387h14.471Z"
+                    transform="translate(0 2.264)"
+                    fill="#fff"
+                  />
+                  <rect
+                    id="Rectangle_372"
+                    data-name="Rectangle 372"
+                    width="10.388"
+                    height="9.234"
+                    transform="translate(2062.404 927.988)"
+                    fill="#fff"
+                  />
+                </g>
+                <text
+                  id="Noroff_"
+                  data-name="Noroff "
+                  transform="translate(495 160.782)"
+                  fill="#707070"
+                  font-size="23"
+                  font-family="SegoeUI, Segoe UI"
+                >
+                  <tspan x="0" y="25">Noroff</tspan>
+                </text>
+                <path
+                  id="Path_3184"
+                  data-name="Path 3184"
+                  d="M552.095,242.662a1.71,1.71,0,0,1-.524,1.233v2.17h-.521v-1.82a1.78,1.78,0,0,1-.435.125v2.348h-.521V244.37a1.739,1.739,0,0,1-.435-.125v1.82h-.521v-2.17a1.718,1.718,0,0,1,.692-2.879v-8.04l1.046-.392v8.432A1.728,1.728,0,0,1,552.095,242.662Zm1.853-12.5-23.5-9.069-23.5,9.069,23.5,8.413Zm-38.056,5.669V249.1c0,1.735,6.516,3.8,14.556,3.8S545,250.833,545,249.1V235.832l-14.553,5.211Z"
+                  transform="translate(-88.689 -45.442)"
+                  fill="#fff"
+                />
+                <text
+                  id="BI_"
+                  data-name="BI  "
+                  transform="translate(495 344.782)"
+                  fill="#707070"
+                  font-size="22"
+                  font-family="SegoeUI, Segoe UI"
+                >
+                  <tspan x="0" y="24" xml:space="preserve">BI</tspan>
+                </text>
+                <text
+                  id="Courses_in_project_management_and_digital_transformation_"
+                  data-name="Courses in project management and digital transformation
+          
+          "
+                  transform="translate(496 380.782)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">
+                    Courses in project management and digital transformation
+                  </tspan>
+                  <tspan x="0" y="31"></tspan>
+                </text>
+                <path
+                  id="Path_3189"
+                  data-name="Path 3189"
+                  d="M552.095,242.662a1.71,1.71,0,0,1-.524,1.233v2.17h-.521v-1.82a1.78,1.78,0,0,1-.435.125v2.348h-.521V244.37a1.739,1.739,0,0,1-.435-.125v1.82h-.521v-2.17a1.718,1.718,0,0,1,.692-2.879v-8.04l1.046-.392v8.432A1.728,1.728,0,0,1,552.095,242.662Zm1.853-12.5-23.5-9.069-23.5,9.069,23.5,8.413Zm-38.056,5.669V249.1c0,1.735,6.516,3.8,14.556,3.8S545,250.833,545,249.1V235.832l-14.553,5.211Z"
+                  transform="translate(-88.689 135.496)"
+                  fill="#fff"
+                />
+                <text
+                  id="Front-end_development_"
+                  data-name="Front-end development
+          "
+                  transform="translate(496 202.782)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">Front-end development</tspan>
+                </text>
+                <text
+                  id="Folkeuniversitet"
+                  transform="translate(495 523.782)"
+                  fill="#707070"
+                  font-size="20"
+                  font-family="SegoeUI, Segoe UI"
+                >
+                  <tspan x="0" y="22">Folkeuniversitet</tspan>
+                </text>
+                <text
+                  id="Courses_in_digital_marketing._"
+                  data-name="Courses in digital marketing. 
+          
+          
+          "
+                  transform="translate(496 560.782)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">Courses in digital marketing.</tspan>
+                </text>
+                <path
+                  id="Path_3190"
+                  data-name="Path 3190"
+                  d="M552.095,242.662a1.71,1.71,0,0,1-.524,1.233v2.17h-.521v-1.82a1.78,1.78,0,0,1-.435.125v2.348h-.521V244.37a1.739,1.739,0,0,1-.435-.125v1.82h-.521v-2.17a1.718,1.718,0,0,1,.692-2.879v-8.04l1.046-.392v8.432A1.728,1.728,0,0,1,552.095,242.662Zm1.853-12.5-23.5-9.069-23.5,9.069,23.5,8.413Zm-38.056,5.669V249.1c0,1.735,6.516,3.8,14.556,3.8S545,250.833,545,249.1V235.832l-14.553,5.211Z"
+                  transform="translate(-88.689 314.754)"
+                  fill="#fff"
+                />
+                <text
+                  id="Supporting_marketing_department_"
+                  data-name="Supporting marketing department
+          "
+                  transform="translate(63 110.779)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">Supporting marketing department</tspan>
+                </text>
+                <text
+                  id="_"
+                  data-name="
+          "
+                  transform="translate(73 293.857)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14"></tspan>
+                </text>
+                <text
+                  id="Online_and_face-to-face_sales_"
+                  data-name="Online and face-to-face sales
+          "
+                  transform="translate(92 476.086)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">Online and face-to-face sales</tspan>
+                </text>
+                <text
+                  id="Digital_sales_and_marketing_"
+                  data-name="Digital sales and marketing
+          "
+                  transform="translate(102 293.857)"
+                  fill="#707070"
+                  font-size="13"
+                  font-family="SegoeUI-Semilight, Segoe UI"
+                  font-weight="300"
+                  letter-spacing="0.004em"
+                >
+                  <tspan x="0" y="14">Digital sales and marketing</tspan>
+                </text>
+              </g>
+              <g
+                id="Group_752"
+                data-name="Group 752"
+                transform="translate(-1727.234 -873.466)"
+              >
+                <path
+                  id="Path_3175-2"
+                  data-name="Path 3175"
+                  d="M2072.565,931.063v1.094h1.908v3.8h-13.584v-3.8h1.908v-1.094h-20.108v35.366h49.406V931.063Zm-25.371,29.013s.467-4,2.821-5.236c1.809-1.392,4.378-2.368,4.641-3.259s-.88-3.382-.88-3.382a1.8,1.8,0,0,1-.8-1.208c-.085-.771.326-.856.326-.856a16.9,16.9,0,0,1-.354-3.077,3.386,3.386,0,0,1,1.865-2.981,5.937,5.937,0,0,1,3.813-.389c.859.194,2.88,1.1,3.037,3.135a11.6,11.6,0,0,1-.325,3.146.414.414,0,0,0,.168.384,2.094,2.094,0,0,1-.158,1.175,2.037,2.037,0,0,1-.7.708,9.347,9.347,0,0,0-.708,2.785,2.687,2.687,0,0,0,.32,1.059c.352,1.017,4.28,1.486,5.686,2.976s1.712,5.019,1.712,5.019Zm37.767-3.262h-10.655v-3.387h10.655Zm0-6.262H2070.49v-3.387h14.471Zm0-6.426H2070.49v-3.387h14.471Z"
+                  transform="translate(0 2.264)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_372-2"
+                  data-name="Rectangle 372"
+                  width="10.388"
+                  height="9.234"
+                  transform="translate(2062.404 927.988)"
+                  fill="#fff"
+                />
+              </g>
+              <g
+                id="Group_754"
+                data-name="Group 754"
+                transform="translate(-1727.234 -693.466)"
+              >
+                <path
+                  id="Path_3175-3"
+                  data-name="Path 3175"
+                  d="M2072.565,931.063v1.094h1.908v3.8h-13.584v-3.8h1.908v-1.094h-20.108v35.366h49.406V931.063Zm-25.371,29.013s.467-4,2.821-5.236c1.809-1.392,4.378-2.368,4.641-3.259s-.88-3.382-.88-3.382a1.8,1.8,0,0,1-.8-1.208c-.085-.771.326-.856.326-.856a16.9,16.9,0,0,1-.354-3.077,3.386,3.386,0,0,1,1.865-2.981,5.937,5.937,0,0,1,3.813-.389c.859.194,2.88,1.1,3.037,3.135a11.6,11.6,0,0,1-.325,3.146.414.414,0,0,0,.168.384,2.094,2.094,0,0,1-.158,1.175,2.037,2.037,0,0,1-.7.708,9.347,9.347,0,0,0-.708,2.785,2.687,2.687,0,0,0,.32,1.059c.352,1.017,4.28,1.486,5.686,2.976s1.712,5.019,1.712,5.019Zm37.767-3.262h-10.655v-3.387h10.655Zm0-6.262H2070.49v-3.387h14.471Zm0-6.426H2070.49v-3.387h14.471Z"
+                  transform="translate(0 2.264)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_372-3"
+                  data-name="Rectangle 372"
+                  width="10.388"
+                  height="9.234"
+                  transform="translate(2062.404 927.988)"
+                  fill="#fff"
+                />
+              </g>
+              <g
+                id="Group_755"
+                data-name="Group 755"
+                transform="translate(-1727.234 -693.466)"
+              >
+                <path
+                  id="Path_3175-4"
+                  data-name="Path 3175"
+                  d="M2072.565,931.063v1.094h1.908v3.8h-13.584v-3.8h1.908v-1.094h-20.108v35.366h49.406V931.063Zm-25.371,29.013s.467-4,2.821-5.236c1.809-1.392,4.378-2.368,4.641-3.259s-.88-3.382-.88-3.382a1.8,1.8,0,0,1-.8-1.208c-.085-.771.326-.856.326-.856a16.9,16.9,0,0,1-.354-3.077,3.386,3.386,0,0,1,1.865-2.981,5.937,5.937,0,0,1,3.813-.389c.859.194,2.88,1.1,3.037,3.135a11.6,11.6,0,0,1-.325,3.146.414.414,0,0,0,.168.384,2.094,2.094,0,0,1-.158,1.175,2.037,2.037,0,0,1-.7.708,9.347,9.347,0,0,0-.708,2.785,2.687,2.687,0,0,0,.32,1.059c.352,1.017,4.28,1.486,5.686,2.976s1.712,5.019,1.712,5.019Zm37.767-3.262h-10.655v-3.387h10.655Zm0-6.262H2070.49v-3.387h14.471Zm0-6.426H2070.49v-3.387h14.471Z"
+                  transform="translate(0 2.264)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_372-4"
+                  data-name="Rectangle 372"
+                  width="10.388"
+                  height="9.234"
+                  transform="translate(2062.404 927.988)"
+                  fill="#fff"
+                />
+              </g>
+              <g
+                id="Group_756"
+                data-name="Group 756"
+                transform="translate(-1727.234 -510.466)"
+              >
+                <path
+                  id="Path_3175-5"
+                  data-name="Path 3175"
+                  d="M2072.565,931.063v1.094h1.908v3.8h-13.584v-3.8h1.908v-1.094h-20.108v35.366h49.406V931.063Zm-25.371,29.013s.467-4,2.821-5.236c1.809-1.392,4.378-2.368,4.641-3.259s-.88-3.382-.88-3.382a1.8,1.8,0,0,1-.8-1.208c-.085-.771.326-.856.326-.856a16.9,16.9,0,0,1-.354-3.077,3.386,3.386,0,0,1,1.865-2.981,5.937,5.937,0,0,1,3.813-.389c.859.194,2.88,1.1,3.037,3.135a11.6,11.6,0,0,1-.325,3.146.414.414,0,0,0,.168.384,2.094,2.094,0,0,1-.158,1.175,2.037,2.037,0,0,1-.7.708,9.347,9.347,0,0,0-.708,2.785,2.687,2.687,0,0,0,.32,1.059c.352,1.017,4.28,1.486,5.686,2.976s1.712,5.019,1.712,5.019Zm37.767-3.262h-10.655v-3.387h10.655Zm0-6.262H2070.49v-3.387h14.471Zm0-6.426H2070.49v-3.387h14.471Z"
+                  transform="translate(0 2.264)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rectangle_372-5"
+                  data-name="Rectangle 372"
+                  width="10.388"
+                  height="9.234"
+                  transform="translate(2062.404 927.988)"
+                  fill="#fff"
+                />
+              </g>
+              <text
+                id="Sales"
+                transform="translate(238.455 412.782)"
+                fill="#707070"
+                font-size="23"
+                font-family="SegoeUI, Segoe UI"
+              >
+                <tspan x="0" y="25">Sales</tspan>
+              </text>
+            </svg>
+          </div>
+          <div class="work-education__container container-fluid">
+            <div class="work-education__row row">
+              <div class="work-education__content--l col-xl-12">
+                <!-- <img
+                  src="/images/work_and_education_work_img01.png"
+                  alt=""
+                  class="work-education__img-smallDevice"
+                /> -->
+              </div>
+              <div class="work-education__img-smallDevice">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 318 449.17"
+                >
+                  <g
+                    id="Group_871"
+                    data-name="Group 871"
+                    transform="translate(-39.594 -6169)"
+                  >
+                    <g
+                      id="Group_859"
+                      data-name="Group 859"
+                      transform="translate(39.594 6169)"
+                    >
+                      <rect
+                        id="Rectangle_386"
+                        data-name="Rectangle 386"
+                        width="317.797"
+                        height="444.321"
+                        transform="translate(0 4.849)"
+                        fill="#e6e6e6"
+                      />
+                      <rect
+                        id="Rectangle_387"
+                        data-name="Rectangle 387"
+                        width="317.797"
+                        height="447.321"
+                        transform="translate(0.203 1.849)"
+                        fill="#fff"
+                      />
+                      <path
+                        id="Path_3556"
+                        data-name="Path 3556"
+                        d="M1467.485,657.777h317.8v200.8H1586.658l-39.725,36.252-39.724-36.252h-39.725Z"
+                        transform="translate(-1467.484 -657.777)"
+                        fill="#20818c"
+                      />
+                    </g>
+                    <g
+                      id="Group_870"
+                      data-name="Group 870"
+                      transform="translate(67.558 6219.374)"
+                    >
+                      <path
+                        id="Path_3175"
+                        data-name="Path 3175"
+                        d="M2112.426,931.063v2.243h4.454V941.1h-31.707v-7.793h4.453v-2.243h-46.937v72.514h115.323V931.063Zm-59.22,59.489s1.089-8.2,6.585-10.737c4.223-2.855,10.22-4.856,10.832-6.682s-2.055-6.935-2.055-6.935a3.77,3.77,0,0,1-1.856-2.478c-.2-1.58.762-1.755.762-1.755s-1.009-4.46-.826-6.308a6.877,6.877,0,0,1,4.353-6.112,15.641,15.641,0,0,1,8.9-.8c2.005.4,6.723,2.25,7.088,6.429a21.032,21.032,0,0,1-.758,6.451.823.823,0,0,0,.393.787,3.815,3.815,0,0,1-.369,2.41,4.557,4.557,0,0,1-1.633,1.452,17.378,17.378,0,0,0-1.653,5.71,5.039,5.039,0,0,0,.746,2.171c.822,2.086,9.99,3.047,13.271,6.1s4,10.292,4,10.292Zm88.155-6.689H2116.49v-6.946h24.872Zm0-12.841h-33.779v-6.945h33.779Zm0-13.175h-33.779V950.9h33.779Z"
+                        transform="translate(-2042.689 -925.724)"
+                        fill="#fff"
+                      />
+                      <rect
+                        id="Rectangle_372"
+                        data-name="Rectangle 372"
+                        width="10.388"
+                        height="9.234"
+                        transform="translate(53.02)"
+                        fill="#fff"
+                      />
+                    </g>
+                    <text
+                      id="My_work_experience:"
+                      data-name="My work experience:"
+                      transform="translate(67 6453)"
+                      fill="#707070"
+                      font-size="27"
+                      font-family="SegoeUI, Segoe UI"
+                    >
+                      <tspan x="0" y="0">My work experience:</tspan>
+                    </text>
+                    <text
+                      id="Online_marketing"
+                      data-name="Online marketing"
+                      transform="translate(75 6495)"
+                      fill="#707070"
+                      font-size="17"
+                      font-family="SegoeUI, Segoe UI"
+                    >
+                      <tspan x="0" y="0">Online marketing</tspan>
+                    </text>
+                    <text
+                      id="Travel_consultant"
+                      data-name="Travel consultant"
+                      transform="translate(75 6535)"
+                      fill="#707070"
+                      font-size="17"
+                      font-family="SegoeUI, Segoe UI"
+                    >
+                      <tspan x="0" y="0">Travel consultant</tspan>
+                    </text>
+                    <text
+                      id="Sales"
+                      transform="translate(77 6575)"
+                      fill="#707070"
+                      font-size="17"
+                      font-family="SegoeUI, Segoe UI"
+                    >
+                      <tspan x="0" y="0">Sales</tspan>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+              <div class="work-education__content--r col-xl-12">
+                <!-- <img
+                  src="/images/work_and_education_education_img02.png"
+                  alt=""
+                  class="work-education__img-smallDevice"
+                /> -->
+                <div class="work-education__img-smallDevice">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 317 449.17"
+                  >
+                    <g
+                      id="Group_872"
+                      data-name="Group 872"
+                      transform="translate(-39.594 -6169)"
+                    >
+                      <g
+                        id="Group_859"
+                        data-name="Group 859"
+                        transform="translate(39.594 6169)"
+                      >
+                        <rect
+                          id="Rectangle_386"
+                          data-name="Rectangle 386"
+                          width="317"
+                          height="444.321"
+                          transform="translate(0 4.849)"
+                          fill="#e6e6e6"
+                        />
+                        <rect
+                          id="Rectangle_387"
+                          data-name="Rectangle 387"
+                          width="317"
+                          height="449.17"
+                          transform="translate(0)"
+                          fill="#fff"
+                        />
+                        <path
+                          id="Path_3556"
+                          data-name="Path 3556"
+                          d="M1467.484,657.777h317v200.8H1586.359l-39.625,36.252-39.625-36.252h-39.625Z"
+                          transform="translate(-1467.484 -657.777)"
+                          fill="#5a4bbf"
+                        />
+                      </g>
+                      <text
+                        id="My_education:"
+                        data-name="My education:"
+                        transform="translate(66.594 6453)"
+                        fill="#707070"
+                        font-size="27"
+                        font-family="SegoeUI, Segoe UI"
+                      >
+                        <tspan x="0" y="0">My education:</tspan>
+                      </text>
+                      <text
+                        id="Noroff_Front-end_development"
+                        data-name="Noroff Front-end development"
+                        transform="translate(76.594 6495)"
+                        fill="#707070"
+                        font-size="17"
+                        font-family="SegoeUI, Segoe UI"
+                      >
+                        <tspan x="0" y="0">Noroff Front-end development</tspan>
+                      </text>
+                      <text
+                        id="Bi_courses_in_project_management_and_digital_transformation"
+                        data-name="Bi courses in project management
+                  and digital transformation"
+                        transform="translate(76.594 6535)"
+                        fill="#707070"
+                        font-size="17"
+                        font-family="SegoeUI, Segoe UI"
+                      >
+                        <tspan x="0" y="0">
+                          Bi courses in project management
+                        </tspan>
+                        <tspan x="0" y="22">and digital transformation</tspan>
+                      </text>
+                      <text
+                        id="Courses_in_digital_marketing"
+                        data-name="Courses in digital marketing"
+                        transform="translate(76.594 6591)"
+                        fill="#707070"
+                        font-size="17"
+                        font-family="SegoeUI, Segoe UI"
+                      >
+                        <tspan x="0" y="0">Courses in digital marketing</tspan>
+                      </text>
+                      <path
+                        id="Path_3184"
+                        data-name="Path 3184"
+                        d="M619.757,274.985a4.273,4.273,0,0,1-1.31,3.082v5.422h-1.3V278.94a4.444,4.444,0,0,1-1.087.313v5.867h-1.3v-5.867a4.342,4.342,0,0,1-1.088-.313v4.549h-1.3v-5.422a4.293,4.293,0,0,1,1.73-7.194v-20.09l2.613-.981v21.07A4.317,4.317,0,0,1,619.757,274.985Zm4.631-31.231-58.72-22.661-58.72,22.661,58.72,21.021ZM529.3,257.92v33.15c0,4.334,16.283,9.484,36.372,9.484s36.364-5.15,36.364-9.484V257.92l-36.364,13.02Z"
+                        transform="translate(-445.715 5999.897)"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="about">
+      <div class="about__container container">
+        <div class="row">
+          <div class="about__content col-4">col-4</div>
+          <div class="about__content col-8">col-8</div>
+        </div>
+      </div>
+    </section> -->
+
+        <!-- <div class="skills__content col-sm-12 col-lg" >
+     <div class="skills__img">
+     <div class="skills__text">
+                      <h2 class="skills__heading">Content management</h2>
+                       <p class="skills__paragraph">Strapi and Herko</p>
+                       <p class="skills__paragraph">Wordpress</p>
+                       <p class="skills__paragraph">FileZilla</p>
+                       <p class="skills__paragraph">Xamp</p> -->
+
+         <!---------------------------------------------- ABOUT ME SECTION:------------------------------------>
+         <section class="heading">
+          <div class="heading__about">
+            <h3 id="aboutme">About me</h3>
+          </div>
+        </section>
         <!-- ABOUT ME SECTION: -->
         <section class="about">
           <div class="about__container container">
@@ -5537,6 +6765,12 @@
           </div>
         </section>
 
+         <!---------------------------------------------- INFOBAR SECTION:------------------------------------>
+         <section class="heading">
+          <div class="heading__infobar">
+            <h3>My Interest</h3>
+          </div>
+        </section>
         <!--INFOBAR SECTION-->
         <section class="infobar">
           <div class="infobar__container">
@@ -5562,109 +6796,99 @@
             </p>
           </div>
         </section>
-
-        <!-- <section class="about">
-      <div class="about__container container">
-        <div class="row">
-          <div class="about__content col-4">col-4</div>
-          <div class="about__content col-8">col-8</div>
-        </div>
-      </div>
-    </section> -->
-
-        <!-- <div class="skills__content col-sm-12 col-lg" >
-     <div class="skills__img">
-     <div class="skills__text">
-                      <h2 class="skills__heading">Content management</h2>
-                       <p class="skills__paragraph">Strapi and Herko</p>
-                       <p class="skills__paragraph">Wordpress</p>
-                       <p class="skills__paragraph">FileZilla</p>
-                       <p class="skills__paragraph">Xamp</p> -->
       </main>
     </div>
 
     <!--FOOTER SECTION-->
-    <div class="wrapper">
-      <footer class="footer container">
-        <!--FOOTER LEFT SECTION-->
-        <div class="footer-l container-fluid">
-          <div class="footer-l__content row">
-            <div class="col-md-4">
-              <div class="footer-l__logo">
-                <a href="index.html">
-                  <img
-                    src="./graphical-items/logo/gg_optic_logo_01_resize.png"
-                    alt="GG Optic logo"
-                    class="footer-l__logo-image"
-                  />
+    <!--FOOTER SECTION-->
+    <footer class="footer footer__style">
+      <!--FOOTER LEFT SECTION-->
+      <div class="footer-l container-fluid">
+        <div class="row">
+          <div class="footer-l__content col-md-4">
+            <div class="footer-l__logo">
+              <a href="index.html">
+                <img
+                  src="images/logo_footer.png"
+                  alt="Aina Bjerke logo"
+                  class="footer-l__logo-image"
+                />            
+              </a>
+            </div>
+            <div class="footer-l__info">
+              <ul class="footer-l__contact" id="contact">
+                <li class="footer-l__contact--item">
+                  <a href="tel:46953337" class="footer-l__link">
+                    <span class="footer-l__icons">
+                      <i class="fas fa-phone-alt"></i>
+                    </span>
+                    +47 46 95 33 37
+                  </a>
+                </li>
+                <li class="footer-l__contact--item">
+                  <a
+                    href="mailto:aina.bjerke@hotmail.com"
+                    class="footer-l__link"
+                  >
+                    <span class="footer-l__icons">
+                      <i class="fas fa-envelope-open-text"></i>
+                    </span>
+                    aina.bjerke@hotmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--FOOTER RIGHT SECTION-->
+          <div class="footer-r col-md-8">
+            <div class="footer-r__content">
+              <h4 class="footer-r__heading">Information</h4>
+
+              <ul class="footer-r__list">
+                <li class="footer-r__item">
+                  <a href="./index.html#portfolio" class="nav__link">Portfolio</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./index.html#aboutme" class="nav__link">About me</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./index.html#workandeducation" class="nav__link">Work and education</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./index.html#speciality" class="nav__link">Speciality</a>
+                </li>
+              </ul>
+
+              <!-- SOCIAL MEDIA SECTION -->
+              <div class="footer-r__smedia">
+                <h4 class="footer-r__smedia--heading">
+                  Connect with me:
+                </h4>
+                <a href="https://github.com/ainabjerke">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://no.linkedin.com/in/aina-bjerke-a2b114172">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="/assets/aina_bjerke_cv.pdf">
+                  <i class="fa-solid fa-file-lines"></i>
                 </a>
               </div>
-              <section class="footer-l__image">
-                <div>
-                  <img
-                    src="./graphical-items/images/footer_img_01_resize.jpeg"
-                    alt=""
-                    class="footer-l__image1"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="./graphical-items/images/footer_img_02_resize.jpeg"
-                    alt=""
-                    class="footer-l__image2"
-                  />
-                </div>
-              </section>
-            </div>
-
-            <!--FOOTER RIGHT SECTION-->
-            <div class="footer-r col-md-8">
-              <div class="footer-r__content">
-                <h4 class="footer-r__heading">GG Optic</h4>
-
-                <ul class="footer-r__list">
-                  <li class="footer-r__item">
-                    <a href="./products.html" class="nav__link">Eyeglasses</a>
-                  </li>
-                  <li class="footer-r__item">
-                    <a href="./products.html" class="nav__link">Sunglasses</a>
-                  </li>
-                  <li class="footer-r__item">
-                    <a href="./products.html" class="nav__link">
-                      Sports glasses
-                    </a>
-                  </li>
-                  <li class="footer-r__item">
-                    <a href="./products.html" class="nav__link">Lenses</a>
-                  </li>
-                  <li class="footer-r__item">
-                    <a href="./products.html" class="nav__link">Accessories</a>
-                  </li>
-                </ul>
-
-                <!-- SOCIAL MEDIA SECTION -->
-                <div class="footer-r__smedia">
-                  <h4 class="footer-r__smedia--heading">
-                    Follow us on social media
-                  </h4>
-                  <a href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a href="#"><i class="fab fa-instagram-square"></i></a>
-                  <a href="#"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#"><i class="fab fa-youtube-square"></i></a>
-                </div>
-                <!-- COPY RIGHT SECTION -->
-                <div class="footer-r__copyright">
-                  <p>
-                    &copy; 2022 GG Optic | Designed and coded by Aina Bjerke and
-                    all rights reserved.
-                  </p>
-                </div>
+              <!-- COPY RIGHT SECTION -->
+              <div class="footer-r__copyright">
+                <p>
+                  &copy; 2022 Portfolio | Designed and coded by Aina Bjerke and
+                  all rights reserved.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
+    <!-- </div> -->
 
     <!-- </div> -->
 
@@ -5672,8 +6896,18 @@
     <!-- <script src="js/hamburgerMenu.js"></script> -->
     <!-- <script src="js/components/errorMessage.js"></script> -->
     <!-- <script src="js/modal.js"></script> -->
-    <!-- JAVA SCRIPT SECTION: -->
+    <!-------------------------------------------------------------------- JAVA SCRIPT SECTION NEW: ---------------------------------------------------->
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
     <script src="./js/index.js" type="module"></script>
+    <script type="text/javascript" src="/js/test.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <!-------------------------------------------------------------------- JAVA SCRIPT SECTION OLD: ---------------------------------------------------->
+    <!-- <script src="./js/index.js" type="module"></script> -->
     <!-- REMEMBER TO REMOVE THE LINE BELOW: -->
     <!-- <script src="js/modal.js"></script>
     <script src="js/hamburgerMenu.js"></script> -->
@@ -5689,4 +6923,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
+</html

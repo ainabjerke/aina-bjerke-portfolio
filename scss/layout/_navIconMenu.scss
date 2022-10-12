@@ -24,7 +24,7 @@
   }
 
   & span {
-    background-color: $white-color;
+    background-color: #8193b2;
     left: -15px;
     position: absolute;
     height: 1px;
@@ -52,7 +52,7 @@
 
     &:nth-child(2),
     &:nth-child(3) {
-      top: 20px;
+      top: 21px;
 
       @media screen and (max-width: 567px) {
         top: 15px;
@@ -60,7 +60,7 @@
     }
 
     &:nth-child(4) {
-      top: 35px;
+      top: 38px;
 
       @media screen and (max-width: 567px) {
         top: 27px;

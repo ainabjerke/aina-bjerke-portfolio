@@ -3,9 +3,15 @@
 
 /*** *** *** COMPONENTS SECTION *** *** ***/
 @import "./components/buttons";
+@import "./components/feedbackMessage";
+@import "./components/loader";
 
 /*** *** *** BASE SECTION *** *** ***/
 @import "./base/reset";
+
+/*** *** *** PAGES SECTION *** *** ***/
+@import "./pages/projectLayout";
+@import "./pages/heading";
 
 /*** *** *** LAYOUT SECTION *** *** ***/
 // @import "./layout/footer";
@@ -16,3 +22,8 @@
 @import "./layout/about";
 @import "./layout/infoBar";
 @import "./layout/footer";
+@import "./layout/workEducation";
+@import "./layout/herobanner";
+@import "./layout/modal";
+
+@import "./layout/test";

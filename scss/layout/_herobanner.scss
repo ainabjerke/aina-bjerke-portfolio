@@ -1,0 +1,351 @@
+.herobanner {
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    margin-top: -50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+    margin-top: -144px;
+  }
+  @media screen and (min-width: 568px) and (max-width: 767px) {
+    margin-top: -213px;
+  }
+  @media screen and (max-width: 567px) {
+    margin-top: -165px;
+  }
+  &__img--primary {
+    background-image: url("../images/intro_background_img.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // height: 729px;
+    // margin-top: 34px;
+    height: 930px;
+    margin-top: 100px;
+    opacity: 0.5;
+    width: 100%;
+    @media screen and (max-width: 567px) {
+      margin-top: -161px;
+    }
+  }
+  &__img--secondary {
+    background-image: url("../images/aina.bjerke_main_bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 729px;
+    margin-top: -724px;
+    opacity: 0.9;
+    @media screen and (min-width: 1200px) {
+      width: 40%;
+      //   width: 49%;
+    }
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+      //   width: 44%;
+      width: 38%;
+      position: relative;
+      z-index: 2;
+    }
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+  }
+  &__content {
+    color: #ffffff;
+    background: rgba(7, 12, 44, 0.5);
+    border-radius: 3px;
+    // font-weight: bold;
+    // left: 76%;
+    // margin-left: -42px;
+    // max-width: 515px;
+    // max-width: 600px;
+    max-width: 715px;
+    // padding: 28px;
+    position: relative;
+    text-align: center;
+    // top: -313px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    @media screen and (min-width: 1200px) {
+      left: 76%;
+      margin-left: -42px;
+      padding: 65px;
+      //   padding: 39px;
+      //   top: -342px;
+      //   top: -320px;
+      top: -305px;
+    }
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+      left: 70%;
+      padding: 18px;
+      top: -346px;
+      //   margin-left: 21px;
+      margin-left: -60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      left: 50%;
+      max-width: 700px;
+      padding: 20px;
+      top: -418px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      left: 50%;
+      max-width: 700px;
+      padding: 20px;
+      top: -418px;
+    }
+
+    @media screen and (max-width: 567px) {
+      left: 50%;
+      max-width: 800px;
+      padding: 36px;
+      top: -465px;
+    }
+  }
+  &__img--tertiary {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      width: 50%;
+      opacity: 0.7;
+      display: block;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      width: 100%;
+      opacity: 0.6;
+      display: block;
+      margin-top: 282px;
+    }
+    @media screen and (max-width: 567px) {
+      width: 100%;
+      opacity: 0.6;
+      display: block;
+      margin-top: 461px;
+    }
+  }
+  &__heading--small {
+    color: #8193b2;
+    text-align: left;
+    // margin-left: 69px;
+    padding: 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      margin-left: 69px;
+    }
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+      margin-left: 120px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      margin-left: 106px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      margin-left: 16px;
+    }
+    @media screen and (max-width: 567px) {
+      text-align: center;
+    }
+
+    // @media screen and (min-width: 568px) and (max-width: 767px) {
+    //   margin-left: 117px;
+    // }
+  }
+  &__subheading {
+    font-size: 30px;
+    padding: 10px;
+    // margin-left: -166px;
+    font-weight: 550;
+    margin-left: -147px;
+    // @media screen and (min-width: 1200px) {
+    //   margin-left: -147px;
+    // }
+    // @media screen and (min-width: 768px) and (max-width: 990px) {
+    //   margin-left: -147px;
+    // }
+  }
+  &__paragraph {
+    font-weight: normal;
+    font-size: 1em;
+    // padding: 5px;
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      padding-bottom: 34px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      padding-bottom: 34px;
+    }
+    & span {
+      @media screen and (max-width: 990px) {
+        display: inline;
+      }
+      @media screen and (max-width: 360px) {
+        display: block;
+      }
+    }
+  }
+
+  &__heading {
+    color: #8193b2;
+    // font-size: 23px;
+    // margin-left: -314px;
+    font-size: 40px;
+    // margin-left: -227px;
+    margin-left: -214px;
+    font-weight: 600;
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      margin-left: -214px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      margin-left: -214px;
+    }
+    @media screen and (max-width: 567px) {
+      top: 17px;
+      position: relative;
+      font-size: 1.5rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media screen and (max-width: 360px) {
+      top: 26px;
+      font-size: 1.2rem;
+    }
+  }
+  &__subheading {
+    color: #8193b2;
+    @media screen and (max-width: 567px) {
+      top: 17px;
+      position: relative;
+      font-size: 1.5rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// .intro-main-img {
+//   background-image: url("../images/intro_background_img.jpeg");
+// }
+
+// .intro-second-img {
+//   background-image: url("../images/aina.bjerke_main_bg2.jpg");
+// }
+
+// .intro-main-img,
+// .intro-second-img {
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   height: 729px;
+// }
+
+// .intro-main-img {
+//   margin-top: 34px;
+//   opacity: 0.5;
+//   width: 100%;
+// }
+
+// .intro-second-img {
+//   margin-top: -724px;
+//   opacity: 0.9;
+//   width: 49%;
+// }
+
+// .intro-main-text {
+//   color: #ffffff;
+//   background: rgba(7, 12, 44, 0.5);
+//   border-radius: 3px;
+//   font-weight: bold;
+//   left: 76%;
+//   margin-left: -33px;
+//   max-width: 515px;
+//   padding: 28px;
+//   position: relative;
+//   text-align: center;
+//   top: -234px;
+//   transform: translate(-50%, -50%);
+//   z-index: 1;
+// }
+
+// .intro-main-text h2 {
+//   font-size: 19px;
+// }
+
+// .intro-main-text p,
+// .intro-main-text span {
+//   font-weight: normal;
+//   font-size: 1em;
+// }
+
+// .intro-main-text span {
+//   display: inline;
+// }
+
+// .small-img-ab {
+//   display: none;
+// }
+
+// @media screen and (max-width: 940px) {
+//   .intro-second-img {
+//     display: none;
+//   }
+//   .intro-main-text {
+//     left: 50%;
+//     max-width: 800px;
+//     padding: 20px;
+//     top: -362px;
+//   }
+
+//   .intro-main-text span {
+//     display: block;
+//   }
+//   .small-img-ab {
+//     display: block;
+//   }
+
+//   .small-img-ab img {
+//     width: 46%;
+//     opacity: 0.9;
+//   }
+// }
+
+// @media screen and (max-width: 550px) {
+//   .intro-main-img {
+//     margin-top: -161px;
+//   }
+
+//   .intro-main-text {
+//     margin-left: 0px;
+//     margin-top: 10px;
+//   }
+
+//   .intro-section-btns__style {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: -50px;
+//   }
+
+//   .intro-main-text h1,
+//   .intro-main-text h2 {
+//     /* left: 32px; */
+//     top: 17px;
+//     position: relative;
+//     font-size: 1.5rem;
+//   }
+//   .small-img-ab {
+//     display: none;
+//   }
+// }
+
+// @media screen and (max-width: 360px) {
+//   .intro-main-text__span span {
+//     display: block;
+//   }
+
+//   .intro-main-text h1 {
+//     top: 26px;
+//   }
+
+//   .intro-main-text h1,
+//   .intro-main-text h2 {
+//     font-size: 1.2rem;
+//   }
+// }

@@ -3,7 +3,7 @@
 //--- --- NAV MENU STYLE: --- ---//
 .nav {
   background-color: $primary-color;
-  z-index: 1;
+  z-index: 3;
   //   position: relative;
   position: fixed;
   width: 100%;
@@ -21,7 +21,9 @@
     align-items: center;
 
     @media screen and (max-width: 991px) {
-      border-bottom: 1px solid $white-color;
+      // border-bottom: 1px solid $white-color;
+      // border-bottom: 1px solid #8193b2;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
   }
 
@@ -87,7 +89,9 @@
 
   &__menu {
     @media screen and (min-width: 992px) {
-      border-top: 1px solid $white-color;
+      // border-top: 1px solid $white-color;
+      // border-top: 1px solid #8193b2;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     @media (max-width: 991px) {
       position: fixed;
@@ -187,8 +191,9 @@
     }
 
     &:hover {
-      color: colors(secondary);
+      //   color: colors(secondary);
       text-decoration: none;
+      color: white;
     }
   }
 }
@@ -206,6 +211,6 @@
 
   .nav__menu__vertical-line {
     padding: 28px 20px;
-    box-shadow: -2px 0 0 -0.7px #b8a188;
+    box-shadow: -2.8px 0 0 -0.7px #8193b2;
   }
 }

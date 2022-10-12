@@ -1,0 +1,78 @@
+/*** *** *** PRODUCT LAYOUT:  *** *** ***/
+
+//--- --- PRODUCT LAYOUT STYLE: --- ---//
+.header {
+  //   background-color: $white-color;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 2px;
+}
+
+.project {
+  margin: 30px 0;
+  padding: 10px;
+  //   max-width: 250px;
+  text-align: center;
+
+  @media screen and (min-width: 568px) and (max-width: 991px) {
+    padding: 10px 20px;
+  }
+
+  &__image {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    // background-color: red;
+    margin-left: -10px;
+  }
+
+  &__content {
+    padding: 10px;
+    color: $primary-color;
+    &:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    color: white;
+  }
+
+  &__price {
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+// .projects {
+//   margin-left: 0px;
+//   margin-right: 0px;
+//   justify-content: space-between;
+//   background-color: $white-color;
+
+//   @media screen and (min-width: 992) {
+//     justify-content: center;
+//     margin: 0 0 50px 0;
+//   }
+
+//   @media screen and (min-width: 568px) and (max-width: 991px) {
+//     justify-content: center;
+//     margin: 0 0 50px 0;
+//   }
+
+//   @media screen and (max-width: 567px) {
+//     justify-content: center;
+//     margin: 0 0 50px 0;
+//   }
+// }

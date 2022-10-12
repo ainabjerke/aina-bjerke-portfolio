@@ -1,0 +1,12 @@
+export async function fetchAPI(acutalFunction, url) {
+  try {
+    const response = await fetch(url);
+    const JSON = await response.json();
+    const getResults = JSON;
+    console.log(getResults);
+    acutalFunction(getResults);
+    // console.log(acutalFunction);
+  } catch (error) {
+    // console.log(error);
+  }
+}

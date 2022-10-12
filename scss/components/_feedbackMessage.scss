@@ -1,0 +1,30 @@
+/*** *** *** FEEDBACK:  *** *** ***/
+
+//--- --- FEEDBACK STYLE: --- ---//
+.feedbackMessage {
+  width: 100%;
+
+  &--success {
+    background: green;
+    color: $white-color;
+    text-align: center;
+    padding: 15px;
+  }
+
+  &--error {
+    margin: 0px 0 20px 0;
+    text-align: center;
+    padding: 15px;
+    background: $red-color;
+    color: $white-color;
+    font-weight: 500;
+  }
+
+  &--warning {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    color: black;
+  }
+}
