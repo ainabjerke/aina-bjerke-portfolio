@@ -8,6 +8,8 @@
   display: inline-block;
   border-radius: 5px;
   text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 
   // box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1),
   //   -5px -5px 20px rgba(255, 255, 255, 0.1);
@@ -60,6 +62,26 @@
     }
   }
 
+  &-webpage {
+    background: $secondary-color;
+    color: $white-color;
+    &:hover {
+      filter: brightness(130%);
+      color: $white-color;
+      text-decoration: none;
+    }
+  }
+
+  &-github {
+    background: $light-purple-color;
+    color: $white-color;
+    &:hover {
+      filter: brightness(130%);
+      color: $white-color;
+      text-decoration: none;
+    }
+  }
+
   //--- --- BUTTON SIZE: --- ---//
   &--xl {
     width: 100%;
@@ -84,17 +106,27 @@
   }
 
   &--sm {
-    letter-spacing: 2px;
-    line-height: 1.2;
-    padding: 14px 20px;
-    font-size: 12px;
+    // letter-spacing: 2px;
+    // line-height: 1.2;
+    // padding: 14px 20px;
+    // font-size: 12px;
+    // font-size: 0.9em;
+    // padding: 15px 85px;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
   }
 
   &--xs {
-    padding: 12px 27px;
-    font-weight: 600;
-    font-size: 13px;
-    margin-top: -13px;
+    // padding: 12px 27px;
+    // font-weight: 600;
+    // font-size: 13px;
+    // margin-top: -13px;
+    // font-size: 0.9em;
+    // padding: 15px 30px;
+    // padding: 15px 65px;
+    // font-size: 0.9em;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
 
   &--cta {
@@ -125,8 +157,6 @@
 
 .btn-cv,
 .btn-portfolio,
-.btn-webpage,
-.btn-github,
 .portfolioBtn {
   border-radius: 5px;
   display: inline-block;
@@ -137,21 +167,28 @@
   color: #ffffff;
 }
 
-.btn-webpage {
-  font-size: 0.9em;
-  padding: 15px 22px;
-}
+// .btn-webpage {
+//   // font-size: 0.9em;
+//   // padding: 15px 22px;
+//   font-size: 0.9em;
+//   padding: 15px 65px;
+// }
 
-.btn-github {
-  font-size: 0.9em;
-  padding: 15px 30px;
-}
+// .btn-github {
+//   font-size: 0.9em;
+//   // padding: 15px 30px;
+//   padding: 15px 85px;
+// }
 
 .portfolioBtn {
   width: 100%;
   padding: 15px 0px;
 }
 
+// .btn-github,
+// .portfolioBtn {
+//   margin-left: 20px;
+// }
 // .about-btn-cv {
 //   width: 98%;
 //   padding: 29px;
@@ -162,13 +199,11 @@
 
 .btn-cv,
 .btn-view-portfolio,
-.portfolioBtn,
-.btn-webpage {
+.portfolioBtn {
   background-color: #20818c;
 }
 
-.btn-portfolio,
-.btn-github {
+.btn-portfolio {
   background-color: #5a4bbf;
 }
 
@@ -205,10 +240,10 @@ button {
     width: 100%;
   }
 
-  .btn-webpage,
-  .btn-github {
-    margin: 10px;
-  }
+  // .btn-webpage,
+  // .btn-github {
+  //   margin: 10px;
+  // }
   // .about-btn-cv {
   //   width: 95.9%;
   //   margin-top: 34px;

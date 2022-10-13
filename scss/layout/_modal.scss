@@ -13,10 +13,38 @@
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   &__row {
-    margin-left: 15px;
-    margin-right: 15px;
-    // padding: 6rem 3rem;
-    padding: 5rem 18rem;
+    @media screen and (min-width: 1200px) {
+      margin-left: 15px;
+      margin-right: 15px;
+      // padding: 6rem 3rem;
+      //   padding: 5rem 18rem;
+      padding: 5rem 6rem;
+    }
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+      //   margin-left: 15px;
+      //   margin-right: 15px;
+      //   // padding: 6rem 3rem;
+      //   //   padding: 5rem 18rem;
+      //   padding: 5rem 5rem;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5rem 0rem;
+    }
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5rem 3rem;
+    }
+    @media screen and (min-width: 568px) and (max-width: 767px) {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5rem 3rem;
+    }
+    @media screen and (max-width: 567px) {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5rem 0rem;
+    }
   }
   .modal-l {
     &__content {
@@ -30,18 +58,93 @@
     &__img {
       //   margin-top: 63px;
       //   width: 85%;
-      width: 64%;
-      padding: -19px;
-      padding-top: 75px;
-      margin-left: 97px;
+      //   width: 64%;
+      //   padding: -19px;
+      //   padding-top: 75px;
+      //   margin-left: 97px;
+      //   width: 100%;
+      // //   padding: -19px;
+      //   padding-top: 75px;
+      //   width: 80%;
+      //   padding-top: 75px;
+      //   margin-left: 64px;
+      //   width: 50%;
+      //   width: 50%;
+      @media screen and (min-width: 1200px) {
+        // max-width: 40rem;
+        // max-width: 100%;
+        // padding-top: 75px;
+        // margin-left: 20px;
+        // margin-left: 10%;
+        // margin-left: 140px;
+        margin-left: 7%;
+        max-width: 100%;
+        padding-top: 75px;
+        // width: 100%;
+        // padding-top: 75px;
+      }
+      @media screen and (min-width: 991px) and (max-width: 1199px) {
+        width: 100%;
+        padding-top: 75px;
+        // margin-left: 7%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 990px) {
+        width: 100%;
+        padding-top: 75px;
+      }
+      @media screen and (min-width: 568px) and (max-width: 767px) {
+        width: 100%;
+        padding-top: 75px;
+      }
+      @media screen and (max-width: 567px) {
+        width: 100%;
+        padding-top: 75px;
+      }
     }
     &__heading {
       //   padding: 22px 152px;
-      padding: 33px 232px;
+      //   padding: 33px 232px;
       background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-align: center;
+      @media screen and (min-width: 1200px) {
+        // margin-top: 50px;
+        // // margin-left: -106px;
+        // margin-right: 180px;
+        // // margin-left: 35%;
+        // font-size: 30px;
+        // margin-top: 35px;
+        // // margin-right: 180px;
+        // font-size: 30px;
+        // margin-bottom: 10px;
+        // // margin-left: -330px;
+        // text-align: center;
+        // margin-left: 20%;
+        // padding: 15px;
+        // position: relative;
+        // // text-align: center;
+        // font-size: 30px;
+        // // margin-left: -210px;
+        // margin-left: -30%;
+        display: none;
+      }
+      @media screen and (min-width: 991px) and (max-width: 1199px) {
+        // margin-left: auto;
+        // margin-right: auto;
+        // text-align: center;
+        padding: 15px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 990px) {
+        padding: 15px;
+      }
+      @media screen and (min-width: 568px) and (max-width: 767px) {
+        padding: 15px;
+      }
+      @media screen and (max-width: 567px) {
+        padding: 15px;
+      }
     }
   }
   .modal-r {
@@ -75,6 +178,10 @@
       border-radius: 5px;
       display: inline;
       color: #ffffff;
+      margin-left: 1%;
+      @media screen and (max-width: 567px) {
+        font-size: 1rem;
+      }
     }
     &__subheading {
       font-size: 1.7rem;
@@ -127,8 +234,50 @@
 }
 
 .intro-section-btns {
-  margin-left: 140px;
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-gap: 2rem;
+  //   gap: 1rem;
+  @media screen and (min-width: 1200px) {
+    // margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 1rem;
+    max-width: 536px;
+    margin-left: 58px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 1rem;
+  }
+  @media screen and (min-width: 568px) and (max-width: 767px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 567px) {
+    display: grid;
+    grid-template-columns: repeat(2, -1fr);
+    grid-gap: 2rem;
+    gap: 1rem;
+  }
 }
+
+// display: grid;
+// grid-template-columns: repeat(2,1fr);
+// grid-gap: 2rem;
+// gap: 2rem;
 /* The Modal (background) */
 // .modal {
 //   display: none; /* Hidden by default */
@@ -164,15 +313,15 @@
   //   align-self: end;
   //   font-size: 28px;
   //   font-weight: bold;
-  color: #aaaaaa;
+  //   color: #aaaaaa;
   align-self: end;
   font-size: 34px;
-  font-weight: bold;
-  display: inline-block;
+  //   font-weight: bold;
+  //   display: inline-block;
   line-height: 1;
   position: absolute;
-  top: 7rem;
-  right: 21rem;
+  //   top: 6rem;
+  //   right: 21rem;
   cursor: pointer;
   z-index: 1000;
   border: 1px solid transparent;
@@ -184,6 +333,27 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  top: 6rem;
+  @media screen and (min-width: 1200px) {
+    right: 9rem;
+    // top: 6rem;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    right: 3rem;
+    // top: 6rem;
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+    right: 5rem;
+    // top: 6rem;
+  }
+  @media screen and (min-width: 568px) and (max-width: 767px) {
+    right: 5rem;
+    // top: 6rem;
+  }
+  @media screen and (max-width: 567px) {
+    right: 2rem;
+    // top: 6rem;
+  }
 }
 
 .closeOne:hover,
