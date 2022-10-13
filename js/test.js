@@ -44,3 +44,20 @@ $(window).on("load", function (e) {
 
   tlOnLoad.add(tlMainAnim, "-=0.5");
 });
+
+// let textarea = document.querySelector("textarea");
+// let message =
+//   "Biography!\n\nFront-end developer student with alot of experience in sales and marketing. I am a hard working responsible person with a positive attetude.I like to learn new things\n\nEnjoy!!";
+
+// let animateInput = (input) => {
+//   if (input.length == 0) return;
+//   let timeout = Math.random() * 20 + 50;
+
+//   setTimeout(() => {
+//     textarea.value += input.slice(0, 1);
+//     animateInput(input.slice(1));
+//   }, timeout);
+// };
+
+// textarea.focus();
+// animateInput(message);
