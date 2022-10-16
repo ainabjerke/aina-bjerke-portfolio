@@ -1,3 +1,5 @@
+//FUNCTION THAT WILL DISPLAY RUN THE ANIMATION TEXT IN HEROBANNER
+
 $(window).on("load", function (e) {
   var tlOnLoad = gsap.timeline({ delay: 1 });
   var onLoadTextCount = $(".anim-text-banner>.anim-text").length;
@@ -45,19 +47,23 @@ $(window).on("load", function (e) {
   tlOnLoad.add(tlMainAnim, "-=0.5");
 });
 
-// let textarea = document.querySelector("textarea");
-// let message =
-//   "Biography!\n\nFront-end developer student with alot of experience in sales and marketing. I am a hard working responsible person with a positive attetude.I like to learn new things\n\nEnjoy!!";
+//Typing animation
 
-// let animateInput = (input) => {
-//   if (input.length == 0) return;
-//   let timeout = Math.random() * 20 + 50;
+let textarea = document.querySelector("textarea");
 
-//   setTimeout(() => {
-//     textarea.value += input.slice(0, 1);
-//     animateInput(input.slice(1));
-//   }, timeout);
-// };
+var text = 0;
+let message =
+  "1.<section>\n2.<h2>Biography</h2>\n3.<h3>Why Front-end development?</h3>\n4.<p>I decided to study Front-end development since I have \n5.great passion for creativity, structure, design and logic</p>\n6.<p>Front-end development also allows me to be able to bring \n7.things to life visually which is appealing to me</p>\n8.<p>I love to create user-friendly design that captures \n9.users attention and suppliment this with clean code.</p>\n10.<p>I truly enjoy working on different projects, \n11.solve problems, expand my knownledge and my skills.</p>\n12.<p>I am also a positive and curious person and like the fact \n13.that there is always something new to learn as a Front-end \n14.developer.</p>\n15.<p>I am looking forward to continue this journey and create\n16.the best solutions for customers.</p>\n17.</section>";
 
-// textarea.focus();
-// animateInput(message);
+let animateInput = (input) => {
+  if (input.length == 0) return;
+  let timeout = Math.random() * 20 + 50;
+
+  setTimeout(() => {
+    textarea.value += input.slice(0, 1);
+    animateInput(input.slice(1));
+  }, timeout);
+};
+
+textarea.focus();
+animateInput(message);
