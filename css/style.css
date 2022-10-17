@@ -484,6 +484,11 @@ iframe {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 990px) {
+  .heading__frontend {
+    margin-top: -60px;
+  }
+}
 .heading__work--education {
   color: #ffffff;
   margin-top: 160px;
@@ -495,17 +500,17 @@ iframe {
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .heading__work--education {
-    margin-top: -20px;
+    margin-top: 70px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 767px) {
   .heading__work--education {
-    margin-top: -20px;
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 567px) {
   .heading__work--education {
-    margin-top: -20px;
+    margin-top: 70px;
   }
 }
 .heading__about {
@@ -623,6 +628,10 @@ textarea {
   resize: none;
   width: 100%;
   padding: 1rem;
+  background: -webkit-linear-gradient(-70deg, #9867f0 0%, #ed4e50 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1200px) {
   textarea {
@@ -1144,6 +1153,21 @@ textarea:focus {
 .frontend__container {
   margin-top: 300px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .frontend__container {
+    margin-bottom: -173px;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .frontend__container {
+    margin-bottom: -173px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .frontend__container {
+    margin-bottom: -173px;
+  }
+}
 .frontend__content {
   background-color: #ffffff;
   margin-left: 5px;
@@ -1217,6 +1241,7 @@ textarea:focus {
 }
 
 .about {
+  margin-left: 5px;
   margin-left: 5px;
 }
 .about__container {
