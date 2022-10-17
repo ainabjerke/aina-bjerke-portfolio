@@ -149,9 +149,17 @@ export function launchAllProjects(projects) {
 
       const subheading = document.querySelector(".modal-r__subheading");
       subheading.textContent = project.subTitleOne;
-
-      const grade = document.querySelector("#modal-grade-value");
-      grade.textContent = project.grade;
+      console.log("project test:", project);
+      const gradeContainer = document.querySelector(
+        ".modal-project-sub-header__grade"
+      );
+      if (project.grade == null) {
+        gradeContainer.style.display = "none";
+      } else {
+        gradeContainer.style.display = "block";
+        const grade = document.querySelector("#modal-grade-value");
+        grade.textContent = project.grade;
+      }
 
       const description = document.querySelector("#modal-description");
       description.innerHTML = "";
@@ -177,13 +185,19 @@ export function launchAllProjects(projects) {
 
       const listSecond = document.querySelector(".modal-r__list--second");
       listSecond.innerHTML = "";
-      const listSecondParagraphs =
-        project.updatesBulletpoints?.split("\n") ?? [];
-      listSecondParagraphs.forEach((paragraph) => {
-        const item = document.createElement("li");
-        item.textContent = paragraph;
-        listSecond.append(item);
-      });
+      const updatesLine = document.querySelector("#updates-line");
+      if (project.updatesBulletpoints == null) {
+        updatesLine.style.display = "none";
+      } else {
+        updatesLine.style.display = "block";
+        const listSecondParagraphs =
+          project.updatesBulletpoints.split("\n") ?? [];
+        listSecondParagraphs.forEach((paragraph) => {
+          const item = document.createElement("li");
+          item.textContent = paragraph;
+          listSecond.append(item);
+        });
+      }
 
       event.stopPropagation();
     };

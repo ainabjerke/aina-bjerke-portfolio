@@ -442,6 +442,16 @@ iframe {
   width: 100%;
 }
 
+#portfolio,
+#aboutme,
+#contact {
+  scroll-margin-top: 200px;
+}
+
+#updates-line {
+  border: 3px solid aqua;
+}
+
 .heading__portfolio {
   color: #ffffff;
   margin-top: -490px;
