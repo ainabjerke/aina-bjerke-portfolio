@@ -49,21 +49,72 @@ $(window).on("load", function (e) {
 
 //Typing animation
 
+// Get textarea and clears it (in case there is a previous loaded value)
 let textarea = document.querySelector("textarea");
+textarea.value = "";
 
 var text = 0;
 let message =
   "1.<section>\n2.<h2>Biography</h2>\n3.<h3>Why Front-end development?</h3>\n4.<p>I decided to study Front-end development since I have \n5.great passion for creativity, structure, design and logic</p>\n6.<p>Front-end development also allows me to be able to bring \n7.things to life visually which is appealing to me</p>\n8.<p>I love to create user-friendly design that captures \n9.users attention and suppliment this with clean code.</p>\n10.<p>I truly enjoy working on different projects, \n11.solve problems, expand my knownledge and my skills.</p>\n12.<p>I am also a positive and curious person and like the fact \n13.that there is always something new to learn as a Front-end \n14.developer.</p>\n15.<p>I am looking forward to continue this journey and create\n16.the best solutions for customers.</p>\n17.</section>";
 
+/*let message2 = [
+  '1.<section>',
+  '2.<h2>Biography</h2>'
+].join('\n')*/
+
+const blink = (keepCursor) => {
+  if (keepCursor) {
+    textarea.value += "|";
+  } else {
+    textarea.value = textarea.value.slice(0, -1);
+  }
+
+  setTimeout(() => blink(!keepCursor), 500);
+};
+
 let animateInput = (input) => {
-  if (input.length == 0) return;
+  if (input.length === 0) {
+    blink(false);
+    return;
+  }
+
   let timeout = Math.random() * 20 + 50;
 
   setTimeout(() => {
-    textarea.value += input.slice(0, 1);
+    textarea.value = textarea.value.slice(0, -1) + input.slice(0, 1) + "|";
     animateInput(input.slice(1));
   }, timeout);
 };
 
-textarea.focus();
-animateInput(message);
+let aboutSectionMouseEntered = false;
+document.querySelector(".about").addEventListener("mouseenter", () => {
+  if (aboutSectionMouseEntered) return;
+
+  aboutSectionMouseEntered = true;
+  textarea.focus();
+  animateInput(message);
+});
+
+// Scroll animation
+// window.scrollY
+const sectionsToBeAnimated = [
+  {
+    section: document.querySelector(".about"),
+    hasBeenAnimated: false,
+  },
+];
+
+const isVisible = (section) => {
+  const offset = 200;
+  const position = section.getBoundingClientRect().y;
+  return position > 0 + offset && position < window.innerHeight - offset;
+};
+
+window.addEventListener("scroll", (event) => {
+  sectionsToBeAnimated.forEach(({ section, hasBeenAnimated }, index, arr) => {
+    if (!hasBeenAnimated && isVisible(section)) {
+      section.classList.add("animate");
+      arr[index].hasBeenAnimated = true;
+    }
+  });
+});

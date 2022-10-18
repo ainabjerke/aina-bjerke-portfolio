@@ -324,6 +324,7 @@ body {
   position: relative;
   box-sizing: border-box;
   background-color: rgb(7, 12, 44);
+  scroll-margin-top: 0;
 }
 
 body {
@@ -650,41 +651,43 @@ textarea {
   textarea {
     max-width: 598px;
     margin-top: -240px;
-    margin-left: -20px;
-    height: 242px;
+    margin-left: 82px;
+    height: 333px;
   }
 }
 @media screen and (min-width: 991px) and (max-width: 1199px) {
   textarea {
     max-width: 413px;
     margin-top: -189px;
-    margin-left: -49px;
-    height: 249px;
+    margin-left: -60px;
+    height: 356px;
     padding: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   textarea {
     max-width: 413px;
-    margin-top: -189px;
-    margin-left: -27px;
-    height: 249px;
+    margin-top: -113px;
+    margin-left: -34px;
+    height: 318px;
+    z-index: 3;
+    position: relative;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 767px) {
   textarea {
-    max-width: 344px;
-    margin-top: -149px;
+    max-width: 459px;
+    margin-top: -48px;
     margin-left: -37px;
-    height: 269px;
+    height: 353px;
   }
 }
 @media screen and (max-width: 567px) {
   textarea {
-    max-width: 284px;
+    max-width: 426px;
     margin-top: -29px;
     margin-left: -45px;
-    height: 323px;
+    height: 484px;
   }
 }
 
@@ -1256,6 +1259,13 @@ textarea:focus {
 .about {
   margin-left: 5px;
   margin-left: 5px;
+  opacity: 0;
+  transform: scale(0.96) translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.about.animate {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 .about__container {
   margin-top: 15px;
@@ -1264,34 +1274,21 @@ textarea:focus {
   background-color: #ffffff;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 992px) {
-  .about__content {
-    height: 285px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .about__content {
-    height: 303px;
-  }
-}
-@media screen and (min-width: 568px) and (max-width: 767px) {
-  .about__content {
-    height: 310px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .about__img--l {
-    width: 83%;
+    width: 90%;
+    margin-top: 14px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .about__img--l {
-    width: 98%;
+    width: 95%;
+    margin-top: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .about__img--l {
-    width: 63%;
+    width: 70%;
     margin-left: auto;
     margin-top: 0px;
     margin-right: 40px;
@@ -1339,6 +1336,26 @@ textarea:focus {
   .about__img--r {
     width: 70%;
     margin-left: 31%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about__content-r {
+    height: 446px;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .about__content-r {
+    height: 442px;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .about__content-r {
+    height: 442px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .about__content-r {
+    height: 650px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1439,7 +1456,7 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .footer .footer-l__contact--item {
     text-align: left;
-    margin-left: 62px;
+    margin-left: 55px;
     font-size: 18px;
   }
 }
@@ -1447,14 +1464,14 @@ textarea:focus {
   .footer .footer-l__contact--item {
     text-align: left;
     margin-left: 33px;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .footer .footer-l__contact--item {
     text-align: left;
     margin-left: 16px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1544,6 +1561,9 @@ textarea:focus {
 .footer .footer-r__item a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+.footer .footer-r__link {
+  color: white;
 }
 .footer .footer-r__smedia {
   margin-bottom: 19px;

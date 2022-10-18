@@ -10,16 +10,29 @@ body {
   position: relative;
   box-sizing: border-box;
   background-color: $primary-color;
+  scroll-margin-top: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  // height: 100%;
+  // overflow: auto;
 }
 
 .wrapper {
   flex: 1 0 auto;
 }
+
+// html {
+//   height: 100%;
+//   // overflow: hidden;
+// }
+
+// body {
+//   height: 100%;
+//   overflow: auto;
+// }
 
 //--- --- MARGIN MARGIN PADDING AND BOX SIZING: --- ---//
 nav,

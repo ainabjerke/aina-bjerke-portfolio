@@ -46,18 +46,18 @@
       //   margin-right: auto;
       @media screen and (min-width: 1200px) {
         text-align: left;
-        margin-left: 62px;
+        margin-left: 55px;
         font-size: 18px;
       }
       @media screen and (min-width: 991px) and (max-width: 1199px) {
         text-align: left;
         margin-left: 33px;
-        font-size: 18px;
+        font-size: 15px;
       }
       @media screen and (min-width: 769px) and (max-width: 991px) {
         text-align: left;
         margin-left: 16px;
-        font-size: 18px;
+        font-size: 16px;
       }
       @media screen and (max-width: 768px) {
         text-align: center;
@@ -153,6 +153,10 @@
         transform: scaleX(1);
       }
     }
+    &__link {
+      color: white;
+    }
+
     &__smedia {
       margin-bottom: 19px;
       @media screen and (max-width: 769px) {
