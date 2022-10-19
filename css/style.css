@@ -1,4 +1,7 @@
-/**** *** *** ABSTRACT SECTION *** *** ***/ /*** *** *** COLOR PALETTE SECTION:  *** *** ***/
+/**** *** *** ABSTRACT SECTION *** *** ***/ /*** *** *** COLOR PALETTE SECTION:  *** *** ***/ /*
+Code from:
+https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+*/
 /*** *** *** COMPONENTS SECTION *** *** ***/
 /*** *** *** BUTTON SECTION:  *** *** ***/
 .btn {
@@ -442,7 +445,7 @@ iframe {
 #aboutme,
 #contact,
 #workandeducation,
-#speciality {
+#Skills-and-tools {
   scroll-margin-top: 200px;
 }
 
