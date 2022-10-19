@@ -7,10 +7,12 @@
   position: relative;
   width: 80px;
   height: 80px;
-  @media screen and (min-width: 992px) {
+  // @media screen and (min-width: 992px)
+  @include respond-above(md) {
     margin-left: 46%;
   }
-  @media screen and (max-width: 991px) {
+  // @media screen and (max-width: 991px)
+  @include respond-below(md) {
     margin-left: 0%;
   }
 

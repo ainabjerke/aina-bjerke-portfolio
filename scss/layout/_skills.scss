@@ -8,13 +8,16 @@
     margin-left: 5px;
     text-align: center;
     height: 310px;
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    // @media screen and (min-width: 768px) and (max-width: 991px) 
+    @include respond-between(sm, md){
       margin-bottom: 196px;
     }
-    @media screen and (min-width: 568px) and (max-width: 765px) {
+    // @media screen and (min-width: 568px) and (max-width: 765px)
+    @include respond-between(xs, sm) {
       margin-bottom: 196px;
     }
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       margin-bottom: 196px;
     }
   }
@@ -22,7 +25,8 @@
   &__img {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1200px)
+    @include respond-above(lg) {
       margin-top: -155px;
       width: 269.18px;
       height: 283.08px;
@@ -35,28 +39,32 @@
       //   margin-left: auto;
       //   margin-right: auto;
     }
-    @media screen and (min-width: 991px) and (max-width: 1199px) {
+    // @media screen and (min-width: 991px) and (max-width: 1199px)
+    @include respond-between(md, lg) {
       margin-top: -145px;
       width: 261.18px;
       height: 258.08px;
       //   margin-left: auto;
       //   margin-right: auto;
     }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    // @media screen and (min-width: 768px) and (max-width: 991px)
+    @include respond-between(sm, md) {
       margin-top: -145px;
       width: 261.18px;
       height: 258.08px;
       //   margin-left: auto;
       //   margin-right: auto;
     }
-    @media screen and (min-width: 568px) and (max-width: 765px) {
+    // @media screen and (min-width: 568px) and (max-width: 765px)
+    @include respond-between(xs, sm) {
       margin-top: -145px;
       width: 261.18px;
       height: 258.08px;
       //   margin-left: auto;
       //   margin-right: auto;
     }
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       margin-top: -145px;
       width: 261.18px;
       height: 258.08px;
@@ -70,7 +78,8 @@
   }
 
   &__heading {
-    @media screen and (min-width: 991px) and (max-width: 1999px) {
+    // @media screen and (min-width: 991px) and (max-width: 1999px)
+    @include respond-between(md, lg) {
       font-size: 25px;
     }
   }

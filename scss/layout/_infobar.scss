@@ -24,7 +24,8 @@
   &__short-text {
     display: block;
     font-size: 14px;
-    @media screen and (max-width: 400px) {
+    // @media screen and (max-width: 400px)
+    @include respond-below(xxs) {
       font-size: 10px;
     }
   }

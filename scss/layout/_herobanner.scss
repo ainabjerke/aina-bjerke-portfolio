@@ -1,14 +1,18 @@
 .herobanner {
-  @media screen and (min-width: 991px) and (max-width: 1199px) {
+  // @media screen and (min-width: 991px) and (max-width: 1199px)
+  @include respond-between(md, lg) {
     margin-top: -50px;
   }
-  @media screen and (min-width: 768px) and (max-width: 990px) {
+  // @media screen and (min-width: 768px) and (max-width: 990px)
+  @include respond-between(sm, md) {
     margin-top: -144px;
   }
-  @media screen and (min-width: 568px) and (max-width: 767px) {
+  // @media screen and (min-width: 568px) and (max-width: 767px)
+  @include respond-between(xs, sm) {
     margin-top: -213px;
   }
-  @media screen and (max-width: 567px) {
+  // @media screen and (max-width: 567px)
+  @include respond-below(xs) {
     margin-top: -165px;
   }
   &__img--primary {
@@ -22,7 +26,8 @@
     margin-top: 100px;
     opacity: 0.5;
     width: 100%;
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       margin-top: -161px;
     }
   }
@@ -33,17 +38,20 @@
     height: 729px;
     margin-top: -724px;
     opacity: 0.9;
-    @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1200px)
+    @include respond-above(lg) {
       width: 40%;
       //   width: 49%;
     }
-    @media screen and (min-width: 991px) and (max-width: 1199px) {
+    // @media screen and (min-width: 991px) and (max-width: 1199px)
+    @include respond-between(md, lg) {
       //   width: 44%;
       width: 38%;
       position: relative;
       z-index: 2;
     }
-    @media screen and (max-width: 990px) {
+    // @media screen and (max-width: 990px)
+    @include respond-below(md) {
       display: none;
     }
   }
@@ -63,7 +71,8 @@
     // top: -313px;
     transform: translate(-50%, -50%);
     z-index: 1;
-    @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1200px)
+    @include respond-above(lg) {
       left: 76%;
       margin-left: -42px;
       padding: 65px;
@@ -72,27 +81,31 @@
       //   top: -320px;
       top: -305px;
     }
-    @media screen and (min-width: 991px) and (max-width: 1199px) {
+    // @media screen and (min-width: 991px) and (max-width: 1199px)
+    @include respond-between(md, lg) {
       left: 70%;
       padding: 18px;
       top: -346px;
       //   margin-left: 21px;
       margin-left: -60px;
     }
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+    // @media screen and (min-width: 768px) and (max-width: 990px)
+    @include respond-between(sm, md) {
       left: 50%;
       max-width: 700px;
       padding: 20px;
       top: -418px;
     }
-    @media screen and (min-width: 568px) and (max-width: 767px) {
+    // @media screen and (min-width: 568px) and (max-width: 767px)
+    @include respond-between(xs, sm) {
       left: 50%;
       max-width: 700px;
       padding: 20px;
       top: -418px;
     }
 
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       left: 50%;
       max-width: 800px;
       padding: 36px;
@@ -101,18 +114,21 @@
   }
   &__img--tertiary {
     display: none;
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+    // @media screen and (min-width: 768px) and (max-width: 990px)
+    @include respond-between(sm, md) {
       width: 50%;
       opacity: 0.7;
       display: block;
     }
-    @media screen and (min-width: 568px) and (max-width: 767px) {
+    // @media screen and (min-width: 568px) and (max-width: 767px)
+    @include respond-between(xs, sm) {
       width: 100%;
       opacity: 0.6;
       display: block;
       margin-top: 282px;
     }
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       width: 100%;
       opacity: 0.6;
       display: block;
@@ -127,19 +143,24 @@
     font-size: 17px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1200px)
+    @include respond-above(lg) {
       margin-left: 69px;
     }
-    @media screen and (min-width: 991px) and (max-width: 1199px) {
+    // @media screen and (min-width: 991px) and (max-width: 1199px)
+    @include respond-between(md, lg) {
       margin-left: 120px;
     }
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+    // @media screen and (min-width: 768px) and (max-width: 990px)
+    @include respond-between(sm, md) {
       margin-left: 106px;
     }
-    @media screen and (min-width: 568px) and (max-width: 767px) {
+    // @media screen and (min-width: 568px) and (max-width: 767px)
+    @include respond-between(xs, sm) {
       margin-left: 16px;
     }
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       text-align: center;
     }
 
@@ -164,17 +185,21 @@
     font-weight: normal;
     font-size: 1em;
     // padding: 5px;
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+    // @media screen and (min-width: 768px) and (max-width: 990px)
+    @include respond-between(sm, md) {
       padding-bottom: 34px;
     }
-    @media screen and (min-width: 568px) and (max-width: 767px) {
+    // @media screen and (min-width: 568px) and (max-width: 767px)
+    @include respond-between(xs, sm) {
       padding-bottom: 34px;
     }
     & span {
-      @media screen and (max-width: 990px) {
+      // @media screen and (max-width: 990px)
+      @include respond-below(md) {
         display: inline;
       }
-      @media screen and (max-width: 360px) {
+      // @media screen and (max-width: 360px)
+      @include respond-below(xxxs) {
         display: block;
       }
     }
@@ -188,34 +213,40 @@
     // margin-left: -227px;
     margin-left: -214px;
     font-weight: 600;
-    @media screen and (min-width: 768px) and (max-width: 990px) {
+    // @media screen and (min-width: 768px) and (max-width: 990px)
+    @include respond-between(sm, md) {
       margin-left: -214px;
     }
-    @media screen and (min-width: 568px) and (max-width: 767px) {
+    // @media screen and (min-width: 568px) and (max-width: 767px)
+    @include respond-between(xs, sm) {
       margin-left: -214px;
     }
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       top: 17px;
       position: relative;
       font-size: 1.5rem;
       margin-left: 0;
       margin-right: 0;
     }
-    @media screen and (max-width: 360px) {
+    // @media screen and (max-width: 360px)
+    @include respond-below(xxxs) {
       top: 26px;
       font-size: 1.2rem;
     }
   }
   &__subheading {
     color: #8193b2;
-    @media screen and (max-width: 567px) {
+    // @media screen and (max-width: 567px)
+    @include respond-below(xs) {
       top: 17px;
       position: relative;
       font-size: 1.5rem;
       margin-left: 0;
       margin-right: 0;
     }
-    @media screen and (max-width: 360px) {
+    // @media screen and (max-width: 360px)
+    @include respond-below(xxxs) {
       font-size: 1.2rem;
     }
   }

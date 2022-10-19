@@ -7,10 +7,12 @@
   //   }
   //--- --- FOOTER LEFT STYLE: --- ---//
   .footer-l {
-    @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1200px)
+    @include respond-above(lg) {
       max-width: 1097px;
     }
-    @media screen and (max-width: 1199px) {
+    // @media screen and (max-width: 1199px)
+    @include respond-below(lg) {
       max-width: 926px;
     }
     &__content {
@@ -34,6 +36,10 @@
       //   padding-left: 162px;
       //   margin-left: auto;
       //   margin-right: auto;
+      // @media screen and (max-width: 768px)
+      @include respond-below(sm) {
+        margin: 0px 13px -7px 0px;
+      }
     }
 
     &__contact--item {
@@ -44,22 +50,26 @@
       font-size: 20px;
       //   margin-left: auto;
       //   margin-right: auto;
-      @media screen and (min-width: 1200px) {
+      // @media screen and (min-width: 1200px)
+      @include respond-above(lg) {
         text-align: left;
         margin-left: 55px;
         font-size: 18px;
       }
-      @media screen and (min-width: 991px) and (max-width: 1199px) {
+      // @media screen and (min-width: 991px) and (max-width: 1199px)
+      @include respond-between(md, lg) {
         text-align: left;
         margin-left: 33px;
         font-size: 15px;
       }
-      @media screen and (min-width: 769px) and (max-width: 991px) {
+      // @media screen and (min-width: 769px) and (max-width: 991px)
+      @include respond-between(sm, md) {
         text-align: left;
         margin-left: 16px;
         font-size: 16px;
       }
-      @media screen and (max-width: 768px) {
+      // @media screen and (max-width: 768px)
+      @include respond-below(sm) {
         text-align: center;
         font-size: 16px;
       }
@@ -97,7 +107,8 @@
       margin-top: 40px;
       margin-left: 85px;
       color: $white-color;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         margin-left: 0px;
       }
     }
@@ -108,7 +119,8 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         text-align: center;
       }
     }
@@ -119,7 +131,8 @@
       margin: 0px 22px 37px 0px;
       padding: 10px;
       margin-bottom: 10px;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         flex-direction: column;
         column-count: 1;
         text-align: center;
@@ -128,7 +141,8 @@
 
     &__item {
       margin-bottom: 30px;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         margin-bottom: 23px;
         font-size: 16px;
       }
@@ -159,7 +173,8 @@
 
     &__smedia {
       margin-bottom: 19px;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         text-align: center;
       }
     }
@@ -182,7 +197,8 @@
     }
     &__copyright {
       font-size: 13px;
-      @media screen and (max-width: 769px) {
+      // @media screen and (max-width: 769px)
+      @include respond-below(sm) {
         text-align: center;
       }
     }

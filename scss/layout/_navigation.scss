@@ -9,7 +9,8 @@
   width: 100%;
 
   & .container {
-    @media screen and (max-width: 991px) {
+    // @media screen and (max-width: 991px)
+    @include respond-below(md) {
       margin: 0;
       padding: 0;
       max-width: 100%;
@@ -20,7 +21,8 @@
     margin: 0;
     align-items: center;
 
-    @media screen and (max-width: 991px) {
+    // @media screen and (max-width: 991px)
+    @include respond-below(md) {
       // border-bottom: 1px solid $white-color;
       // border-bottom: 1px solid #8193b2;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -30,13 +32,15 @@
   &__trademark {
     width: 100%;
     margin-left: -52px;
-    @media screen and (max-width: 550px) {
+    // @media screen and (max-width: 550px)
+    @include respond-below(xs) {
       display: none;
     }
   }
 
   &__trademark--mobile {
-    @media screen and (min-width: 550px) {
+    // @media screen and (min-width: 550px)
+    @include respond-above(xs) {
       display: none;
     }
   }
@@ -59,10 +63,12 @@
     display: flex;
     justify-content: flex-end;
     font-size: 40px;
-    @media screen and (max-width: 991px) {
+    // @media screen and (max-width: 991px)
+    @include respond-below(md) {
       margin-right: 15px;
     }
-    @media screen and (max-width: 519px) {
+    // @media screen and (max-width: 519px)
+    @include respond-below(xs) {
       display: flex;
       justify-content: flex-start;
       font-size: 33px;
@@ -88,12 +94,14 @@
   }
 
   &__menu {
-    @media screen and (min-width: 992px) {
+    // @media screen and (min-width: 992px)
+    @include respond-above(md) {
       // border-top: 1px solid $white-color;
       // border-top: 1px solid #8193b2;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    @media (max-width: 991px) {
+    // @media (max-width: 991px)
+    @include respond-below(md) {
       position: fixed;
       top: 0;
       padding-top: 100px;
@@ -113,14 +121,16 @@
       height: 100%;
       padding: 0;
 
-      @media (min-width: 992px) {
+      // @media (min-width: 992px)
+      @include respond-above(md) {
         display: none;
       }
     }
 
     &__list {
       list-style: none;
-      @media (min-width: 992px) {
+      // @media (min-width: 992px)
+      @include respond-above(md) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -129,7 +139,8 @@
         justify-content: center;
       }
 
-      @media (max-width: 991px) {
+      // @media (max-width: 991px)
+      @include respond-below(md) {
         display: flex;
         flex-direction: column;
         line-height: 50px;
@@ -139,10 +150,12 @@
     }
 
     &__logo-menubar {
-      @media screen and (min-width: 991px) {
+      // @media screen and (min-width: 991px)
+      @include respond-above(md) {
         display: none;
       }
-      @media screen and (max-width: 991px) {
+      // @media screen and (max-width: 991px)
+      @include respond-below(md) {
         margin-top: -88px;
         width: 333px;
       }
@@ -153,10 +166,12 @@
       font-weight: 300;
       letter-spacing: 1.5px;
 
-      @media (min-width: 992px) {
+      // @media (min-width: 992px)
+      @include respond-above(md) {
         padding: 0px 30px;
       }
-      @media (max-width: 991px) {
+      // @media (max-width: 991px)
+      @include respond-below(md) {
         padding: 10px 20px;
       }
       & a {
@@ -186,7 +201,8 @@
     color: $white-color;
     text-transform: uppercase;
 
-    @media screen and (max-width: 991px) {
+    // @media screen and (max-width: 991px)
+    @include respond-below(md) {
       color: $white-color;
     }
 
@@ -199,7 +215,8 @@
 }
 
 //--- --- BURGER MENU OPEN STYLE: --- ---//
-@media (max-width: 991px) {
+// @media (max-width: 991px)
+@include respond-below(md) {
   .open-menu {
     left: 0px;
     // right: 0;
