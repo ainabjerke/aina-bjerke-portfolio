@@ -1,6 +1,12 @@
 /**** *** *** ABSTRACT SECTION *** *** ***/
+@import "./abstract/variables";
 @import "./abstract/maps";
 @import "./abstract/mixin";
+// @import "./abstract/variables";
+
+// /**** *** *** ANIMATION SECTION *** *** ***/
+// @import "./animations/textHeroBanner";
+// @import "./animations/textareaAboutMe";
 
 /*** *** *** COMPONENTS SECTION *** *** ***/
 @import "./components/buttons";
@@ -9,6 +15,7 @@
 
 /*** *** *** BASE SECTION *** *** ***/
 @import "./base/reset";
+@import "./base/typography";
 
 /*** *** *** PAGES SECTION *** *** ***/
 @import "./pages/projectLayout";
@@ -27,3 +34,9 @@
 @import "./layout/workEducation";
 @import "./layout/herobanner";
 @import "./layout/modal";
+
+/**** *** *** ANIMATION SECTION *** *** ***/
+@import "./webAnimations/textHeroBanner";
+@import "./webAnimations/textareaAboutMe";
+@import "./webAnimations/portfolioSkillsFrontend";
+@import "./webAnimations/frontendSlider";

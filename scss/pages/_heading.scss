@@ -1,21 +1,12 @@
-#portfolio,
-#aboutme,
-#contact,
-#workandeducation,
-#Skills-and-tools {
-  scroll-margin-top: 200px;
-}
-
-#updates-line {
-  border: 1px solid #8193b2;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+// #updates-line {
+//   border: 1px solid #8193b2;
+//   border-top: 1px solid rgba(255, 255, 255, 0.1);
+// }
 
 .heading {
   &__portfolio {
     color: $white-color;
     margin-top: -490px;
-    // margin-top: -387px;
     margin-left: 5px;
     background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
     -webkit-background-clip: text;
@@ -35,6 +26,7 @@
       margin-top: -964px;
     }
   }
+
   &__skills {
     color: $white-color;
     margin-top: 100px;
@@ -44,6 +36,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   &__frontend {
     color: $white-color;
     margin-top: 100px;
@@ -57,6 +50,7 @@
       margin-top: -60px;
     }
   }
+
   &__work--education {
     color: $white-color;
     margin-top: 160px;
@@ -77,6 +71,7 @@
       margin-top: 70px;
     }
   }
+
   &__about {
     color: $white-color;
     margin-top: 138px;
@@ -86,6 +81,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   &__infobar {
     color: $white-color;
     margin-top: 66px;
@@ -95,4 +91,13 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+/*ALL HEADINGS: */
+#portfolio,
+#aboutme,
+#contact,
+#workandeducation,
+#Skills-and-tools {
+  scroll-margin-top: 200px;
 }

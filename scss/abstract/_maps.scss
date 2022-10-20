@@ -1,18 +1,19 @@
 /*** *** *** COLOR PALETTE SECTION:  *** *** ***/
 
-//--- --- COLOR VARIABLES SECTION: --- ---//
-$primary-color: rgb(07, 12, 44);
-$secondary-color: rgb(32, 129, 140);
-// $tertiary-color: rgb(90, 75, 191);
-$tertiary-color: rgb(60, 69, 125);
-$light-purple-color: rgb(90, 75, 191);
-$light-green-color: #48c3cf;
-$white-color: #ffffff;
-$dark-blue-color: #132361;
-$red-color: #d2042d;
-$off-white-color: #efedea;
-$lighten-color: 10;
-$darken-color: 25;
+// //--- --- COLOR VARIABLES SECTION: --- ---//
+// $primary-color: rgb(07, 12, 44);
+// $secondary-color: rgb(32, 129, 140);
+// // $tertiary-color: rgb(90, 75, 191);
+// $tertiary-color: rgb(60, 69, 125);
+// $light-blue-color: rgb(72, 195, 207);
+// $light-purple-color: rgb(90, 75, 191);
+// $light-green-color: #48c3cf;
+// $white-color: #ffffff;
+// $dark-blue-color: #132361;
+// $red-color: #d2042d;
+// $off-white-color: #efedea;
+// $lighten-color: 10;
+// $darken-color: 25;
 
 //--- --- COLOR MAP SECTION: --- ---//
 $colors: (
@@ -43,3 +44,4 @@ $colors: (
   $color: map-get(map-get($colors, $base), $shade);
   @return $color;
 }
+

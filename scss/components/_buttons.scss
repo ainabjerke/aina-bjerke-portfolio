@@ -2,17 +2,12 @@
 
 //--- --- BUTTON STYLE: --- ---//
 .btn {
-  // display: inline-block;
   text-transform: uppercase;
-  // border-radius: 0;
   display: inline-block;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-
-  // box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1),
-  //   -5px -5px 20px rgba(255, 255, 255, 0.1);
 
   &:hover {
     cursor: pointer;
@@ -85,9 +80,7 @@
   //--- --- BUTTON SIZE: --- ---//
   &--xl {
     width: 100%;
-    // padding: 13px;
     font-weight: 500;
-    // padding: 20px 0px;
     padding: 17px 0px;
   }
 
@@ -107,25 +100,11 @@
   }
 
   &--sm {
-    // letter-spacing: 2px;
-    // line-height: 1.2;
-    // padding: 14px 20px;
-    // font-size: 12px;
-    // font-size: 0.9em;
-    // padding: 15px 85px;
     padding: 0.8rem 3rem;
     font-size: 1rem;
   }
 
   &--xs {
-    // padding: 12px 27px;
-    // font-weight: 600;
-    // font-size: 13px;
-    // margin-top: -13px;
-    // font-size: 0.9em;
-    // padding: 15px 30px;
-    // padding: 15px 65px;
-    // font-size: 0.9em;
     padding: 0.8rem 2rem;
     font-size: 1rem;
   }
@@ -145,266 +124,3 @@
     font-size: 14px;
   }
 }
-.btn-cv,
-.btn-portfolio,
-.portfolioBtn {
-  font-size: 1em;
-}
-
-.btn-cv,
-.btn-portfolio {
-  padding: 15px 36px;
-}
-
-.btn-cv,
-.btn-portfolio,
-.portfolioBtn {
-  border-radius: 5px;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  color: #ffffff;
-}
-
-// .btn-webpage {
-//   // font-size: 0.9em;
-//   // padding: 15px 22px;
-//   font-size: 0.9em;
-//   padding: 15px 65px;
-// }
-
-// .btn-github {
-//   font-size: 0.9em;
-//   // padding: 15px 30px;
-//   padding: 15px 85px;
-// }
-
-.portfolioBtn {
-  width: 100%;
-  padding: 15px 0px;
-}
-
-// .btn-github,
-// .portfolioBtn {
-//   margin-left: 20px;
-// }
-// .about-btn-cv {
-//   width: 98%;
-//   padding: 29px;
-//   margin-top: 10px;
-//   margin-left: 10px;
-//   font-size: 1.5em;
-// }
-
-.btn-cv,
-.btn-view-portfolio,
-.portfolioBtn {
-  background-color: #20818c;
-}
-
-.btn-portfolio {
-  background-color: #5a4bbf;
-}
-
-.btn-cv i,
-.btn-portfolio i,
-.btn-github i {
-  color: #ffffff;
-}
-
-button {
-  border: none;
-}
-
-.btn-cv:hover,
-.btn-portfolio:hover,
-.btn-view-portfolio:hover,
-.portfolioBtn:hover,
-.portfolio-section img:hover,
-.btn-webpage:hover,
-.btn-github:hover {
-  filter: brightness(115%);
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 567px) {
-  .btn-cv,
-  .btn-portfolio {
-    // margin-top: 10px;
-    // padding: 19px;
-    // width: 70%;
-    // margin-left: 92px;
-    margin-top: 10px;
-    padding: 19px;
-    width: 100%;
-  }
-
-  // .btn-webpage,
-  // .btn-github {
-  //   margin: 10px;
-  // }
-  // .about-btn-cv {
-  //   width: 95.9%;
-  //   margin-top: 34px;
-  // }
-}
-// .button {
-//   top: 40%;
-//   height: 80px;
-//   padding: 0 70px;
-//   // border-radius: 40px;
-//   font-size: 0.7em;
-//   color: #ffffff;
-//   letter-spacing: 0.24em;
-//   cursor: pointer;
-//   position: relative;
-//   overflow: hidden;
-//   border: 0;
-//   width: 100%;
-//   .btn-text {
-//     position: relative;
-//     z-index: 4;
-//   }
-//   &:after {
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 0;
-//     // border-radius: 20px;
-//     background: #ce3745;
-//     background-image: linear-gradient(
-//       to right top,
-//       #051937,
-//       #004d7a,
-//       #008793,
-//       #00bf72,
-//       #a8eb12
-//     );
-//     background-size: 200% 200%;
-//     background-position: 100%;
-//     transition: all ease-in-out 0.3s;
-//   }
-//   &:hover {
-//     &:after {
-//       background-position: 0%;
-//       transition: all ease-in-out 0.3s;
-//     }
-//   }
-// }
-
-// .btn-cv,
-// .btn-portfolio,
-// .portfolioBtn {
-//   font-size: 1em;
-// }
-
-// .btn-cv,
-// .btn-portfolio {
-//   padding: 15px 36px;
-// }
-
-// .btn-cv,
-// .btn-portfolio,
-// .btn-webpage,
-// .btn-github,
-// .portfolioBtn,
-// .about-btn-cv {
-//   border-radius: 5px;
-//   display: inline-block;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   cursor: pointer;
-//   text-align: center;
-//   color: #ffffff;
-// }
-
-// .btn-webpage {
-//   font-size: 0.9em;
-//   padding: 15px 22px;
-// }
-
-// .btn-github {
-//   font-size: 0.9em;
-//   padding: 15px 30px;
-// }
-
-// .portfolioBtn {
-//   width: 100%;
-//   padding: 15px 0px;
-// }
-
-// .about-btn-cv {
-//   width: 98%;
-//   padding: 29px;
-//   margin-top: 10px;
-//   margin-left: 10px;
-//   font-size: 1.5em;
-// }
-
-// .btn-cv,
-// .btn-view-portfolio,
-// .about-btn-cv,
-// .portfolioBtn,
-// .btn-webpage {
-//   background-color: #20818c;
-// }
-
-// .btn-portfolio,
-// .btn-github {
-//   background-color: #5a4bbf;
-// }
-
-// .btn-cv i,
-// .btn-portfolio i,
-// .btn-github i {
-//   color: #ffffff;
-// }
-
-// button {
-//   border: none;
-// }
-
-// .btn-cv:hover,
-// .btn-portfolio:hover,
-// .btn-view-portfolio:hover,
-// .about-btn-cv:hover,
-// .portfolioBtn:hover,
-// .portfolio-section img:hover,
-// .btn-webpage:hover,
-// .btn-github:hover {
-//   filter: brightness(115%);
-//   text-decoration: underline;
-// }
-
-// @media screen and (max-width: 800px) {
-//   .about-btn-cv {
-//     top: -17px;
-//     position: relative;
-//     width: 97.4%;
-//   }
-// }
-
-// @media screen and (max-width: 550px) {
-//   .btn-cv,
-//   .btn-portfolio {
-//     margin-top: 10px;
-//     padding: 19px;
-//     width: 70%;
-//     margin-left: 92px;
-//   }
-
-//   .btn-webpage,
-//   .btn-github {
-//     margin: 10px;
-//   }
-//   .about-btn-cv {
-//     width: 95.9%;
-//     margin-top: 34px;
-//   }
-// }

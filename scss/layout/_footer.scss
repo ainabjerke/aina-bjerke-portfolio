@@ -1,10 +1,5 @@
 /*** *** *** FOOTER SECTION:  *** *** ***/
 .footer {
-  //   max-width: 1097px;
-  //   background-color: $dark-blue-color;
-  //   &__style {
-  //     max-width: 1101px;
-  //   }
   //--- --- FOOTER LEFT STYLE: --- ---//
   .footer-l {
     // @media screen and (min-width: 1200px)
@@ -15,13 +10,11 @@
     @include respond-below(lg) {
       max-width: 926px;
     }
+
     &__content {
       background-color: $dark-blue-color;
-      //   border-right: 1px solid #dee2e6 !important;
-      //   @media screen and (max-width: 768px) {
-      //     border-bottom: 1px solid #dee2e6 !important;
-      //   }
     }
+
     &__logo-image {
       height: 4.8em;
       margin-top: 19px;
@@ -33,9 +26,6 @@
     &__contact {
       margin: 0px 0px -7px 0px;
       padding: 11.7px;
-      //   padding-left: 162px;
-      //   margin-left: auto;
-      //   margin-right: auto;
       // @media screen and (max-width: 768px)
       @include respond-below(sm) {
         margin: 0px 13px -7px 0px;
@@ -44,27 +34,21 @@
 
     &__contact--item {
       list-style-type: none;
-      //   text-align: left;
-      //   margin-left: -125px;
       margin-top: 30px;
       font-size: 20px;
-      //   margin-left: auto;
-      //   margin-right: auto;
+      text-align: left;
       // @media screen and (min-width: 1200px)
       @include respond-above(lg) {
-        text-align: left;
         margin-left: 55px;
         font-size: 18px;
       }
       // @media screen and (min-width: 991px) and (max-width: 1199px)
       @include respond-between(md, lg) {
-        text-align: left;
         margin-left: 33px;
         font-size: 15px;
       }
       // @media screen and (min-width: 769px) and (max-width: 991px)
       @include respond-between(sm, md) {
-        text-align: left;
         margin-left: 16px;
         font-size: 16px;
       }
@@ -74,30 +58,20 @@
         font-size: 16px;
       }
     }
+
     &__link {
-      color: white;
+      color: $white-color;
       text-decoration: none;
       &:hover {
         color: $secondary-color;
       }
     }
+
     &__icons {
       font-size: 30px;
       color: $light-green-color;
       padding: 5px;
     }
-
-    // &__image1 {
-    //   width: 100%;
-    //   margin-top: -59;
-    //   margin-bottom: 30px;
-    // }
-
-    // &__image2 {
-    //   width: 100%;
-    //   margin-top: -59;
-    //   margin-bottom: 30px;
-    // }
   }
 
   //--- --- FOOTER RIGHT STYLE: --- ---//
@@ -112,6 +86,7 @@
         margin-left: 0px;
       }
     }
+
     &__heading {
       margin-bottom: 23px;
       font-size: 33px;
@@ -124,6 +99,7 @@
         text-align: center;
       }
     }
+
     &__list {
       column-count: 2;
       list-style-type: none;
@@ -146,9 +122,11 @@
         margin-bottom: 23px;
         font-size: 16px;
       }
+
       & a {
         position: relative;
       }
+
       & a::before {
         content: "";
         position: absolute;
@@ -162,11 +140,13 @@
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
       }
+
       & a:hover::before {
         transform-origin: left;
         transform: scaleX(1);
       }
     }
+
     &__link {
       color: white;
     }
@@ -178,14 +158,16 @@
         text-align: center;
       }
     }
+
     &__smedia--heading {
       background: -webkit-linear-gradient(-70deg, #9867f0 0%, #ed4e50 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     &__smedia a {
-      color: #48c3cf;
+      color: $light-green-color;
       font-size: 69px;
       height: 96px;
       width: 76px;
@@ -195,6 +177,7 @@
         filter: brightness(130%);
       }
     }
+
     &__copyright {
       font-size: 13px;
       // @media screen and (max-width: 769px)
@@ -204,198 +187,3 @@
     }
   }
 }
-
-// a {
-//   position: relative;
-// }
-// a::before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 1px;
-//   border-radius: 1px;
-//   background-color: $secondary-color;
-//   bottom: 0;
-//   left: 0;
-//   transform-origin: right;
-//   transform: scaleX(0);
-//   transition: transform 0.3s ease-in-out;
-// }
-// a:hover::before {
-//   transform-origin: left;
-//   transform: scaleX(1);
-// }
-
-// /*** *** *** FOOTER SECTION:  *** *** ***/
-// .footer {
-//   //   background-color: $dark-blue-color;
-//   .footer-l {
-//     &__content {
-//       background-color: $dark-blue-color;
-
-//       //--- --- FOOTER LEFT STYLE: --- ---//
-
-//       //   max-width: 1125px;
-//     }
-//     &__logo--image {
-//       height: 5.8em;
-//       margin-top: 23px;
-//       object-fit: contain;
-//       width: 100%;
-//       margin-bottom: 20px;
-//     }
-//     &__info {
-//       margin: 0px 0px -7px 9px;
-//       padding: 11.7px;
-//       padding-left: 162px;
-//     }
-//     &__item {
-//       list-style-type: none;
-//       text-align: left;
-//       margin-left: -116px;
-//       margin-top: 40px;
-//       font-size: 20px;
-//       & a {
-//         text-decoration: none;
-//         color: #ffffff;
-//       }
-//       & i {
-//         font-size: 30px;
-//         color: #6bb7bf;
-//         padding: 5px;
-//       }
-//     }
-//   }
-//   //--- --- FOOTER RIGHT STYLE: --- ---//
-//   .footer-r {
-//     &__content {
-//       //   margin-top: 40px;
-//       //   margin-left: 85px;
-//       color: $white-color;
-//       background-color: $dark-blue-color;
-
-//       @media screen and (max-width: 769px) {
-//         margin-left: 0px;
-//       }
-//     }
-//     &__heading {
-//       margin-bottom: 23px;
-//       font-size: 33px;
-//       @media screen and (max-width: 769px) {
-//         text-align: center;
-//       }
-//     }
-//     &__list {
-//       column-count: 3;
-//       list-style-type: none;
-//       position: relative;
-//       margin: 0px 22px 37px 0px;
-//       @media screen and (max-width: 769px) {
-//         flex-direction: column;
-//         column-count: 1;
-//         text-align: center;
-//       }
-//     }
-
-//     &__item {
-//       margin-bottom: 30px;
-//       @media screen and (max-width: 769px) {
-//         margin-bottom: 23px;
-//         font-size: 16px;
-//       }
-//     }
-//     &__smedia {
-//       margin-bottom: 19px;
-//       @media screen and (max-width: 769px) {
-//         text-align: center;
-//       }
-//     }
-//     &__smedia a {
-//       color: $secondary-color;
-//       font-size: 69px;
-//       height: 96px;
-//       width: 76px;
-//       display: inline-block;
-
-//       &:hover {
-//         filter: brightness(130%);
-//       }
-//     }
-//     &__copyright {
-//       font-size: 13px;
-//       @media screen and (max-width: 769px) {
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
-
-// .container-footer-info {
-//     display: flex;
-//     flex-direction: row;
-//     margin-top: 10px;
-//   }
-
-//   .left-footer-info,
-//   .right-footer-container-info {
-//     background-color: #132361;
-//   }
-
-//   .left-footer-info {
-//     margin: 0px 0px -7px 9px;
-//     padding: 11.7px;
-//     padding-left: 162px;
-//   }
-
-//   .left-footer-info li {
-//     list-style-type: none;
-//     text-align: left;
-//     margin-left: -270px;
-//     margin-top: 40px;
-//     font-size: 20px;
-//   }
-
-//   .left-footer-info a {
-//     text-decoration: none;
-//     color: #ffffff;
-//   }
-
-//   .left-footer-logo img {
-//     height: 5em;
-//     margin-top: 0px;
-//     object-fit: contain;
-//     margin-left: -111px;
-//   }
-
-//   .left-footer-info i {
-//     font-size: 30px;
-//     color: #6bb7bf;
-//     padding: 5px;
-//   }
-
-//   .right-footer-container-info {
-//     flex: 50%;
-//     margin: 0px 9px -8px 8px;
-//     padding: 31px;
-//   }
-
-//   .right-footer-nav ul {
-//     column-count: 2;
-//     list-style-type: none;
-//     margin: 0px 60px 37px 0px;
-//     position: relative;
-//   }
-
-//   .right-footer-nav-style a {
-//     color: #fff;
-//     font-size: 18px;
-//     line-height: 38px;
-//     padding: 2px;
-//     text-decoration: none;
-//   }
-
-//   .right-footer-nav-style a:hover,
-//   .left-footer-info a:hover {
-//     color: #ffffff;
-//     text-decoration: underline;
-//   }

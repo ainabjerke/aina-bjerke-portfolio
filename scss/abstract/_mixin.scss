@@ -1,6 +1,8 @@
 /*
+
 Code from:
 https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+
 */
 
 // A map of breakpoints.
@@ -90,4 +92,13 @@ $breakpoints: (
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
+}
+
+//--- --- COLOR MIXIN SECTION: ---- ---//
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

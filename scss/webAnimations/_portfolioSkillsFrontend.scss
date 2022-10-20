@@ -1,0 +1,32 @@
+/*** *** *** PROJECTS, SKILLS, FRONTEND ANIMATION SECTION:  *** *** ***/
+// $speed: 0.35s;
+
+.project__image,
+.skills__img,
+.frontend__img {
+  filter: brightness(97%);
+  &:hover,
+  &:focus,
+  &.hovered {
+    transform: scale(0.95);
+    filter: brightness(110%);
+    img {
+      transform: scale(1.1);
+    }
+
+    &,
+    img {
+      transition-timing-function: ease-out;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &,
+  img {
+    transition: transform $speed ease-in;
+  }
+}

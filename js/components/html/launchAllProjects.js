@@ -16,8 +16,8 @@ export function launchAllProjects(projects) {
   if (projects.length === 0) {
     displayMessage(
       "feedbackMessage feedbackMessage--error",
-      "Sorry, no products found. Please check your search and try again",
-      ".products"
+      "Sorry, no projects found",
+      ".projects"
     );
   }
   // console.log("products ===", products);
@@ -42,80 +42,6 @@ export function launchAllProjects(projects) {
     anchor.append(heading);
     anchor.append(button);
     anchor.onclick = function (event) {
-      // project === {
-      //   "id": 5,
-      //   "title": "Helios Travel",
-      //   "description": "Project exam 1 was created in 2022 to showcase my skills learned over the first year of studies.\n\nI created a Travel blog for a fictive company by the name of Helios Travel based on the following specifications:",
-      //   "price": null,
-      //   "image_url": "https://i.ibb.co/VCSqCPv/helios-travel-webpage-img.jpg",
-      //   "featured": null,
-      //   "published_at": "2022-09-30T17:33:49.009Z",
-      //   "created_at": "2022-09-30T17:33:43.002Z",
-      //   "updated_at": "2022-10-10T11:33:05.681Z",
-      //   "webpageUrl": "https://inspiring-shaw-0ef167.netlify.app/index.html",
-      //   "githubUrl": "https://github.com/ainabjerke/HeliosTravel",
-      //   "languages": "HTML CSS JS Wordpress API",
-      //   "subTitleOne": "Project exam 1",
-      //   "grade": "A",
-      //   "descriptionBulletpoints": "WordPress REST API to fetch data\nResponsive layout\nFetch dynamic data stored in WordPress\nCarousel slider users can click to view more posts\nView more/less button to view more blog posts\nUsing query parameter to fetch specific data users has clicked on\nModal users can click on to view a bigger images\nSearch function allows users to find the blog post easier\nPost data from contact form to WordPress so the details is saved\nAllows user to submit comments on blog posts and post this data to WordPress\nJavaScript is used for validation on the contact form, showing an error message I the value in the textboxes does not meet the requirements\n",
-      //   "subheadingTwo": "Updates implemented",
-      //   "updatesBulletpoints": "Lightbox modal images gallery, clicking on the images in blog specific page opens the lightbox",
-      //   "test": null,
-      //   "bulletpointTest": null,
-      //   "image": {
-      //     "id": 6,
-      //     "name": "helios_travel_webpage_img.jpg",
-      //     "alternativeText": "",
-      //     "caption": "",
-      //     "width": 535,
-      //     "height": 446,
-      //     "formats": {
-      //       "small": {
-      //         "ext": ".jpg",
-      //         "url": "https://res.cloudinary.com/dhalnmt5w/image/upload/v1665401582/small_helios_travel_webpage_img_0a9262f895.jpg",
-      //         "hash": "small_helios_travel_webpage_img_0a9262f895",
-      //         "mime": "image/jpeg",
-      //         "name": "small_helios_travel_webpage_img.jpg",
-      //         "path": null,
-      //         "size": 25.9,
-      //         "width": 500,
-      //         "height": 417,
-      //         "provider_metadata": {
-      //           "public_id": "small_helios_travel_webpage_img_0a9262f895",
-      //           "resource_type": "image"
-      //         }
-      //       },
-      //       "thumbnail": {
-      //         "ext": ".jpg",
-      //         "url": "https://res.cloudinary.com/dhalnmt5w/image/upload/v1665401581/thumbnail_helios_travel_webpage_img_0a9262f895.jpg",
-      //         "hash": "thumbnail_helios_travel_webpage_img_0a9262f895",
-      //         "mime": "image/jpeg",
-      //         "name": "thumbnail_helios_travel_webpage_img.jpg",
-      //         "path": null,
-      //         "size": 6.2,
-      //         "width": 187,
-      //         "height": 156,
-      //         "provider_metadata": {
-      //           "public_id": "thumbnail_helios_travel_webpage_img_0a9262f895",
-      //           "resource_type": "image"
-      //         }
-      //       }
-      //     },
-      //     "hash": "helios_travel_webpage_img_0a9262f895",
-      //     "ext": ".jpg",
-      //     "mime": "image/jpeg",
-      //     "size": 28.72,
-      //     "url": "https://res.cloudinary.com/dhalnmt5w/image/upload/v1665401581/helios_travel_webpage_img_0a9262f895.jpg",
-      //     "previewUrl": null,
-      //     "provider": "cloudinary",
-      //     "provider_metadata": {
-      //       "public_id": "helios_travel_webpage_img_0a9262f895",
-      //       "resource_type": "image"
-      //     },
-      //     "created_at": "2022-10-10T11:33:03.264Z",
-      //     "updated_at": "2022-10-10T11:33:03.275Z"
-      //   }
-      // }
       const modal = document.querySelector("#myModalOne");
       modal.style.display = "block";
       console.log("anchor", project);

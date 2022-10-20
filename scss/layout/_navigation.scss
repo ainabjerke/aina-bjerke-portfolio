@@ -4,7 +4,6 @@
 .nav {
   background-color: $primary-color;
   z-index: 3;
-  //   position: relative;
   position: fixed;
   width: 100%;
 
@@ -23,8 +22,6 @@
 
     // @media screen and (max-width: 991px)
     @include respond-below(md) {
-      // border-bottom: 1px solid $white-color;
-      // border-bottom: 1px solid #8193b2;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
   }
@@ -96,8 +93,6 @@
   &__menu {
     // @media screen and (min-width: 992px)
     @include respond-above(md) {
-      // border-top: 1px solid $white-color;
-      // border-top: 1px solid #8193b2;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     // @media (max-width: 991px)
@@ -207,9 +202,8 @@
     }
 
     &:hover {
-      //   color: colors(secondary);
       text-decoration: none;
-      color: white;
+      color: $white-color;
     }
   }
 }

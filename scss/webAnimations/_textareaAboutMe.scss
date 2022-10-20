@@ -1,0 +1,56 @@
+textarea {
+  font-family: monospace;
+  font-size: 0.7rem;
+  display: block;
+  border: 0;
+  -webkit-appearance: none;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  background: -webkit-linear-gradient(-70deg, #9867f0 0%, #ed4e50 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // @media screen and (min-width: 1200px)
+  @include respond-above(lg) {
+    max-width: 598px;
+    margin-top: -240px;
+    margin-left: 82px;
+    height: 333px;
+  }
+  // @media screen and (min-width: 991px) and (max-width: 1199px)
+  @include respond-between(md, lg) {
+    max-width: 413px;
+    margin-top: -189px;
+    margin-left: -60px;
+    height: 356px;
+    padding: 1rem;
+  }
+  // @media screen and (min-width: 768px) and (max-width: 990px)
+  @include respond-between(sm, md) {
+    max-width: 413px;
+    margin-top: -113px;
+    margin-left: -34px;
+    height: 318px;
+    z-index: 3;
+    position: relative;
+  }
+  // @media screen and (min-width: 568px) and (max-width: 767px)
+  @include respond-between(xs, sm) {
+    max-width: 459px;
+    margin-top: -48px;
+    margin-left: -37px;
+    height: 353px;
+  }
+  // @media screen and (max-width: 567px)
+  @include respond-below(xs) {
+    max-width: 426px;
+    margin-top: -29px;
+    margin-left: -45px;
+    height: 521px;
+  }
+}
+
+textarea:focus {
+  outline: none;
+}
