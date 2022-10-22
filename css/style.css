@@ -3,8 +3,7 @@
 Code from:
 https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
 
-*/
-/*** *** *** COMPONENTS SECTION *** *** ***/
+*/ /*** *** *** COMPONENTS SECTION *** *** ***/
 /*** *** *** BUTTON SECTION:  *** *** ***/
 .btn {
   text-transform: uppercase;
@@ -1898,6 +1897,12 @@ body {
 
 /**** *** *** ANIMATION SECTION *** *** ***/
 /*** *** *** ANIMATION HEROBANNER SECTION:  *** *** ***/
+/*
+
+Code from:
+https://codepen.io/studiojvla/pen/qVbQqW
+
+*/
 .anim-text-banner {
   font-size: 20px;
   font-weight: bold;
@@ -2108,6 +2113,12 @@ textarea:focus {
 }
 
 /*** *** ***  FRONTEND SLIDER ANIMATION SECTION:  *** *** ***/
+/*
+
+Code from:
+https://codepen.io/studiojvla/pen/qVbQqW
+
+*/
 .slider__bar {
   align-items: center;
   display: flex;
