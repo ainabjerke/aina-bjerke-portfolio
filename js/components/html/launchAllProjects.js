@@ -221,7 +221,7 @@ export function launchAllProjects(projects) {
     //CREATES <div> ELEMENT:
     const division = document.createElement("div");
     //ADDING CLASS TO THE division/<div> ELEMENT:
-    division.classList.add("project", "col-sm-12", "col-lg-4");
+    division.classList.add("project", "col-sm-12", "col-md-6", "col-lg-4");
     //ADDING division/<div> TO ANCHOR/<a> BY USING.APPEND:
     division.append(anchor);
 
