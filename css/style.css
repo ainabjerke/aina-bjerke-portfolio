@@ -348,6 +348,11 @@ body {
   padding: 10px;
   text-align: center;
 }
+@media (min-width: 576px) and (max-width: 991px) {
+  .project {
+    padding: 10px 20px;
+  }
+}
 .project__image {
   overflow: hidden;
   margin: 0;
@@ -1539,7 +1544,7 @@ body {
   font-size: 30px;
   padding: 10px;
   font-weight: 550;
-  margin-left: -147px;
+  margin-left: -167px;
 }
 .herobanner__paragraph {
   font-weight: normal;
@@ -1568,17 +1573,17 @@ body {
 .herobanner__heading {
   color: #8193b2;
   font-size: 40px;
-  margin-left: -214px;
+  margin-left: -223px;
   font-weight: 600;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .herobanner__heading {
-    margin-left: -214px;
+    margin-left: -227px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .herobanner__heading {
-    margin-left: -214px;
+    margin-left: -223px;
   }
 }
 @media (max-width: 575px) {
@@ -1900,7 +1905,7 @@ body {
 /*
 
 Code from:
-https://codepen.io/studiojvla/pen/qVbQqW
+https://codepen.io/abirana/pen/vYEqqEy?fbclid=IwAR2PKb8t9tYR815VjFKcqRGAseSZ3z5MMiIMtOK24ZvPwR61DvqT5MX2PSQ
 
 */
 .anim-text-banner {
@@ -1992,6 +1997,12 @@ https://codepen.io/studiojvla/pen/qVbQqW
   }
 }
 
+/*
+
+Code from:
+https://codepen.io/jkulton/pen/zdXMXL:
+
+*/
 textarea {
   font-family: monospace;
   font-size: 0.7rem;
