@@ -55,7 +55,9 @@
     &__img {
       // @media screen and (min-width: 1200px)
       @include respond-above(lg) {
-        margin-left: 7%;
+        // margin-left: 7%;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 100%;
         padding-top: 75px;
       }
@@ -197,14 +199,16 @@
 
 .intro-section-btns {
   // @media screen and (min-width: 1200px)
+
   @include respond-above(lg) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     gap: 1rem;
-    max-width: 536px;
-    margin-left: 58px;
+    // max-width: 536px;
+    // margin-left: 58px;
     margin-top: 20px;
+    margin-bottom: 35px;
   }
   // @media screen and (min-width: 991px) and (max-width: 1199px)
   @include respond-between(md, lg) {
@@ -212,6 +216,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     gap: 1rem;
+    margin-bottom: 35px;
   }
   // @media screen and (min-width: 768px) and (max-width: 990px)
   @include respond-between(sm, md) {

@@ -22,6 +22,11 @@
     margin: 0;
     width: 100%;
     margin-left: -10px;
+    height: 299px;
+    object-fit: fill;
+    @include respond-below(sm) {
+      height: 360px;
+    }
   }
 
   &__content {
