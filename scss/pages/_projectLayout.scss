@@ -22,10 +22,13 @@
     margin: 0;
     width: 100%;
     margin-left: -10px;
-    height: 299px;
+    height: 280px;
     object-fit: fill;
-    @include respond-below(sm) {
+    @include respond-between(xs, sm) {
       height: 360px;
+    }
+    @include respond-below(xs) {
+      height: auto;
     }
   }
 

@@ -141,7 +141,7 @@ export function launchAllProjects(projects) {
       );
       //if project.grade has no value then do not show the grade
       //else show the given grade
-      if (project.grade == null) {
+      if (!project.grade) {
         gradeContainer.style.display = "none";
       } else {
         gradeContainer.style.display = "block";
@@ -195,7 +195,9 @@ export function launchAllProjects(projects) {
       const updatesLine = document.querySelector("#updates-line");
       //if project.updatesBulletpoints has no value then do not show the updatedline
       //else show the project.updatesBulletpoints
-      if (project.updatesBulletpoints == null) {
+      debugger;
+      console.log("project.updatesBulletpoints", project.updatesBulletpoints);
+      if (!project.updatesBulletpoints) {
         updatesLine.style.display = "none";
       } else {
         updatesLine.style.display = "block";

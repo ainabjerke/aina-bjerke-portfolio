@@ -358,12 +358,17 @@ body {
   margin: 0;
   width: 100%;
   margin-left: -10px;
-  height: 299px;
+  height: 280px;
   object-fit: fill;
 }
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .project__image {
     height: 360px;
+  }
+}
+@media (max-width: 575px) {
+  .project__image {
+    height: auto;
   }
 }
 .project__content {
@@ -2181,9 +2186,21 @@ https://codepen.io/studiojvla/pen/qVbQqW
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: 3500px;
 }
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+/*
+  If the user has expressed their preference for
+  reduced motion, then don't use animations on the frontendSlider.
+*/
+@media (prefers-reduced-motion: reduce) {
+  .slide-track {
+    animation: none !important;
+  }
+  .slide {
+    animation: none !important;
+  }
 }/*# sourceMappingURL=style.css.map */
