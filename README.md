@@ -32,7 +32,7 @@ Some features:
 
 ## Getting Started
 
-### Getting Started using the hosted application link in Netlify
+### Getting Started using the hosted application link
 
 URL: www.abjerke.com
 
