@@ -195,8 +195,6 @@ export function launchAllProjects(projects) {
       const updatesLine = document.querySelector("#updates-line");
       //if project.updatesBulletpoints has no value then do not show the updatedline
       //else show the project.updatesBulletpoints
-      debugger;
-      console.log("project.updatesBulletpoints", project.updatesBulletpoints);
       if (!project.updatesBulletpoints) {
         updatesLine.style.display = "none";
       } else {
