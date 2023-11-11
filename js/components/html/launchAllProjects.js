@@ -113,7 +113,7 @@ export function launchAllProjects(projects) {
         const projectUrl = project.webpageUrl;
 
         // Open a new window or tab with the project's URL.
-        window.open(projectUrl, "_blank");
+        window.open(projectUrl, "href", "_blank");
       });
 
       //GETS THE class="btn-github" IN HTML LINE 219
@@ -136,7 +136,7 @@ export function launchAllProjects(projects) {
         const githubUrl = project.githubUrl; // Replace 'project.githubUrl' with your actual URL
 
         // Open the link in a new window
-        window.open(githubUrl, "_blank");
+        window.open(githubUrl, "href", "_blank");
       });
 
       //GETS THE modal-r__header IN HTML LINE 229:
