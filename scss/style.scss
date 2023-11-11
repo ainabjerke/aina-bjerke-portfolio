@@ -15,9 +15,13 @@
 /*** *** *** PAGES SECTION *** *** ***/
 @import "./pages/projectLayout";
 @import "./pages/heading";
+@import "../scss/pages/about/caseStudy01.scss";
+@import "../scss/pages/case/caseStudy01Info.scss";
+@import "../scss/pages/detail/caseStudy01empathise.scss";
 
 /*** *** *** LAYOUT SECTION *** *** ***/
 @import "./layout/animation";
+@import "./layout/carousel";
 @import "./layout/navigation";
 @import "./layout/navIconMenu";
 @import "./layout/skills";
@@ -28,6 +32,8 @@
 @import "./layout/workEducation";
 @import "./layout/herobanner";
 @import "./layout/modal";
+@import "./layout/uiDesign";
+@import "./layout/uxDesign";
 
 /**** *** *** ANIMATION SECTION *** *** ***/
 @import "./webAnimations/textHeroBanner";

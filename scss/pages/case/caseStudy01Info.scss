@@ -1,0 +1,103 @@
+.case-study01-jumbotron {
+  &__info-main-img {
+    background-image: url("/images/flex_fit_img_02.jpg");
+    width: 100%;
+    // height: 188px;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    width: 100%;
+    // height: 188px;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    // height: 550px;
+    @include respond-above(lg) {
+      height: 550px;
+    }
+    @include respond-between(md, lg) {
+      height: 450px;
+    }
+    @include respond-between(sm, md) {
+      height: 344px;
+    }
+    @include respond-below(sm) {
+      height: 344px;
+    }
+  }
+
+  &__info-main-imgCS02 {
+    background-image: url("/images/xplore_img_02.jpg");
+    width: 100%;
+    // height: 188px;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    width: 100%;
+    // height: 188px;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    // height: 550px;
+    @include respond-above(lg) {
+      height: 550px;
+    }
+    @include respond-between(md, lg) {
+      height: 450px;
+    }
+    @include respond-between(sm, md) {
+      height: 344px;
+    }
+    @include respond-below(sm) {
+      height: 344px;
+    }
+  }
+
+  &__info-text-container {
+    @include respond-between(sm, md) {
+      top: 45%;
+      left: 38%;
+    }
+  }
+}
+
+.portfolio-UX01-info {
+  &__container {
+    background-color: #070c2c;
+    color: white;
+  }
+
+  &__heading {
+    margin-top: -448px;
+    margin-bottom: 145px;
+  }
+
+  &__img-container {
+    margin-top: -221px;
+    margin-bottom: 55px;
+    @include respond-below(sm) {
+      margin-top: 0px;
+    }
+  }
+  &__img-container02 {
+    // margin-top: -110px;
+    margin-top: -33px;
+    margin-bottom: 55px;
+    @include respond-below(sm) {
+      margin-top: 0px;
+    }
+  }
+}
+
+// margin-top: -448px;
+// margin-bottom: 145px;

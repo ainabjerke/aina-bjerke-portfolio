@@ -1,0 +1,42 @@
+.portfolio-UX01 {
+  &__instagram {
+    margin-left: -23px !important;
+  }
+}
+
+.portfolio-UX01-info {
+  &__container-instagram {
+    margin-top: 0px;
+  }
+  &__img-container-instagram {
+    // width: 435px;
+    // height: 260px;
+    margin-top: -400px;
+    width: 595px;
+    height: 267px;
+    object-fit: contain;
+    // object-fit: contain;
+  }
+
+  &__heading-instagram {
+    margin-bottom: 56px;
+    margin-top: -377px;
+    @include respond-below(sm) {
+      margin-top: -128px;
+      text-align: center;
+    }
+  }
+
+  &__img-container-instagram-p {
+    margin-top: -31px;
+    @include respond-below(sm) {
+      text-align: center;
+    }
+  }
+
+  &__instagram-button {
+    margin-top: 22px;
+  }
+}
+
+// margin-top: 22px;

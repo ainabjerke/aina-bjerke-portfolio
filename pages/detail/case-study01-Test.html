@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO SECTION: -->
+    <meta
+      name="description"
+      content="Aina Bjerke Frontend developer porfolio page"
+    />
+    <meta
+      name="keywords"
+      content="Fronend, UX, UI, design, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Aina Bjerke" />
+    <!-- FONT AWESOME SECTION: -->
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP SECTION: -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous"
+  />
+  
+    <!-- FAVE ICON SECTION: -->
+    <link rel="icon" type="images/fav_icon.png" href="images/fav_icon.png" />
+
+    <!-- CSS SECTION: -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- PAGE TITLE SECTION: -->
+    <title>Aina Bjerke - Frontend developer</title>
+  </head>
+  
+    <div class="wrapper">
+    <header>
+      <!-- Header content goes here -->
+  </header>
+  <body>
+  <nav class="nav">
+    <div class="container">
+      <!-- TOP NAV SECTION: -->
+      <div class="nav__top row">
+        <!-- LOGO NAV SECTION: -->
+        <div class="nav__trademark col">
+          <a href="/index.html">
+            <img
+              src="/images/aina_bjerke_logo.png"
+              alt="Aina Bjerke Logo"
+              class="nav__logo"
+            />
+          </a>
+        </div>
+        <div class="nav__trademark--mobile col">
+          <a href="./index.html">
+            <img
+              src="/images/aina_bjerke_logo_mobile_01.png"
+              alt="Aina Bjerke logo"
+              class="nav__logo nav__logo--mobile"
+            />
+          </a>
+        </div>
+        <!-- SOCIAL MEDIA ICON SECTION: -->
+        <div class="nav__icons col">
+          <div class="nav__icon">
+            <a href="https://github.com/ainabjerke" target="_blank">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="https://no.linkedin.com/in/aina-bjerke-a2b114172" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="/assets/aina_bjerke_cv.pdf" target="_blank">
+              <i class="fa-solid fa-file-lines"></i>
+            </a>
+          </div>
+        </div>
+        <!-- HAMBURGER ICON SECTION: -->
+        <div class="nav__menu__vertical-line"></div>
+        <div class="nav__menu-icon col">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- MENU LIST SECTION: -->
+      <div class="nav__menu col-lg-12">
+        <ul class="nav__menu__list">
+          <li>
+            <a href="./index.html">
+              <img
+                src="/images/aina_bjerke_logo.png"
+                alt="GG optic Logo"
+                class="nav__menu__logo-menubar"
+              />
+            </a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="/index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="/index.html#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="/index.html#aboutme" class="nav__link">About me</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="/index.html#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main container">
+      <!-- Main content goes here -->
+     
+      <section class="bredcrumb">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb__styling">
+          <li class="breadcrumb-item "><a href="/index.html" class="breadcrumb__styling"><i class="fa-solid fa-house"></i></a></li>
+          <li class="breadcrumb-item"><a href="/pages/about/case-study01.html" class="breadcrumb__styling">Case study 01</a></li>
+          <li class="breadcrumb-item breadcrumb-item__active" aria-current="page">Test stage</li>
+        </ol>
+      </nav>
+    </section>
+
+
+           <!--jumbotron -->
+           <section class="case-study01-jumbotron">
+            <div class="case-study01-jumbotron__main-img case-study01-jumbotron__info-main-img case-study01-jumbotron__test-main-img "></div>
+          </section>
+          <section>
+            <div class="case-study01-jumbotron__text-container case-study01-jumbotron__info-text-container">
+              <!-- <h1>Project: App development</h1>
+              <p class="case-study01-jumbotron__text-p">My role: UX designer
+                </p> -->
+              <!-- <a href="/pages/case/case-study01-info.html" class="case-study01-jumbotron__btn">
+               read more
+              </a> -->
+            </div>
+          </section>
+       
+
+
+  <!--TAB CONTENT-->
+<section class="tab tab__container tab-container">
+  <div class="tab">
+    <button class="tablinks" onclick="openTabContent(event, 'tab1')">Test stage</button>
+    <button class="tablinks" onclick="openTabContent(event, 'tab2')">Goals</button>
+    <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
+  </div>
+  
+  <div id="tab1" class="tabcontent">
+    <h3>Test stage</h3>
+ 
+    <p> 
+      The "Flexfit" app is currently in the testing phase of UX design. 
+      This phase focuses on ensuring the design's user-friendliness and effectiveness 
+      by identifying and fixing usability issues, technical problems, and design flaws. 
+      Feedback collected during testing helps improve the design, leading to a more user-centered final product. 
+      Testing provides insights into user behavior and performance metrics, such as task success rates and user 
+      satisfaction scores. Incorporating user feedback into the design process is essential for creating a 
+      user-centered, functional, and optimized design that meets user needs and business goals. 
+        <!-- <span id="dotsEmpathiseTab2">...</span><span id="moreEmpathiseTab2"> -->
+        
+        <!-- </span></p>
+        <button class="portfolio-UX01__r__btn--readMore" onclick="btnReadMoreEmpathiseTab2()" id="moreEmpathiseTab2Btn">Read more</button> -->
+
+  </div>
+  
+  <div id="tab2" class="tabcontent">
+    <h3>Usabilty test goals</h3>
+    <p> 1. Identify User Issues: Uncover problems users face during interaction and with navigation and content.</p> 
+        <p> 2. Evaluate Task Performance: Assess how well users complete tasks and find obstacles.</p> 
+          <p> 3. Gather Feedback: Collect qualitative and quantitative user feedback.
+          </p> 
+          <p> 4. Assess Learnability: Evaluate how quickly users grasp product use.
+          </p> 
+          <p> 5. Measure Effectiveness: Assess if users achieve their goals with the product.
+          </p> 
+          <p> 6. Collect Data on Error Rates: Track and analyze user errors.
+          </p> 
+          <p> 7. Evaluate Aesthetics and Design Elements: Assess visual design and interface.
+          </p> 
+          <p> 7. Quantify User Satisfaction: Measure user satisfaction with surveys to identify areas that may need improvement
+    </p> 
+    <p> 8. Prioritize Design Changes: Identify critical issues for immediate action
+    </p> 
+      
+      
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+        <span id="dotsEmpathiseTab2">...</span><span id="moreEmpathiseTab2">
+          Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+          sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis 
+          imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+          Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+        </span></p>
+        <button class="portfolio-UX01__r__btn--readMore" onclick="btnReadMoreEmpathiseTab2()" id="moreEmpathiseTab2Btn">Read more</button> -->
+  </div>
+  
+  <!-- <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div> -->
+</section>
+
+
+
+
+  <!-- <section class="case-study01__info-container">
+    <div class="case-study01__container-infoBar">
+      <h3 class="case-study01__infoBar-Heading">Postnatal app feature:</h3>
+    </div>
+    <div class="case-study01__icon-bar">
+      <p class="case-study01__icon-bar__p">
+        <i class="fa-solid fa-check case-study01__icon-bar__i"></i>
+        <span class="case-study01__icon-bar__text">Exercise app</span>
+      </p>
+      <p class="case-study01__icon-bar__p">
+        <i class="fa-solid fa-check case-study01__icon-bar__i"></i>
+        <span class="case-study01__icon-bar__text">Mental health</span>
+      </p>
+      <p class="case-study01__icon-bar__p">
+        <i class="fa-solid fa-check case-study01__icon-bar__i"></i>
+        <span class="case-study01__icon-bar__text">Nutrition app</span>
+      </p>
+      <p class="case-study01__icon-bar__p">
+        <i class="fa-solid fa-check case-study01__icon-bar__i"></i>
+        <span class="case-study01__icon-bar__text">Baby tips</span>
+      </p>
+      <p class="case-study01__icon-bar__p">
+        <i class="fa-solid fa-check case-study01__icon-bar__i"></i>
+        <span class="case-study01__icon-bar__text">Sleep log</span>
+      </p>
+    </div>
+  </section> -->
+ 
+
+        <!-- ****************************************** TIMELINE USABILITY TEST ************************************** -->
+                 <!-- PRODUCTS AND DYNAMIC PRODUCTS SECTION-->
+                 <section class="heading case-study01">
+                  <div class="heading__portfolio-UX">
+                    <h2 id="portfolio">Timeline for Usability test</h2>
+                  </div>
+                </section>
+                      <section class="portfolio-UX01">
+                      <div class="portfolio-UX01__container card mb-3" >
+                        
+                        <div class="portfolio-UX01__row row">
+                         
+                           <!---------------------------------------- Modal feature------------------------->
+                           
+                          <div class="modal-empathise portfolio-UX01__l col-md-4">
+                            <!-- <div> -->
+                            <img src="/images/usability_test_timeline_pc.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">  
+  
+                           <!-- Trigger/Open The Modal -->
+                           <button id="btnModalT1" class="modal-empathise__btn btn btn--primary  project__button">Usability test timeline</button>
+
+                           <!-- The Modal -->
+                           <div id="modalT1" class="modal">
+
+                             <!-- Modal content -->
+                             <div class="modal-content">
+                               <span class="close closeT1">&times;</span>
+                               <img src="/images/usability_test_timeline.png" class="portfolio-UX01__l__img img-fluid rounded-start" alt="...">  
+                             </div>
+
+                           </div>
+
+                         
+                         <!-- </div> -->
+                       </div>
+                          
+                          <div class="portfolio-UX01__r  col-md-8">
+                            <div class="card-body">
+                              <h5 class="portfolio-UX01__lable  portfolio-UX01__r__lable">Test</h5>
+                              <h5 class="portfolio-UX01__r__heading card-title">Usabilty test timeline</h5>
+                              <hr class="portfolio-UX01__r__underline">
+                              <p class="portfolio-UX01__r__content">
+                                Effective project planning is vital for ensuring smooth usability testing and avoiding tight deadlines. 
+                                A well-defined timeline helps set milestones and prevents rushed or delayed testing, allowing for iterative 
+                                design changes based on user insights. 
+                                <span id="dotsModalT1">...</span><span id="moreModalT1">
+                                  This timeline ensures sufficient time for participant identification, scheduling,
+                                  pilot testing, and script development. Additionally, it allows for thorough data analysis and 
+                                  report generation, leading to a more user-friendly and intuitive product tailored to user preferences, ultimately enhancing user satisfaction and experience.</span></p>
+                                <button class="portfolio-UX01__r__btn--readMore"onclick=" btnReadMoreModalT1()" id="btnMoreModalT1" >Read more</button>
+                             
+                              
+                             
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                
+
+
+ <!-- ****************************************** TIMELINE USABILITY TEST ************************************** -->
+                 <!-- PRODUCTS AND DYNAMIC PRODUCTS SECTION-->
+                 <section class="heading case-study01">
+                    <div class="heading__portfolio-UX">
+                      <h2 id="portfolio">Metod, strategy, goals</h2>
+                    </div>
+                  </section>
+                        <section class="portfolio-UX01">
+                        <div class="portfolio-UX01__container card mb-3" >
+                          
+                          <div class="portfolio-UX01__row row">
+                           
+                             <!---------------------------------------- Modal feature------------------------->
+                             
+                            <div class="modal-empathise portfolio-UX01__l col-md-4">
+                              <!-- <div> -->
+                              <img src="/images/detail_working_plan_pc.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">  
+    
+                             <!-- Trigger/Open The Modal -->
+                             <button id="btnModalT2" class="modal-empathise__btn btn btn--primary  project__button">Detail working plan</button>
+  
+                             <!-- The Modal -->
+                             <div id="modalT2" class="modal">
+  
+                               <!-- Modal content -->
+                               <div class="modal-content">
+                                 <span class="close closeT2">&times;</span>
+                                 <img src="/images/detail_working_plan.png" class="portfolio-UX01__l__img img-fluid rounded-start" alt="...">  
+                               </div>
+  
+                             </div>
+  
+                           
+                           <!-- </div> -->
+                         </div>
+                            
+                            <div class="portfolio-UX01__r  col-md-8">
+                              <div class="card-body">
+                                <h5 class="portfolio-UX01__lable  portfolio-UX01__r__lable">Test</h5>
+                                <h5 class="portfolio-UX01__r__heading card-title">Detail working plan</h5>
+                                <hr class="portfolio-UX01__r__underline">
+                                <p class="portfolio-UX01__r__content">
+                                  A detailed plan is important in usability testing for UX design because it provides clarity, consistency, and structure to the testing process. 
+                                  <span id="dotsModalT2">...</span><span id="moreModalT2">
+                                    helps allocate resources, guides participant recruitment, outlines task scenarios, 
+                                    defines data collection methods, offers a moderator's guide, plans for analysis and reporting, 
+                                    includes contingency measures, and addresses ethical considerations, all of which contribute 
+                                    to a more effective and reliable usability testing process.
+                                  </span></p>
+                                  <button class="portfolio-UX01__r__btn--readMore"onclick=" btnReadMoreModalT2()" id="btnMoreModalT2" >Read more</button>
+                               
+                                
+                               
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                
+                      
+
+                       <!-- ****************************************** PARTICIPANT SELECTION ************************************** -->
+                 <!-- PRODUCTS AND DYNAMIC PRODUCTS SECTION-->
+                 <section class="heading case-study01">
+                    <div class="heading__portfolio-UX">
+                      <h2 id="portfolio">Participant selection</h2>
+                    </div>
+                  </section>
+                        <section class="portfolio-UX01">
+                        <div class="portfolio-UX01__container card mb-3" >
+                          
+                          <div class="portfolio-UX01__row row">
+                           
+                             <!---------------------------------------- Modal feature------------------------->
+                             
+                            <div class="modal-empathise portfolio-UX01__l col-md-4">
+                              <!-- <div> -->
+                              <img src="/images/participant_recruitment_img_pc.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">  
+    
+                             <!-- Trigger/Open The Modal -->
+                             <button id="btnModalT3" class="modal-empathise__btn btn btn--primary  project__button">View participant selection</button>
+  
+                             <!-- The Modal -->
+                             <div id="modalT3" class="modal">
+  
+                               <!-- Modal content -->
+                               <div class="modal-content">
+                                 <span class="close closeT3">&times;</span>
+                                 <img src="/images/participant_recruitment_img.png" class="portfolio-UX01__l__img img-fluid rounded-start" alt="...">  
+                               </div>
+  
+                             </div>
+  
+                           
+                           <!-- </div> -->
+                         </div>
+                            
+                            <div class="portfolio-UX01__r  col-md-8">
+                              <div class="card-body">
+                                <h5 class="portfolio-UX01__lable  portfolio-UX01__r__lable">Test</h5>
+                                <h5 class="portfolio-UX01__r__heading card-title">Participant selection</h5>
+                                <hr class="portfolio-UX01__r__underline">
+                                <p class="portfolio-UX01__r__content">
+                                  Usability testing is about understanding how real users interact with a product. Choosing the right participants, who match the target user group, is key to getting valuable and relevant feedback.
+                                  <span id="dotsModalT3">...</span><span id="moreModalT3">
+                                    This helps designers make informed decisions for a better user experience. Testing with the right users can efficiently identify issues, reducing the need for extensive retesting later in the development process.
+                                  </span></p>
+                                  <button class="portfolio-UX01__r__btn--readMore"onclick=" btnReadMoreModalT3()" id="btnMoreModalT3" >Read more</button>                               
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                  
+
+
+   
+
+                   
+    <!--short hikes page health and safety accordion-->
+   
+   
+    
+    <section class="heading__portfolio-UX long-hikes-accordion__heading ">
+        <h2>Design itteration</h2>
+      </section>
+      
+      <section class="accordion_container">
+        <button class="accordion">Task1</button>
+        <div class="panel">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="/images/usablity_test_task1.1_v1.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="/images/usablity_test_task1_v1.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="/images/usablity_test_task1.2_v1.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/images/usablity_test_task1.3_v1.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                    <div class="text">Caption four</div>
+                  </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dotC1" onclick="currentSlide(1)"></span> 
+                  <span class="dotC1" onclick="currentSlide(2)"></span> 
+                  <span class="dotC1" onclick="currentSlide(3)"></span> 
+                  <span class="dotC1" onclick="currentSlide(4)"></span> 
+                </div>
+                
+          <!-- <img src="/images/viceral_donNormal_img.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">  -->
+          <!-- <h3>Baby 2 body </h3> -->
+          <!-- <p class="portfolio-UX01__r__content">
+            The app design focuses on the F scanning pattern, layer cake pattern, and spotted pattern, white space, 
+            headings, short text, different font size, colors, shape, icons, label and images. 
+          <span id="dotsMoreAccordionTextP1">...</span><span id="moreAccordionTextP1">
+            This will make it easier for Jessica to quickly scan the apps content and locate relevant information. 
+            These elemens contritbute to the visual appeal of the design and play a role in creating a 
+            positive impression 
+            </span></p>
+          <button class="portfolio-UX01__r__btn--readMore"onclick="btnReadMoreAccordionP1()" id="btnMoreAccordionTextP1" >Read more</button> -->
+          <!-- <hr class="portfolio-UX01__r__underline"> -->
+  
+          
+          <!-- <img src="/images/empathise_project_planning_pc_img.jpg" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">   -->
+        <!-- <div>
+          <h3>Baby 2 body </h3>
+          
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+          <span id="dotsEmpathiseTab2">...</span><span id="moreEmpathiseTab2">
+            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis 
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+            Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+          </span></p>
+          <button class="portfolio-UX01__r__btn--readMore" onclick="btnReadMoreEmpathiseTab2()" id="moreEmpathiseTab2Btn">Read more</button>
+        </div>
+  
+        </div> -->
+      </div>
+        <button class="accordion">Task2</button>
+        <div class="panel">
+            <div class="slideshow-container2">
+
+                <div class="mySlidesC2 fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="/images/usablity_test_task2.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlidesC2 fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="/images/usablity_test_task2.1.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlidesC2 fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="/images/usablity_test_task2.2.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlidesC2 fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/images/usablity_test_task2.3_v1.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                    <div class="text">Caption four</div>
+                  </div>
+                  
+                <a class="prev" onclick="plusSlidesC2(-1)">❮</a>
+                <a class="next" onclick="plusSlidesC2(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dotC2" onclick="currentSlideC2(1)"></span> 
+                  <span class="dotC2" onclick="currentSlideC2(2)"></span> 
+                  <span class="dotC2" onclick="currentSlideC2(3)"></span> 
+                  <span class="dotC2" onclick="currentSlideC2(4)"></span> 
+                </div>
+
+
+          <!-- <img src="/images/behavioral_donNormal_img.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="..."> 
+           <p class="portfolio-UX01__r__content">
+            Familiar design functionality such as carousel, accordions, tabs, modal, drop down, input field, 
+            read more/read less functionality are used. 
+            This aligns with behavioral design by focusing on providing interaction that are intuitive 
+            and recognizable to users, allowing her to interact with the app effectively...
+          <span id="dotsMoreAccordionTextP2">...</span><span id="moreAccordionTextP2">
+            without the need for exstensive learning. Since Jessicas time and motivation are limitated the design aims to minimize cognitive effort 
+            and enable her to perform activity efficiently. This aligns with behavioral design principle
+            that priorize ease of use and task completion
+            </span></p> 
+          <button class="portfolio-UX01__r__btn--readMore"onclick="btnReadMoreAccordionP2()" id="btnMoreAccordionTextP2" >Read more</button>  -->
+        </div>
+  
+        <button class="accordion">Task 3</button>
+        <div class="panel">
+            <div class="slideshow-container3">
+
+                <div class="mySlidesC3 fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="/images/usablity_test_task3.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlidesC3 fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="/images/usablity_test_task3.1.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlidesC3 fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="/images/usablity_test_task3.2.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlidesC3 fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/images/usablity_test_task3.3.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                    <div class="text">Caption four</div>
+                  </div>
+                  
+                <a class="prev" onclick="plusSlidesC3(-1)">❮</a>
+                <a class="next" onclick="plusSlidesC3(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dotC3" onclick="currentSlideC3(1)"></span> 
+                  <span class="dotC3" onclick="currentSlideC3(2)"></span> 
+                  <span class="dotC3" onclick="currentSlideC3(3)"></span> 
+                  <span class="dotC3" onclick="currentSlideC3(4)"></span> 
+                </div>
+
+
+          <!-- <img src="/images/reflective_donNormal_img.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="..."> 
+          <p class="portfolio-UX01__r__content">
+            The app has a well structured site architecture, provide a good combination of images, 
+            text, buttons, icons, familiar design components like accordion, tabs, modal,
+             drop down to make Jessica reach the goal in a efficient way regardless of her experience level. ...
+          <span id="dotsMoreAccordionTextP3">...</span><span id="moreAccordionTextP3">
+            Jessica can easily navigate through activity options, utilize back and forward buttons, 
+            apply filters, track progress via breadcrumbs, access dropdown menu 
+            and explore off-canvas content. The step by step information during sign up is designed
+            to accomondate users like Jessica who have a limited attention span. 
+            To avoid overwhelming her with text, most information is condensed within 
+            accordions and off-canvas elements, allowing users to click and expand section for futher reading.
+            The app place users in ful control over their action, activity, 
+            reading preferences and task. Overall, the user experiences is seamless, cohensive,
+             and intuitive, offering a logical, fun, journey throughout 
+            </span></p> 
+          <button class="portfolio-UX01__r__btn--readMore"onclick="btnReadMoreAccordionP3()" id="btnMoreAccordionTextP3" >Read more</button>  -->
+        </div> 
+
+        <!-- <button class="accordion">Task 4</button>
+        <div class="panel">
+            <div class="slideshow-container4">
+
+                <div class="mySlidesC4 fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="/images/brainstorming_modal_img.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlidesC4 fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="/images/brainstorming_modal_img.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlidesC4 fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="/images/swot_analysis.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlidesC4 fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/images/swot_analysis.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                    <div class="text">Caption four</div>
+                  </div>
+                  
+                <a class="prev" onclick="plusSlidesC4(-1)">❮</a>
+                <a class="next" onclick="plusSlidesC4(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dotC4" onclick="currentSlideC4(1)"></span> 
+                  <span class="dotC4" onclick="currentSlideC4(2)"></span> 
+                  <span class="dotC4" onclick="currentSlideC4(3)"></span> 
+                  <span class="dotC4" onclick="currentSlideC4(4)"></span> 
+                </div> -->
+          <!-- <img src="/images/style_guide.png" class=" modal-empathise__img-container portfolio-UX01__l__img  img-fluid rounded-start" alt="...">  -->
+          <!-- <p class="portfolio-UX01__r__content">
+            The app has a well structured site architecture, provide a good combination of images, 
+            text, buttons, icons, familiar design components like accordion, tabs, modal,
+             drop down to make Jessica reach the goal in a efficient way regardless of her experience level. ...
+          <span id="dotsMoreAccordionTextP3">...</span><span id="moreAccordionTextP3">
+            Jessica can easily navigate through activity options, utilize back and forward buttons, 
+            apply filters, track progress via breadcrumbs, access dropdown menu 
+            and explore off-canvas content. The step by step information during sign up is designed
+            to accomondate users like Jessica who have a limited attention span. 
+            To avoid overwhelming her with text, most information is condensed within 
+            accordions and off-canvas elements, allowing users to click and expand section for futher reading.
+            The app place users in ful control over their action, activity,       
+            reading preferences and task. Overall, the user experiences is seamless, cohensive,
+             and intuitive, offering a logical, fun, journey throughout 
+            </span></p> 
+          <button class="portfolio-UX01__r__btn--readMore"onclick="btnReadMoreAccordionP3()" id="btnMoreAccordionTextP3" >Read more</button>  -->
+        <!-- </div>  -->
+        <!-- <button class="accordion">Task 5</button>
+        <div class="panel">
+            <div class="slideshow-container5">
+                <div class="mySlidesC5 fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="/images/brainstorming_modal_img.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlidesC5 fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="/images/brainstorming_modal_img.png" class="test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlidesC5 fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="/images/swot_analysis.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlidesC5 fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/images/swot_analysis.png" class=" test_img portfolio-UX01__l__img img-fluid rounded-start">
+                    <div class="text">Caption four</div>
+                  </div>
+                  
+                <a class="prev" onclick="plusSlidesC5(-1)">❮</a>
+                <a class="next" onclick="plusSlidesC5(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dotC5" onclick="currentSlideC5(1)"></span> 
+                  <span class="dotC5" onclick="currentSlideC5(2)"></span> 
+                  <span class="dotC5" onclick="currentSlideC5(3)"></span> 
+                  <span class="dotC5" onclick="currentSlideC5(4)"></span> 
+                </div>
+      
+        </div> -->
+      </section>
+
+      
+  <footer>
+      <!--FOOTER SECTION-->
+      <footer class="footer footer__style footer__case-study01">
+        <!--FOOTER LEFT SECTION-->
+        <div class="footer-l footer__case-study01-l footer__case-study01-l-styling container-fluid">
+          <div class="row">
+            <div class="footer-l__content col-md-4">
+              <div class="footer-l__logo">
+                <a href="index.html">
+                  <img
+                    src="../../images/logo_footer.png"
+                    alt="Aina Bjerke logo"
+                    class="footer-l__logo-image"
+                  />            
+                </a>
+              </div>
+              <div class="footer-l__info">
+                <ul class="footer-l__contact" id="contact">
+                  <li class="footer-l__contact--item">
+                    <a href="tel:46953337" class="footer-l__link">
+                      <span class="footer-l__icons">
+                        <i class="fas fa-phone-alt"></i>
+                      </span>
+                      +47 46 95 33 37
+                    </a>
+                  </li>
+                  <li class="footer-l__contact--item">
+                    <a
+                      href="mailto:aina.bjerke@hotmail.com"
+                      class="footer-l__link"
+                    >
+                      <span class="footer-l__icons">
+                        <i class="fas fa-envelope-open-text"></i>
+                      </span>
+                      aina.bjerke@hotmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <!--FOOTER RIGHT SECTION-->
+            <div class="footer-r col-md-8">
+              <div class="footer-r__content">
+                <h4 class="footer-r__heading">Information</h4>
+  
+                <ul class="footer-r__list">
+                  <li class="footer-r__item">
+                    <a href="/index.html#portfolio" class="footer-r__link">Portfolio</a>
+                  </li>
+                  <li class="footer-r__item">
+                    <a href="/index.html#aboutme" class="footer-r__link">About me</a>
+                  </li>
+                  <li class="footer-r__item">
+                    <a href="/index.html#workandeducation" class="footer-r__link">Work and education</a>
+                  </li>
+                  <li class="footer-r__item">
+                    <a href="/index.html#Skills-and-tools" class="footer-r__link">Skills and tools</a>
+                  </li>
+                </ul>
+  
+                <!-- SOCIAL MEDIA SECTION -->
+                <div class="footer-r__smedia">
+                  <h4 class="footer-r__smedia--heading">
+                    Connect with me:
+                  </h4>
+                  <a href="https://github.com/ainabjerke" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://no.linkedin.com/in/aina-bjerke-a2b114172" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="/assets/aina_bjerke_cv.pdf" target="_blank">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                </div>
+                <!-- COPY RIGHT SECTION -->
+                <div class="footer-r__copyright">
+                  <p>
+                    &copy; 2022 Portfolio | Designed and coded by Aina Bjerke and
+                    all rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </footer>
+</main>
+     <!-- ****************************************** JS SECTION: ************************************** -->
+    <script
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/js/index.js" type="module"></script>
+    <script src="/js/components/features/tabs/detail/casestudy01/tabEmpathise.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMoreEmpathiseTab2.js" type="text/javascript"></script>
+    <!-- <script src="/js/components/features/modal/detail/casestudy01/modalE1.js" type="text/javascript"></script> -->
+    <script src="/js/components/features/modal/detail/casestudy01/modalT1.js" type="text/javascript"></script>
+    <script src="/js/components/features/modal/detail/casestudy01/modalT2.js" type="text/javascript"></script>
+    <script src="/js/components/features/modal/detail/casestudy01/modalT3.js" type="text/javascript"></script>
+    <!-- <script src="/js/components/features/modal/detail/casestudy01/modalI2.js" type="text/javascript"></script>
+    <script src="/js/components/features/modal/detail/casestudy01/modalI3.js" type="text/javascript"></script> -->
+    <script src="/js/components/features/readmore/detail/casestudy01/readMoreTestModal1.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMoreTestModal2.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMoreTestModal3.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMoreIdeateModal3.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMorePrototypeAccordion1.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMorePrototypeAccordion2.js" type="text/javascript"></script>
+    <script src="/js/components/features/readmore/detail/casestudy01/readMorePrototypeAccordion3.js" type="text/javascript"></script>
+    <script src="/js/components/features/carousel/caseStudy01/carouselT1.js" type="text/javascript"></script>
+    <script src="/js/components/features/carousel/caseStudy01/carouselT2.js" type="text/javascript"></script>
+    <script src="/js/components/features/carousel/caseStudy01/carouselT3.js" type="text/javascript"></script>
+    <script src="/js/components/features/carousel/caseStudy01/carouselT4.js" type="text/javascript"></script>
+    <script src="/js/components/features/carousel/caseStudy01/carouselT5.js" type="text/javascript"></script>
+    <!-- <script src="/js/tab.js" type="text/javascript"></script> -->
+    <script src="/js/accordion.js" type="text/javascript"></script>
+  </div>
+  </body>
+</html>

@@ -101,6 +101,15 @@
     }
   }
 
+  &__subheading-UI-UX {
+    margin-top: 5px;
+    margin-bottom: -18px;
+    margin-left: -179px !important;
+    @include respond-below(xs) {
+      margin-left: 0px !important;
+    }
+  }
+
   &__img--tertiary {
     display: none;
     // @media screen and (min-width: 768px) and (max-width: 990px)
@@ -228,3 +237,6 @@
     }
   }
 }
+
+// margin-top: 5px;
+//   margin-bottom: -18px;

@@ -6,24 +6,56 @@
 .heading {
   &__portfolio {
     color: $white-color;
-    margin-top: -490px;
-    margin-left: 5px;
+    // margin-top: -490px;
+    // margin-left: 5px;
     background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 80px;
 
     // @media screen and (min-width: 768px) and (max-width: 990px)
-    @include respond-between(sm, md) {
-      margin-top: -587px;
-    }
+    // @include respond-between(sm, md) {
+    //   margin-top: -587px;
+    // }
     // @media screen and (min-width: 568px) and (max-width: 767px)
-    @include respond-between(xs, sm) {
-      margin-top: -766px;
-    }
+    // @include respond-between(xs, sm) {
+    //   margin-top: -766px;
+    // }
     // @media screen and (max-width: 567px)
+    // @include respond-below(xs) {
+    //   margin-top: -964px;
+    // }
+  }
+
+  &__portfolio-UX {
+    margin-top: -450px;
+    color: $white-color;
+    // margin-top: 100px;
+    // margin-bottom: -134px;
+    margin-bottom: 45px;
+    background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__portfolio-UX-index {
+    @include respond-between(sm, md) {
+      margin-top: -636px !important;
+    }
+    @include respond-between(xs, sm) {
+      margin-top: -816px !important;
+    }
     @include respond-below(xs) {
-      margin-top: -964px;
+      margin-top: -985px !important;
+    }
+  }
+
+  &__portfolio-frontend {
+    margin-top: -66px;
+    @include respond-below(sm) {
+      margin-top: 130px;
     }
   }
 

@@ -187,3 +187,33 @@
     }
   }
 }
+
+.footer {
+  &__case-study01 {
+    margin-top: auto;
+    // padding-right: 0px !important;
+    // padding-left: 0px !important;
+    margin-left: -10px !important;
+    margin-right: -7px !important;
+  }
+
+  &__case-study01-l {
+    // padding-left: 0px !important;
+    // padding-right: 0px !important;
+    // max-width: 1157px;
+    // padding-right: 0px;
+    max-width: none !important;
+    width: auto;
+  }
+
+  &__case-study01-l-styling {
+    margin-top: 80px;
+  }
+}
+
+// .footer {
+//   &__case-study01 {
+//     margin-top: 514px;
+//   }
+// }
+// __case-study01

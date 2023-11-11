@@ -102,9 +102,42 @@ export function launchAllProjects(projects) {
       const webpage = document.querySelector(".btn-webpage");
       webpage.setAttribute("href", project.webpageUrl); //name="href" and value= dynamic project webpage url/project.webpageUrl retrived from api
 
+      //New Code
+      const webpageLink = document.querySelector(".btn-webpage");
+
+      webpageLink.addEventListener("click", (event) => {
+        // Prevent the default behavior of the link to avoid opening the URL in the current window.
+        event.preventDefault();
+
+        // Get the URL from your project object (assuming project is defined somewhere in your code).
+        const projectUrl = project.webpageUrl;
+
+        // Open a new window or tab with the project's URL.
+        window.open(projectUrl, "_blank");
+      });
+
       //GETS THE class="btn-github" IN HTML LINE 219
       const github = document.querySelector(".btn-github");
       github.setAttribute("href", project.githubUrl); //name="href" and value= dynamic project github url/project.githubUrl retrived from api
+
+      // const githubLink = document.querySelector(".btn-github");
+
+      // githubLink.addEventListener("click", (event) => {
+      //   // Prevent the default behavior of the link to avoid opening the URL in the current window.
+      //   event.preventDefault();
+      //   // Open a new window or tab with the project's URL.
+      //   const projectURL = project.webpageUrl;
+      //   window.open(projectURL, "_blank");
+      // });
+
+      const githubLink = document.querySelector(".btn-github");
+      githubLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        const githubUrl = project.githubUrl; // Replace 'project.githubUrl' with your actual URL
+
+        // Open the link in a new window
+        window.open(githubUrl, "_blank");
+      });
 
       //GETS THE modal-r__header IN HTML LINE 229:
       const header = document.querySelector(".modal-r__header");

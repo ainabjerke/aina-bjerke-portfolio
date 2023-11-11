@@ -124,3 +124,31 @@
     font-size: 14px;
   }
 }
+
+.prototype {
+  &__btn {
+    margin-top: 20px;
+    margin-top: 49px;
+    margin-bottom: -12px;
+    // width: 101.6%;
+    // margin-left: -10px;
+    // background: rgb(60, 69, 125) !important;
+
+    @include respond-above(lg) {
+      width: 100.8%;
+      margin-left: -5px;
+    }
+    @include respond-between(md, lg) {
+      width: 100.8%;
+      margin-left: -5px;
+    }
+    @include respond-between(sm, md) {
+      width: 100.8%;
+      margin-left: -5px;
+    }
+    @include respond-below(sm) {
+      width: 100.8%;
+      margin-left: -5px;
+    }
+  }
+}
