@@ -130,6 +130,32 @@
       height: 344px;
     }
   }
+  &__main-imgCS3 {
+    background-image: url("/images/easy_lift_img_01.jpg");
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    width: 100%;
+    // height: 188px;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    // height: 550px;
+    @include respond-above(lg) {
+      height: 550px;
+    }
+    @include respond-between(md, lg) {
+      height: 450px;
+    }
+    @include respond-between(sm, md) {
+      height: 344px;
+    }
+    @include respond-below(sm) {
+      height: 344px;
+    }
+  }
+
 
   &__btn {
     width: 56%;

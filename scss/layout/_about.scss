@@ -81,7 +81,9 @@
   &__content-r {
     // @media screen and (min-width: 768px) and (max-width: 991px)
     @include respond-between(sm, md) {
-      height: 446px;
+      // height: 446px;
+      // height: 489px!important;
+      height: 489px!important;
     }
     // @media screen and (min-width: 568px) and (max-width: 767px)
     @include respond-between(xs, sm) {
@@ -98,7 +100,11 @@
     // @media screen and (min-width: 1200px)
     @include respond-above(lg) {
       margin-top: -134px;
-      margin-left: -131px;
+      // margin-left: -131px;
+      margin-left: -192px!important;
+      z-index: 2!important;
+    position: relative!important;
+  
     }
     // @media screen and (min-width: 992px) and (max-width: 1199px)
     @include respond-between(md, lg) {

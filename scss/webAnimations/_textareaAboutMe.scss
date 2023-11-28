@@ -27,27 +27,48 @@ textarea {
   }
   // @media screen and (min-width: 991px) and (max-width: 1199px)
   @include respond-between(md, lg) {
-    max-width: 413px;
+    // max-width: 418px;
+    // margin-top: -189px;
+    // margin-left: -60px;
+    // // height: 356px;
+    // height: 432px!important;
+    // padding: 1rem;
+    max-width: 462px;
     margin-top: -189px;
     margin-left: -60px;
-    height: 356px;
+    height: 382px !important;
     padding: 1rem;
+    position: relative;
+    z-index: 2;
+  
   }
   // @media screen and (min-width: 768px) and (max-width: 990px)
   @include respond-between(sm, md) {
+    // max-width: 413px;
+    // margin-top: -113px;
+    // margin-left: -34px;
+    // height: 318px;
+    // z-index: 3;
+    // position: relative;
     max-width: 413px;
-    margin-top: -113px;
+    margin-top: -155px;
     margin-left: -34px;
-    height: 318px;
+    height: 430px;
     z-index: 3;
     position: relative;
   }
   // @media screen and (min-width: 568px) and (max-width: 767px)
   @include respond-between(xs, sm) {
+    // max-width: 459px;
+    // margin-top: -48px;
+    // margin-left: -37px;
+    // height: 353px;
     max-width: 459px;
-    margin-top: -48px;
+    margin-top: -81px;
     margin-left: -37px;
-    height: 353px;
+    height: 369px;
+    position: relative;
+    z-index: 3;
   }
   // @media screen and (max-width: 567px)
   @include respond-below(xs) {

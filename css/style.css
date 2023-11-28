@@ -1,10 +1,13 @@
 @charset "UTF-8";
-/**** *** *** ABSTRACT SECTION *** *** ***/ /*** *** *** COLOR PALETTE SECTION:  *** *** ***/ /*
+/**** *** *** ABSTRACT SECTION *** *** ***/
+/*** *** *** COLOR PALETTE SECTION:  *** *** ***/
+/*
 
 Code from:
 https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
 
-*/ /*** *** *** COMPONENTS SECTION *** *** ***/
+*/
+/*** *** *** COMPONENTS SECTION *** *** ***/
 /*** *** *** BUTTON SECTION:  *** *** ***/
 .btn {
   text-transform: uppercase;
@@ -354,10 +357,10 @@ iframe {
 
 @media (min-width: 1200px) {
   .container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
     max-width: 1134px;
   }
 }
@@ -656,6 +659,34 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__main-imgCS3 {
+  background-image: url("/images/easy_lift_img_01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__main-imgCS3 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__main-imgCS3 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__main-imgCS3 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__main-imgCS3 {
+    height: 344px;
+  }
+}
 .case-study01-jumbotron__btn {
   width: 56%;
   margin-top: 14px;
@@ -854,6 +885,72 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__info-main-imgCS03 {
+  background-image: url("/images/easylift_img_02.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__info-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__info-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__info-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__info-main-imgCS03 {
+    height: 344px;
+  }
+}
+.case-study01-jumbotron__info-main-imgCS02 {
+  background-image: url("/images/xplore_img_02.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__info-main-imgCS02 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__info-main-imgCS02 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__info-main-imgCS02 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__info-main-imgCS02 {
+    height: 344px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .case-study01-jumbotron__info-text-container {
     top: 45%;
@@ -998,6 +1095,39 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__empathise-main-imgCS03 {
+  background-image: url("/images/easylift_img_CS02_empathise01_v1.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__empathise-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__empathise-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__empathise-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__empathise-main-imgCS03 {
+    height: 344px;
+  }
+}
 .case-study01-jumbotron__define-main-img {
   background-image: url("/images/flex_fit_img_define01.jpg");
   width: 100%;
@@ -1061,6 +1191,39 @@ body {
 }
 @media (max-width: 767px) {
   .case-study01-jumbotron__define-main-imgCS02 {
+    height: 344px;
+  }
+}
+.case-study01-jumbotron__define-main-imgCS03 {
+  background-image: url("/images/easylift_img_CS03_define_01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__define-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__define-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__define-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__define-main-imgCS03 {
     height: 344px;
   }
 }
@@ -1130,6 +1293,39 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__ideate-main-imgCS03 {
+  background-image: url("/images/easylift_img_ideate01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__ideate-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__ideate-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__ideate-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__ideate-main-imgCS03 {
+    height: 344px;
+  }
+}
 .case-study01-jumbotron__prototype-main-img {
   background-image: url("/images/flex_fit_img_prototype01.jpg");
   width: 100%;
@@ -1196,6 +1392,39 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__prototype-main-imgCS03 {
+  background-image: url("/images/easylift_img_CS02_prototype_01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__prototype-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__prototype-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__prototype-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__prototype-main-imgCS03 {
+    height: 344px;
+  }
+}
 .case-study01-jumbotron__test-main-img {
   background-image: url("/images/flex_fit_img_test01.jpg");
   width: 100%;
@@ -1259,6 +1488,39 @@ body {
 }
 @media (max-width: 767px) {
   .case-study01-jumbotron__test-main-imgCS02 {
+    height: 344px;
+  }
+}
+.case-study01-jumbotron__test-main-imgCS03 {
+  background-image: url("/images/easylift_img_CS02_test_01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__test-main-imgCS03 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__test-main-imgCS03 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__test-main-imgCS03 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__test-main-imgCS03 {
     height: 344px;
   }
 }
@@ -1630,19 +1892,19 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .prev,
-.next {
+  .next {
     margin-left: -346px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .prev,
-.next {
+  .next {
     margin-left: -53%;
   }
 }
 @media (max-width: 575px) {
   .prev,
-.next {
+  .next {
     margin-left: -55%;
   }
 }
@@ -1750,8 +2012,8 @@ body {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
-.next,
-.text {
+  .next,
+  .text {
     font-size: 11px;
   }
 }
@@ -2296,7 +2558,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .about__content-r {
-    height: 446px;
+    height: 489px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2312,7 +2574,9 @@ body {
 @media (min-width: 1200px) {
   .about__text {
     margin-top: -134px;
-    margin-left: -131px;
+    margin-left: -192px !important;
+    z-index: 2 !important;
+    position: relative !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3459,6 +3723,10 @@ body {
   display: none;
 }
 
+#moreIndexCS3 {
+  display: none;
+}
+
 #moreAccordionTextE1 {
   display: none;
 }
@@ -3606,19 +3874,21 @@ textarea {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   textarea {
-    max-width: 413px;
+    max-width: 462px;
     margin-top: -189px;
     margin-left: -60px;
-    height: 356px;
+    height: 382px !important;
     padding: 1rem;
+    position: relative;
+    z-index: 2;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   textarea {
     max-width: 413px;
-    margin-top: -113px;
+    margin-top: -155px;
     margin-left: -34px;
-    height: 318px;
+    height: 430px;
     z-index: 3;
     position: relative;
   }
@@ -3626,9 +3896,11 @@ textarea {
 @media (min-width: 576px) and (max-width: 767px) {
   textarea {
     max-width: 459px;
-    margin-top: -48px;
+    margin-top: -81px;
     margin-left: -37px;
-    height: 353px;
+    height: 369px;
+    position: relative;
+    z-index: 3;
   }
 }
 @media (max-width: 575px) {

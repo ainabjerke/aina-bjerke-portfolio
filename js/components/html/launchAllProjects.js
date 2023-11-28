@@ -27,6 +27,7 @@ export function launchAllProjects(projects) {
       ".projects"
     );
   }
+  // console.log("products ===", products);
   //https://www.w3schools.com/js/js_htmldom.asp
   //https://www.w3schools.com/js/js_htmldom_nodes.asp
   //https://www.w3schools.com/jsref/prop_element_classlist.asp
@@ -40,30 +41,7 @@ export function launchAllProjects(projects) {
   //https://javascript.info/nullish-coalescing-operator
   //https://www.w3schools.com/jsref/met_element_closest.asp
   //FUNCTION THAT CREATES THE DYNAMIC PROJECT THAT IS SORTED STORED IN HEROKU STRAPI API
-  const webpageLink = document.querySelector(".btn-webpage");
-  const githubLink = document.querySelector(".btn-github");
-
-  webpageLink.addEventListener("click", (event) => {
-    // Prevent the default behavior of the link to avoid opening the URL in the current window.
-    event.preventDefault();
-
-    // Get the URL from your project object (assuming project is defined somewhere in your code).
-    const projectUrl = webpageLink.getAttribute("href"); // Replace 'project.githubUrl' with your actual URL
-
-    // Open a new window or tab with the project's URL.
-    window.open(projectUrl);
-  });
-
-  githubLink.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the default behavior of the link
-
-    const githubUrl = githubLink.getAttribute("href"); // Replace 'project.githubUrl' with your actual URL
-
-    // Open the link in a new window
-    window.open(githubUrl);
-  });
-
-  sorted.forEach(function (project, index) {
+  sorted.forEach(function (project) {
     //CREATES TEXT NODE WITH THE TEXT VIEW MORE:
     const viewMoreText = document.createTextNode("View more");
     //CREATES <button> ELEMENT:
@@ -104,15 +82,11 @@ export function launchAllProjects(projects) {
     anchor.append(button);
     //ADDING AND ONCLICK EVENT TO THE ANCHOR/<a> THAT ALSO TARGETS THE IMAGE, HEADING, BUTTON ELEMENT
     anchor.onclick = function (event) {
-      event.preventDefault();
-
-      webpageLink.setAttribute("href", project.webpageUrl); //name="href" and value= dynamic project webpage url/project.webpageUrl retrived from api
-      githubLink.setAttribute("href", project.githubUrl); //name="href" and value= dynamic project webpage url/project.webpageUrl retrived from api
-
       //GETS THE id="myModalOne" LINE 196 IN HTML
       const modal = document.querySelector("#myModalOne");
       //DISPLAY THE MODAL WHEN USER CLICKS ON THE IMAGE HEADING OR BUTTON
       modal.style.display = "block";
+      console.log("anchor", project);
 
       //GETS THE class="modal-l__img" IN HTML LINE 208
       const modalImage = document.querySelector(".modal-l__img");
@@ -124,6 +98,28 @@ export function launchAllProjects(projects) {
       //textContent property sets or returns the text content of the specified node, and all its descendants
       heading.textContent = project.title; //heading = set the text content of a node to get the dynamic project title/project.title retrived from api
 
+      //GETS THE class="btn-webpage" IN HTML LINE 215
+      const webpage = document.querySelector(".btn-webpage");
+      webpage.setAttribute("href", project.webpageUrl); //name="href" and value= dynamic project webpage url/project.webpageUrl retrived from api
+
+      //New Code
+      const webpageLink = document.querySelector(".btn-webpage");
+
+      webpageLink.addEventListener("click", (event) => {
+        // Prevent the default behavior of the link to avoid opening the URL in the current window.
+        event.preventDefault();
+
+        // Get the URL from your project object (assuming project is defined somewhere in your code).
+        const projectUrl = project.webpageUrl;
+
+        // Open a new window or tab with the project's URL.
+        window.open(projectUrl, "_blank");
+      });
+
+      //GETS THE class="btn-github" IN HTML LINE 219
+      const github = document.querySelector(".btn-github");
+      github.setAttribute("href", project.githubUrl); //name="href" and value= dynamic project github url/project.githubUrl retrived from api
+
       // const githubLink = document.querySelector(".btn-github");
 
       // githubLink.addEventListener("click", (event) => {
@@ -133,6 +129,15 @@ export function launchAllProjects(projects) {
       //   const projectURL = project.webpageUrl;
       //   window.open(projectURL, "_blank");
       // });
+
+      const githubLink = document.querySelector(".btn-github");
+      githubLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        const githubUrl = project.githubUrl; // Replace 'project.githubUrl' with your actual URL
+
+        // Open the link in a new window
+        window.open(githubUrl, "_blank");
+      });
 
       //GETS THE modal-r__header IN HTML LINE 229:
       const header = document.querySelector(".modal-r__header");
@@ -145,6 +150,7 @@ export function launchAllProjects(projects) {
       const projectLanguages = project.languages.split(" "); //the dynamic string project.languages api data gets splitted and stored in projectLanguages
       //LOOPS THROUGH projectLanguages THAT ALREADY STORES THE DYNAMIC STRING PROJECT.LANGUAGES API DATA THAT HAS BEEN SPLITTED
       projectLanguages.forEach((language) => {
+        console.log("language", language);
         //CREATES <span> ELEMENT:
         const span = document.createElement("span");
         //ADDING MULTIPLE CLASSES TO THE SPAN ELEMENT:
@@ -160,6 +166,7 @@ export function launchAllProjects(projects) {
       const subheading = document.querySelector(".modal-r__subheading");
       //textContent property sets or returns the text content of the specified node, and all its descendants
       subheading.textContent = project.subTitleOne; //subheading = set the text content of a node to get the dynamic project subTitleOne retrived from api
+      console.log("project test:", project);
 
       //GETS THE class="modal-project-sub-header__grade" IN HTML LINE 250:
       const gradeContainer = document.querySelector(
@@ -258,6 +265,7 @@ export function launchAllProjects(projects) {
   const viewMoreBtn = document.querySelector(".project a");
   //GETS THE id="myModalOne" LINE 196 IN HTML
   const modal = document.querySelector("#myModalOne");
+  console.log(modal);
   //GETS THE class="closeOne" LINE 198 IN HTML
   const close = document.querySelector(".closeOne");
   //ADDING AN ONCLICK EVENT TO THE variable close/".closeOne"
@@ -265,7 +273,6 @@ export function launchAllProjects(projects) {
     //modal close when user clicks on the close/".closeOne"
     modal.style.display = "none";
   };
-
   window.onclick = function (event) {
     //modal does not close if the user clicks on the modal
     //The closest() method searches up the DOM tree for elements which matches a specified CSS selector.
@@ -273,12 +280,13 @@ export function launchAllProjects(projects) {
     //The closest() method returns null() if no match is found.
     const modalL = event.target.closest(".modal-l__content"); // Is the event target a child of .modal-l
     const modalR = event.target.closest(".modal-r__content");
-    console.log({ modalL, modalR });
     //if not modalL and !modalR then close the modal
     if (!modalL && !modalR) {
+      console.log("not isModal");
       modal.style.display = "none";
     }
   };
+  // console.log(viewMoreBtn);
 }
 
 document.querySelectorAll(".modal-content").forEach((modal) => {
