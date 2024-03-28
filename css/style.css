@@ -298,7 +298,6 @@ body {
   box-sizing: border-box;
   background-color: rgb(7, 12, 44);
   scroll-margin-top: 0px;
-  /* background-color: red; */
 }
 
 body {
@@ -3729,6 +3728,10 @@ body {
 }
 
 #moreIndexCS3 {
+  display: none;
+}
+
+#moreIndexCS4 {
   display: none;
 }
 
