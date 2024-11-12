@@ -58,7 +58,43 @@
     width: 100%;
   }
 
+  &__pdfButtonL {
+    
+    @include respond-above(md) {
+    width: 100%;
+    // background-color: rgb(60, 69, 125);
+  }
+  @include respond-below(lg) {
+    display: none;
+}
+}
+
+&__pdfButtonS {
+  @include respond-above(md) {
+   display: none;
+    // background-color: rgb(60, 69, 125);
+  
+  }
+  @include respond-below(lg) {
+  display: block;
+
+}
+
+@include respond-below(md) {
+  padding: 0.7rem 0rem;
+  font-size: 0.8rem;
+}
+}
+
   &__button {
     width: 100%;
+    background-color: rgb(60, 69, 125);
+    // color:red;
+    // background-color: red;
+
+  @include respond-below(md) {
+padding: 0.8rem 1rem;
+font-size: 0.7rem;
   }
+}
 }

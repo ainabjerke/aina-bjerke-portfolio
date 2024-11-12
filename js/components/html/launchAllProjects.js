@@ -69,7 +69,7 @@ export function launchAllProjects(projects) {
     //CREATES <button> ELEMENT:
     const button = document.createElement("button");
     //ADDING MULTIPLE CLASSES TO THE BUTTON ELEMENT:
-    button.classList.add("btn", "btn--primary", "btn--sm", "project__button");
+    button.classList.add("btn", "btn--primary", "btn--sm", "btn--tertiary", "project__button");
     //ADD VIEWMORETEXT TO BUTTON ELEMENT BY USING.APPEND:
     button.append(viewMoreText);
     //CREATE TEXT NODE THAT GETS THE DYNAMIC PROJECT TITLE FROM API:

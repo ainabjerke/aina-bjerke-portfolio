@@ -78,6 +78,7 @@
       margin-left: 0px;
     }
   }
+  
 }
 
 .portfolio-UX01__r {
@@ -172,7 +173,55 @@
     outline: inherit;
     color: #bf63b9;
   }
+
 }
+
+.case-study01__r{
+  &__checkIcons04 {
+
+  @include respond-above(lg) {
+    margin-left: -15px;
+  }
+
+  @include respond-below(sm) {
+    margin-left: 0px;
+  }
+}
+}
+
+.cs04__container {
+  &__row {
+    display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -45px;
+  margin-left: -31px;
+  }
+}
+
+.prototype__btn{
+&__cs04{
+    border: 2px solid !important;
+  border-color: white !important;
+  background-color: #070C2C!important;
+}
+
+}
+
+
+// .prototype__btn__04{
+//   border: 2px solid;
+//     border-top-color: currentcolor;
+//     border-right-color: currentcolor;
+//     border-bottom-color: currentcolor;
+//     border-left-color: currentcolor;
+//   border-top-color: currentcolor;
+//   border-right-color: currentcolor;
+//   border-bottom-color: currentcolor;
+//   border-left-color: currentcolor;
+//   border-color: white;
+//   background-color: #070C2C;
+// }
 
 //read more caseStudyInfo1 I=info c02=case02
 #more {

@@ -95,7 +95,7 @@ https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstr
 }
 .btn--sm {
   padding: 0.8rem 3rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .btn--xs {
   padding: 0.8rem 2rem;
@@ -428,8 +428,41 @@ body {
   margin-bottom: 28px;
   width: 100%;
 }
+@media (min-width: 992px) {
+  .project__pdfButtonL {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .project__pdfButtonL {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .project__pdfButtonS {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .project__pdfButtonS {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .project__pdfButtonS {
+    padding: 0.7rem 0rem;
+    font-size: 0.8rem;
+  }
+}
 .project__button {
   width: 100%;
+  background-color: rgb(60, 69, 125);
+}
+@media (max-width: 991px) {
+  .project__button {
+    padding: 0.8rem 1rem;
+    font-size: 0.7rem;
+  }
 }
 
 .heading__portfolio {
@@ -687,6 +720,34 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__main-imgCS4 {
+  background-image: url("/images/GigHub_img_01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__main-imgCS4 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__main-imgCS4 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__main-imgCS4 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__main-imgCS4 {
+    height: 344px;
+  }
+}
 .case-study01-jumbotron__btn {
   width: 56%;
   margin-top: 14px;
@@ -766,7 +827,7 @@ body {
   position: relative;
   z-index: 1;
   margin-left: 99px;
-  background: #646673;
+  background: #272727;
   color: white;
   width: 83%;
   padding: 20px;
@@ -951,6 +1012,39 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__info-main-imgCS04 {
+  background-image: url("/images/GigHub_img_02.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__info-main-imgCS04 {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__info-main-imgCS04 {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__info-main-imgCS04 {
+    height: 344px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__info-main-imgCS04 {
+    height: 344px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .case-study01-jumbotron__info-text-container {
     top: 45%;
@@ -1128,6 +1222,42 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__empathise-main-imgCS04 {
+  background-image: url("/images/GigHub_img_empathise01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__empathise-main-imgCS04 {
+    height: 620px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__empathise-main-imgCS04 {
+    height: 523px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__empathise-main-imgCS04 {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__empathise-main-imgCS04 {
+    height: 344px;
+    height: 384px;
+    width: inherit;
+    background-repeat: round;
+  }
+}
 .case-study01-jumbotron__define-main-img {
   background-image: url("/images/flex_fit_img_define01.jpg");
   width: 100%;
@@ -1225,6 +1355,42 @@ body {
 @media (max-width: 767px) {
   .case-study01-jumbotron__define-main-imgCS03 {
     height: 344px;
+  }
+}
+.case-study01-jumbotron__define-main-imgCS04 {
+  background-image: url("/images/GigHub_img_define01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__define-main-imgCS04 {
+    height: 620px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__define-main-imgCS04 {
+    height: 523px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__define-main-imgCS04 {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__define-main-imgCS04 {
+    height: 344px;
+    height: 384px;
+    width: inherit;
+    background-repeat: round;
   }
 }
 .case-study01-jumbotron__ideate-main-img {
@@ -1326,6 +1492,42 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__ideate-main-imgCS04 {
+  background-image: url("/images/GigHub_img_ideate01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__ideate-main-imgCS04 {
+    height: 620px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__ideate-main-imgCS04 {
+    height: 523px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__ideate-main-imgCS04 {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__ideate-main-imgCS04 {
+    height: 344px;
+    height: 384px;
+    width: inherit;
+    background-repeat: round;
+  }
+}
 .case-study01-jumbotron__prototype-main-img {
   background-image: url("/images/flex_fit_img_prototype01.jpg");
   width: 100%;
@@ -1423,6 +1625,42 @@ body {
 @media (max-width: 767px) {
   .case-study01-jumbotron__prototype-main-imgCS03 {
     height: 344px;
+  }
+}
+.case-study01-jumbotron__prototype-main-imgCS04 {
+  background-image: url("/images/GigHub_img_prototype01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__prototype-main-imgCS04 {
+    height: 620px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__prototype-main-imgCS04 {
+    height: 523px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__prototype-main-imgCS04 {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__prototype-main-imgCS04 {
+    height: 344px;
+    height: 384px;
+    width: inherit;
+    background-repeat: round;
   }
 }
 .case-study01-jumbotron__test-main-img {
@@ -1524,6 +1762,42 @@ body {
     height: 344px;
   }
 }
+.case-study01-jumbotron__test-main-imgCS04 {
+  background-image: url("/images/GigHub_img_test01.jpg");
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100%;
+  margin-top: 218px;
+  background-position: 0% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media (min-width: 1200px) {
+  .case-study01-jumbotron__test-main-imgCS04 {
+    height: 620px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .case-study01-jumbotron__test-main-imgCS04 {
+    height: 523px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .case-study01-jumbotron__test-main-imgCS04 {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01-jumbotron__test-main-imgCS04 {
+    height: 344px;
+    height: 384px;
+    width: inherit;
+    background-repeat: round;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .case-study01-jumbotron__info-text-container {
     top: 45%;
@@ -1534,14 +1808,14 @@ body {
 /************************************** Style the tab ***************************/
 .tab {
   overflow: hidden;
-  background-color: #646673;
+  background-color: #272727;
 }
 .tab__container {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: -54px;
-  background-color: #434552;
-  color: white;
+  color: black;
+  background: white;
 }
 
 /* Style the buttons inside the tab */
@@ -1554,6 +1828,7 @@ body {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  color: #676767;
 }
 
 /* Change background color of buttons on hover */
@@ -1567,7 +1842,7 @@ body {
 .tab button.TabActive {
   text-decoration: underline;
   color: #1ed0d0 !important;
-  background-color: #646673 !important;
+  background-color: #272727 !important;
 }
 
 /* Style the tab content */
@@ -2950,7 +3225,7 @@ body {
   }
 }
 .herobanner__img--secondary {
-  background-image: url("../images/aina.bjerke_main_bg2.jpg");
+  background-image: url("../images/aina.bjerke_main_bg6.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 729px;
@@ -3617,6 +3892,31 @@ body {
   cursor: pointer;
   outline: inherit;
   color: #bf63b9;
+}
+
+@media (min-width: 1200px) {
+  .case-study01__r__checkIcons04 {
+    margin-left: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .case-study01__r__checkIcons04 {
+    margin-left: 0px;
+  }
+}
+
+.cs04__container__row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -45px;
+  margin-left: -31px;
+}
+
+.prototype__btn__cs04 {
+  border: 2px solid !important;
+  border-color: white !important;
+  background-color: #070C2C !important;
 }
 
 #more {
