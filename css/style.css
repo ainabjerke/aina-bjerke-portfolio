@@ -920,6 +920,12 @@ body {
 @media (max-width: 767px) {
   .case-study01-jumbotron__info-main-img {
     height: 344px;
+    background-image: url("/images/flex_fit_img_002.jpg");
+    width: 100%;
+    margin-top: 218px;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
   }
 }
 .case-study01-jumbotron__info-main-imgCS02 {
