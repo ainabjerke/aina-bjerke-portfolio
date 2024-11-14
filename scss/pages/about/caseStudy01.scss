@@ -217,11 +217,13 @@
       top: 39%;
       left: 44%;
       margin-top: 0vh;
+      margin-top: 17vh;
     }
     @include respond-between(xs, sm) {
       top: 40%;
       left: 35%;
-      margin-top: 07vh;
+      margin-top: 14vh;
+      
       margin-right: 44px;
     }
 
@@ -229,6 +231,7 @@
       top: 38%;
       left: 46%;
       margin-top: 07vh;
+      margin-top: 15vh;
     }
 
     @include respond-below(xxs) {
