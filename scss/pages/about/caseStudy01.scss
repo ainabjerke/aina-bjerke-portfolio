@@ -197,37 +197,44 @@
     transform: translate(-20%, -50%);
     color: white;
     text-align: right;
+    margin-top: 10vh;
 
     @include respond-above(lg) {
       top: 55%;
       left: 53%;
       // margin-left: 50%;
       // margin-top: -22%;
+      margin-top: 10vh;
     }
     @include respond-between(md, lg) {
       top: 47%;
       left: 47%;
+      margin-top: 10vh;
     }
     @include respond-between(sm, md) {
       // top: 56%;
       // left: 36%;
       top: 39%;
       left: 44%;
+      margin-top: 0vh;
     }
     @include respond-between(xs, sm) {
       top: 40%;
       left: 35%;
+      margin-top: 07vh;
+      margin-right: 44px;
     }
 
     @include respond-between(xxs, xs) {
       top: 38%;
       left: 46%;
+      margin-top: 07vh;
     }
 
     @include respond-below(xxs) {
       top: 43%;
       left: 46%;
-      margin-top: 48px;
+      margin-top: 07vh;
     }
   }
   &__text-p {

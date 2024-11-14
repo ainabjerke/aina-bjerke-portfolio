@@ -763,42 +763,49 @@ body {
   transform: translate(-20%, -50%);
   color: white;
   text-align: right;
+  margin-top: 10vh;
 }
 @media (min-width: 1200px) {
   .case-study01-jumbotron__text-container {
     top: 55%;
     left: 53%;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .case-study01-jumbotron__text-container {
     top: 47%;
     left: 47%;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .case-study01-jumbotron__text-container {
     top: 39%;
     left: 44%;
+    margin-top: 0vh;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .case-study01-jumbotron__text-container {
     top: 40%;
     left: 35%;
+    margin-top: 7vh;
+    margin-right: 44px;
   }
 }
 @media (min-width: 400px) and (max-width: 575px) {
   .case-study01-jumbotron__text-container {
     top: 38%;
     left: 46%;
+    margin-top: 7vh;
   }
 }
 @media (max-width: 399px) {
   .case-study01-jumbotron__text-container {
     top: 43%;
     left: 46%;
-    margin-top: 48px;
+    margin-top: 7vh;
   }
 }
 @media (max-width: 991px) {
@@ -3917,6 +3924,16 @@ body {
   border: 2px solid !important;
   border-color: white !important;
   background-color: #070C2C !important;
+}
+
+.case-study01-jumbotron__heading {
+  color: #ffffff;
+  background: -webkit-linear-gradient(300deg, #93f5ec 56%, #a77bf3 114%);
+  background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #more {
