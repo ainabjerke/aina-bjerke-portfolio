@@ -204,12 +204,12 @@
       left: 53%;
       // margin-left: 50%;
       // margin-top: -22%;
-      margin-top: 10vh;
+      margin-top: 2vh;
     }
     @include respond-between(md, lg) {
       top: 47%;
       left: 47%;
-      margin-top: 10vh;
+      margin-top: 2vh;
     }
     @include respond-between(sm, md) {
       // top: 56%;
